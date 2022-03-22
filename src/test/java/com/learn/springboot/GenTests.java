@@ -34,10 +34,8 @@ public class GenTests {
                     noSourcePropertiesList.add(property);
                 }
             }
-            //propertiesList.sort(Comparator.comparing(ConfigMetadata.Properties::getName));
             map.put(group, propertiesList);
         }
-
 
         // 已分类
         for (Map.Entry<ConfigMetadata.Groups, List<ConfigMetadata.Properties>> entry : map.entrySet()) {

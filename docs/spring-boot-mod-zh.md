@@ -1,6 +1,6 @@
 
 ### server.xx
-描述: 服务器-基础
+描述:服务器-基础
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties`
 
@@ -14,7 +14,7 @@
 | shutdown | org.springframework.boot.web.server.Shutdown | Type of shutdown that the server will support. | immediate |  | 
 
 ### server.compression.xx
-描述: 服务器-压缩
+描述:服务器-压缩
 类型:`org.springframework.boot.web.server.Compression`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties`
 
@@ -26,7 +26,7 @@
 | min-response-size | org.springframework.util.unit.DataSize | Minimum "Content-Length" value that is required for compression to be performed. | 2KB |  | 
 
 ### server.error.xx
-描述: 服务器-错误
+描述:服务器-错误
 类型:`org.springframework.boot.autoconfigure.web.ErrorProperties`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties`
 
@@ -39,7 +39,7 @@
 | path | java.lang.String | Path of the error controller. | /error |  | 
 
 ### server.error.whitelabel.xx
-描述: 服务器-错误
+描述:服务器-错误
 类型:`org.springframework.boot.autoconfigure.web.ErrorProperties$Whitelabel`
 源类型:`org.springframework.boot.autoconfigure.web.ErrorProperties`
 
@@ -48,7 +48,7 @@
 | enabled | java.lang.Boolean | Whether to enable the default error page displayed in browsers in case of a server error. | true |  | 
 
 ### server.http2.xx
-描述: 服务器-http2
+描述:服务器-http2
 类型:`org.springframework.boot.web.server.Http2`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties`
 
@@ -57,7 +57,7 @@
 | enabled | java.lang.Boolean | Whether to enable HTTP/2 support, if the current environment supports it. | false |  | 
 
 ### server.jetty.xx
-描述: 服务器-jetty
+描述:服务器-jetty
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Jetty`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties`
 
@@ -67,7 +67,7 @@
 | max-http-form-post-size | org.springframework.util.unit.DataSize | Maximum size of the form content in any HTTP post request. | 200000B |  | 
 
 ### server.jetty.accesslog.xx
-描述: 服务器-jetty-访问日志
+描述:服务器-jetty-访问日志
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Jetty$Accesslog`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Jetty`
 
@@ -83,7 +83,7 @@
 | retention-period | java.lang.Integer | Number of days before rotated log files are deleted. | 31 |  | 
 
 ### server.jetty.threads.xx
-描述: 服务器-jetty-线程
+描述:服务器-jetty-线程
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Jetty$Threads`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Jetty`
 
@@ -97,7 +97,7 @@
 | selectors | java.lang.Integer | Number of selector threads to use. When the value is -1, the default, the number of selectors is derived from the operating environment. | -1 |  | 
 
 ### server.netty.xx
-描述: 服务器-netty
+描述:服务器-netty
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Netty`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties`
 
@@ -112,7 +112,7 @@
 | validate-headers | java.lang.Boolean | Whether to validate headers when decoding requests. | true |  | 
 
 ### server.reactive.xx
-描述: 服务器-响应式
+描述:服务器-响应式
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Reactive`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties`
 
@@ -120,7 +120,7 @@
 |-----|------|-----|-------|---------|
 
 ### server.reactive.session.xx
-描述: 服务器-响应式-会话
+描述:服务器-响应式-会话
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Reactive$Session`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Reactive`
 
@@ -129,7 +129,7 @@
 | timeout | java.time.Duration | Session timeout. If a duration suffix is not specified, seconds will be used. | 30m |  | 
 
 ### server.servlet.xx
-描述: 服务器-应用
+描述:服务器-应用
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Servlet`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties`
 
@@ -141,7 +141,7 @@
 | register-default-servlet | java.lang.Boolean | Whether to register the default Servlet with the container. | false |  | 
 
 ### server.servlet.encoding.xx
-描述: 服务器-应用-编码
+描述:服务器-应用-编码
 类型:`org.springframework.boot.web.servlet.server.Encoding`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Servlet`
 
@@ -154,7 +154,7 @@
 | mapping | java.util.Map<java.util.Locale,java.nio.charset.Charset> | null |  |  | 
 
 ### server.servlet.jsp.xx
-描述: 服务器-应用-jsp
+描述:服务器-应用-jsp
 类型:`org.springframework.boot.web.servlet.server.Jsp`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Servlet`
 
@@ -165,7 +165,7 @@
 | registered | java.lang.Boolean | Whether the JSP servlet is registered. | true |  | 
 
 ### server.servlet.session.xx
-描述: 服务器-应用-会话(session)
+描述:服务器-应用-会话(session)
 类型:`org.springframework.boot.web.servlet.server.Session`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Servlet`
 
@@ -177,7 +177,7 @@
 | tracking-modes | java.util.Set<org.springframework.boot.web.servlet.server.Session$SessionTrackingMode> | Session tracking modes. |  |  | 
 
 ### server.servlet.session.cookie.xx
-描述: 服务器-应用-会话(cookie)
+描述:服务器-应用-会话(cookie)
 类型:`org.springframework.boot.web.servlet.server.Session$Cookie`
 源类型:`org.springframework.boot.web.servlet.server.Session`
 
@@ -193,7 +193,7 @@
 | secure | java.lang.Boolean | null |  |  | 
 
 ### server.ssl.xx
-描述: 服务器-SSL
+描述:服务器-SSL
 类型:`org.springframework.boot.web.server.Ssl`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties`
 
@@ -231,7 +231,7 @@
 | trust-store-type | java.lang.String | null |  |  | 
 
 ### server.tomcat.xx
-描述: 服务器-tomcat
+描述:服务器-tomcat
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties`
 
@@ -256,7 +256,7 @@
 | use-relative-redirects | java.lang.Boolean | Whether HTTP 1.1 and later location headers generated by a call to sendRedirect will use relative or absolute redirects. | false |  | 
 
 ### server.tomcat.accesslog.xx
-描述: 服务器-tomcat-访问日志
+描述:服务器-tomcat-访问日志
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat$Accesslog`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat`
 
@@ -281,7 +281,7 @@
 | suffix | java.lang.String | Log file name suffix. | .log |  | 
 
 ### server.tomcat.mbeanregistry.xx
-描述: 服务器-tomcat-指标
+描述:服务器-tomcat-指标
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat$Mbeanregistry`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat`
 
@@ -290,7 +290,7 @@
 | enabled | java.lang.Boolean | Whether Tomcat's MBean Registry should be enabled. | false |  | 
 
 ### server.tomcat.remoteip.xx
-描述: 服务器-tomcat-remoteip
+描述:服务器-tomcat-remoteip
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat$Remoteip`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat`
 
@@ -304,7 +304,7 @@
 | remote-ip-header | java.lang.String | Name of the HTTP header from which the remote IP is extracted. For instance, 'X-FORWARDED-FOR'. |  |  | 
 
 ### server.tomcat.resource.xx
-描述: 服务器-tomcat-资源
+描述:服务器-tomcat-资源
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat$Resource`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat`
 
@@ -324,7 +324,7 @@
 | min-spare | java.lang.Integer | Minimum amount of worker threads. | 10 |  | 
 
 ### server.undertow.xx
-描述: 服务器-undertow
+描述:服务器-undertow
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Undertow`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties`
 
@@ -345,7 +345,7 @@
 | url-charset | java.nio.charset.Charset | Charset used to decode URLs. | UTF-8 |  | 
 
 ### server.undertow.accesslog.xx
-描述: 服务器-undertow-访问日志
+描述:服务器-undertow-访问日志
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Undertow$Accesslog`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Undertow`
 
@@ -359,7 +359,7 @@
 | suffix | java.lang.String | Log file name suffix. | log |  | 
 
 ### server.undertow.options.xx
-描述: 服务器-undertow-选项
+描述:服务器-undertow-选项
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Undertow$Options`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Undertow`
 
@@ -369,7 +369,7 @@
 | socket | java.util.Map<java.lang.String,java.lang.String> | null |  |  | 
 
 ### server.undertow.threads.xx
-描述: 服务器-undertow-线程
+描述:服务器-undertow-线程
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Undertow$Threads`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Undertow`
 
@@ -379,7 +379,7 @@
 | worker | java.lang.Integer | Number of worker threads. The default is 8 times the number of I/O threads. |  |  | 
 
 ### spring.activemq.xx
-描述: spring-activemq
+描述:spring-activemq
 类型:`org.springframework.boot.autoconfigure.jms.activemq.ActiveMQProperties`
 源类型:`org.springframework.boot.autoconfigure.jms.activemq.ActiveMQProperties`
 
@@ -394,7 +394,7 @@
 | user | java.lang.String | Login user of the broker. |  |  | 
 
 ### spring.activemq.packages.xx
-描述: spring-activemq-包
+描述:spring-activemq-包
 类型:`org.springframework.boot.autoconfigure.jms.activemq.ActiveMQProperties$Packages`
 源类型:`org.springframework.boot.autoconfigure.jms.activemq.ActiveMQProperties`
 
@@ -404,7 +404,7 @@
 | trusted | java.util.List<java.lang.String> | Comma-separated list of specific packages to trust (when not trusting all packages). |  |  | 
 
 ### spring.activemq.pool.xx
-描述: spring-activemq-连接池
+描述:spring-activemq-连接池
 类型:`org.springframework.boot.autoconfigure.jms.JmsPoolConnectionFactoryProperties`
 源类型:`org.springframework.boot.autoconfigure.jms.activemq.ActiveMQProperties`
 
@@ -418,17 +418,9 @@
 | max-sessions-per-connection | java.lang.Integer | Maximum number of pooled sessions per connection in the pool. | 500 |  | 
 | time-between-expiration-check | java.time.Duration | Time to sleep between runs of the idle connection eviction thread. When negative, no idle connection eviction thread runs. | -1ms |  | 
 | use-anonymous-producers | java.lang.Boolean | Whether to use only one anonymous "MessageProducer" instance. Set it to false to create one "MessageProducer" every time one is required. | true |  | 
-| block-if-full | java.lang.Boolean | Whether to block when a connection is requested and the pool is full. Set it to false to throw a "JMSException" instead. | true |  | 
-| block-if-full-timeout | java.time.Duration | Blocking period before throwing an exception if the pool is still full. | -1ms |  | 
-| enabled | java.lang.Boolean | Whether a JmsPoolConnectionFactory should be created, instead of a regular ConnectionFactory. | false |  | 
-| idle-timeout | java.time.Duration | Connection idle timeout. | 30s |  | 
-| max-connections | java.lang.Integer | Maximum number of pooled connections. | 1 |  | 
-| max-sessions-per-connection | java.lang.Integer | Maximum number of pooled sessions per connection in the pool. | 500 |  | 
-| time-between-expiration-check | java.time.Duration | Time to sleep between runs of the idle connection eviction thread. When negative, no idle connection eviction thread runs. | -1ms |  | 
-| use-anonymous-producers | java.lang.Boolean | Whether to use only one anonymous "MessageProducer" instance. Set it to false to create one "MessageProducer" every time one is required. | true |  | 
 
 ### spring.artemis.xx
-描述:spring-artemis
+描述:spring-[artemis](https://activemq.apache.org/components/artemis/)
 类型:`org.springframework.boot.autoconfigure.jms.artemis.ArtemisProperties`
 源类型:`org.springframework.boot.autoconfigure.jms.artemis.ArtemisProperties`
 
@@ -463,14 +455,6 @@
 
 | 名称 | 类型 | 描述 | 默认值 | 过期替代 |
 |-----|------|-----|-------|---------|
-| block-if-full | java.lang.Boolean | Whether to block when a connection is requested and the pool is full. Set it to false to throw a "JMSException" instead. | true |  | 
-| block-if-full-timeout | java.time.Duration | Blocking period before throwing an exception if the pool is still full. | -1ms |  | 
-| enabled | java.lang.Boolean | Whether a JmsPoolConnectionFactory should be created, instead of a regular ConnectionFactory. | false |  | 
-| idle-timeout | java.time.Duration | Connection idle timeout. | 30s |  | 
-| max-connections | java.lang.Integer | Maximum number of pooled connections. | 1 |  | 
-| max-sessions-per-connection | java.lang.Integer | Maximum number of pooled sessions per connection in the pool. | 500 |  | 
-| time-between-expiration-check | java.time.Duration | Time to sleep between runs of the idle connection eviction thread. When negative, no idle connection eviction thread runs. | -1ms |  | 
-| use-anonymous-producers | java.lang.Boolean | Whether to use only one anonymous "MessageProducer" instance. Set it to false to create one "MessageProducer" every time one is required. | true |  | 
 | block-if-full | java.lang.Boolean | Whether to block when a connection is requested and the pool is full. Set it to false to throw a "JMSException" instead. | true |  | 
 | block-if-full-timeout | java.time.Duration | Blocking period before throwing an exception if the pool is still full. | -1ms |  | 
 | enabled | java.lang.Boolean | Whether a JmsPoolConnectionFactory should be created, instead of a regular ConnectionFactory. | false |  | 
@@ -592,7 +576,7 @@
 | max-in-memory-size | org.springframework.util.unit.DataSize | Limit on the number of bytes that can be buffered whenever the input stream needs to be aggregated. This applies only to the auto-configured WebFlux server and WebClient instances. By default this is not set, in which case individual codec defaults apply. Most codecs are limited to 256K by default. |  |  | 
 
 ### spring.couchbase.xx
-描述: spring-[couchbase](https://www.couchbase.com/)
+描述:spring-[couchbase](https://www.couchbase.com/)
 类型:`org.springframework.boot.autoconfigure.couchbase.CouchbaseProperties`
 源类型:`org.springframework.boot.autoconfigure.couchbase.CouchbaseProperties`
 
@@ -710,7 +694,7 @@
 | timeout | java.time.Duration | How long the driver waits for a request to complete. | 2s |  | 
 
 ### spring.data.cassandra.request.throttler.xx
-描述: spring-data-cassandra-请求-节流
+描述:spring-data-cassandra-请求-节流
 类型:`org.springframework.boot.autoconfigure.cassandra.CassandraProperties$Throttler`
 源类型:`org.springframework.boot.autoconfigure.cassandra.CassandraProperties$Request`
 
@@ -723,7 +707,7 @@
 | type | org.springframework.boot.autoconfigure.cassandra.CassandraProperties$ThrottlerType | Request throttling type. | none |  | 
 
 ### spring.data.couchbase.xx
-描述: spring-data-couchbase
+描述:spring-data-couchbase
 类型:`org.springframework.boot.autoconfigure.data.couchbase.CouchbaseDataProperties`
 源类型:`org.springframework.boot.autoconfigure.data.couchbase.CouchbaseDataProperties`
 
@@ -736,7 +720,7 @@
 | type-key | java.lang.String | Name of the field that stores the type information for complex types when using "MappingCouchbaseConverter". | _class |  | 
 
 ### spring.data.elasticsearch.client.reactive.xx
-描述: spring-data-elasticsearch-client
+描述:spring-data-elasticsearch-client
 类型:`org.springframework.boot.autoconfigure.data.elasticsearch.DeprecatedReactiveElasticsearchRestClientProperties`
 源类型:`org.springframework.boot.autoconfigure.data.elasticsearch.DeprecatedReactiveElasticsearchRestClientProperties`
 
@@ -751,7 +735,7 @@
 | username | java.lang.String | Credentials username. |  | true,spring.elasticsearch.username | 
 
 ### spring.data.mongodb.xx
-描述: spring-data-mongodb
+描述:spring-data-mongodb
 类型:`org.springframework.boot.autoconfigure.mongo.MongoProperties`
 源类型:`org.springframework.boot.autoconfigure.mongo.MongoProperties`
 
@@ -977,7 +961,7 @@
 | validation-timeout | java.lang.Long | null |  |  | 
 
 ### spring.datasource.oracleucp.xx
-描述:spring-数据源-oracleucp
+描述:spring-数据源-[oracleucp](https://docs.oracle.com/cd/E11882_01/java.112/e12265/intro.htm#BABHFGCA)
 类型:`oracle.ucp.jdbc.PoolDataSourceImpl`
 源类型:`org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$OracleUcp`
 
@@ -1542,7 +1526,7 @@
 | query-timeout | java.time.Duration | Query timeout. Default is to use the JDBC driver's default configuration. If a duration suffix is not specified, seconds will be used. |  |  | 
 
 ### spring.jersey.xx
-描述:spring-jersey
+描述:spring-[jersey](https://eclipse-ee4j.github.io/jersey/)
 类型:`org.springframework.boot.autoconfigure.jersey.JerseyProperties`
 源类型:`org.springframework.boot.autoconfigure.jersey.JerseyProperties`
 
@@ -1697,20 +1681,16 @@
 | properties | java.util.Map<java.lang.String,java.lang.String> | Additional admin-specific properties used to configure the client. |  |  | 
 
 ### spring.kafka.admin.security.xx
-描述:spring-kafka-admin-protocol
+描述:spring-kafka-admin-security
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Security`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Admin`
 
 | 名称 | 类型 | 描述 | 默认值 | 过期替代 |
 |-----|------|-----|-------|---------|
 | protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
-| protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
-| protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
-| protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
-| protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
 
 ### spring.kafka.admin.ssl.xx
-描述:
+描述:spring-kafka-admin-ssl
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Ssl`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Admin`
 
@@ -1727,53 +1707,9 @@
 | trust-store-location | org.springframework.core.io.Resource | Location of the trust store file. |  |  | 
 | trust-store-password | java.lang.String | Store password for the trust store file. |  |  | 
 | trust-store-type | java.lang.String | Type of the trust store. |  |  | 
-| key-password | java.lang.String | Password of the private key in either key store key or key store file. |  |  | 
-| key-store-certificate-chain | java.lang.String | Certificate chain in PEM format with a list of X.509 certificates. |  |  | 
-| key-store-key | java.lang.String | Private key in PEM format with PKCS#8 keys. |  |  | 
-| key-store-location | org.springframework.core.io.Resource | Location of the key store file. |  |  | 
-| key-store-password | java.lang.String | Store password for the key store file. |  |  | 
-| key-store-type | java.lang.String | Type of the key store. |  |  | 
-| protocol | java.lang.String | SSL protocol to use. |  |  | 
-| trust-store-certificates | java.lang.String | Trusted certificates in PEM format with X.509 certificates. |  |  | 
-| trust-store-location | org.springframework.core.io.Resource | Location of the trust store file. |  |  | 
-| trust-store-password | java.lang.String | Store password for the trust store file. |  |  | 
-| trust-store-type | java.lang.String | Type of the trust store. |  |  | 
-| key-password | java.lang.String | Password of the private key in either key store key or key store file. |  |  | 
-| key-store-certificate-chain | java.lang.String | Certificate chain in PEM format with a list of X.509 certificates. |  |  | 
-| key-store-key | java.lang.String | Private key in PEM format with PKCS#8 keys. |  |  | 
-| key-store-location | org.springframework.core.io.Resource | Location of the key store file. |  |  | 
-| key-store-password | java.lang.String | Store password for the key store file. |  |  | 
-| key-store-type | java.lang.String | Type of the key store. |  |  | 
-| protocol | java.lang.String | SSL protocol to use. |  |  | 
-| trust-store-certificates | java.lang.String | Trusted certificates in PEM format with X.509 certificates. |  |  | 
-| trust-store-location | org.springframework.core.io.Resource | Location of the trust store file. |  |  | 
-| trust-store-password | java.lang.String | Store password for the trust store file. |  |  | 
-| trust-store-type | java.lang.String | Type of the trust store. |  |  | 
-| key-password | java.lang.String | Password of the private key in either key store key or key store file. |  |  | 
-| key-store-certificate-chain | java.lang.String | Certificate chain in PEM format with a list of X.509 certificates. |  |  | 
-| key-store-key | java.lang.String | Private key in PEM format with PKCS#8 keys. |  |  | 
-| key-store-location | org.springframework.core.io.Resource | Location of the key store file. |  |  | 
-| key-store-password | java.lang.String | Store password for the key store file. |  |  | 
-| key-store-type | java.lang.String | Type of the key store. |  |  | 
-| protocol | java.lang.String | SSL protocol to use. |  |  | 
-| trust-store-certificates | java.lang.String | Trusted certificates in PEM format with X.509 certificates. |  |  | 
-| trust-store-location | org.springframework.core.io.Resource | Location of the trust store file. |  |  | 
-| trust-store-password | java.lang.String | Store password for the trust store file. |  |  | 
-| trust-store-type | java.lang.String | Type of the trust store. |  |  | 
-| key-password | java.lang.String | Password of the private key in either key store key or key store file. |  |  | 
-| key-store-certificate-chain | java.lang.String | Certificate chain in PEM format with a list of X.509 certificates. |  |  | 
-| key-store-key | java.lang.String | Private key in PEM format with PKCS#8 keys. |  |  | 
-| key-store-location | org.springframework.core.io.Resource | Location of the key store file. |  |  | 
-| key-store-password | java.lang.String | Store password for the key store file. |  |  | 
-| key-store-type | java.lang.String | Type of the key store. |  |  | 
-| protocol | java.lang.String | SSL protocol to use. |  |  | 
-| trust-store-certificates | java.lang.String | Trusted certificates in PEM format with X.509 certificates. |  |  | 
-| trust-store-location | org.springframework.core.io.Resource | Location of the trust store file. |  |  | 
-| trust-store-password | java.lang.String | Store password for the trust store file. |  |  | 
-| trust-store-type | java.lang.String | Type of the trust store. |  |  | 
 
 ### spring.kafka.consumer.xx
-描述:
+描述:spring-kafka-consumer
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Consumer`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties`
 
@@ -1795,20 +1731,16 @@
 | value-deserializer | java.lang.Class<?> | Deserializer class for values. |  |  | 
 
 ### spring.kafka.consumer.security.xx
-描述:
+描述:spring-kafka-consumer-security
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Security`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Consumer`
 
 | 名称 | 类型 | 描述 | 默认值 | 过期替代 |
 |-----|------|-----|-------|---------|
 | protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
-| protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
-| protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
-| protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
-| protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
 
 ### spring.kafka.consumer.ssl.xx
-描述:
+描述:spring-kafka-consumer-ssl
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Ssl`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Consumer`
 
@@ -1825,53 +1757,9 @@
 | trust-store-location | org.springframework.core.io.Resource | Location of the trust store file. |  |  | 
 | trust-store-password | java.lang.String | Store password for the trust store file. |  |  | 
 | trust-store-type | java.lang.String | Type of the trust store. |  |  | 
-| key-password | java.lang.String | Password of the private key in either key store key or key store file. |  |  | 
-| key-store-certificate-chain | java.lang.String | Certificate chain in PEM format with a list of X.509 certificates. |  |  | 
-| key-store-key | java.lang.String | Private key in PEM format with PKCS#8 keys. |  |  | 
-| key-store-location | org.springframework.core.io.Resource | Location of the key store file. |  |  | 
-| key-store-password | java.lang.String | Store password for the key store file. |  |  | 
-| key-store-type | java.lang.String | Type of the key store. |  |  | 
-| protocol | java.lang.String | SSL protocol to use. |  |  | 
-| trust-store-certificates | java.lang.String | Trusted certificates in PEM format with X.509 certificates. |  |  | 
-| trust-store-location | org.springframework.core.io.Resource | Location of the trust store file. |  |  | 
-| trust-store-password | java.lang.String | Store password for the trust store file. |  |  | 
-| trust-store-type | java.lang.String | Type of the trust store. |  |  | 
-| key-password | java.lang.String | Password of the private key in either key store key or key store file. |  |  | 
-| key-store-certificate-chain | java.lang.String | Certificate chain in PEM format with a list of X.509 certificates. |  |  | 
-| key-store-key | java.lang.String | Private key in PEM format with PKCS#8 keys. |  |  | 
-| key-store-location | org.springframework.core.io.Resource | Location of the key store file. |  |  | 
-| key-store-password | java.lang.String | Store password for the key store file. |  |  | 
-| key-store-type | java.lang.String | Type of the key store. |  |  | 
-| protocol | java.lang.String | SSL protocol to use. |  |  | 
-| trust-store-certificates | java.lang.String | Trusted certificates in PEM format with X.509 certificates. |  |  | 
-| trust-store-location | org.springframework.core.io.Resource | Location of the trust store file. |  |  | 
-| trust-store-password | java.lang.String | Store password for the trust store file. |  |  | 
-| trust-store-type | java.lang.String | Type of the trust store. |  |  | 
-| key-password | java.lang.String | Password of the private key in either key store key or key store file. |  |  | 
-| key-store-certificate-chain | java.lang.String | Certificate chain in PEM format with a list of X.509 certificates. |  |  | 
-| key-store-key | java.lang.String | Private key in PEM format with PKCS#8 keys. |  |  | 
-| key-store-location | org.springframework.core.io.Resource | Location of the key store file. |  |  | 
-| key-store-password | java.lang.String | Store password for the key store file. |  |  | 
-| key-store-type | java.lang.String | Type of the key store. |  |  | 
-| protocol | java.lang.String | SSL protocol to use. |  |  | 
-| trust-store-certificates | java.lang.String | Trusted certificates in PEM format with X.509 certificates. |  |  | 
-| trust-store-location | org.springframework.core.io.Resource | Location of the trust store file. |  |  | 
-| trust-store-password | java.lang.String | Store password for the trust store file. |  |  | 
-| trust-store-type | java.lang.String | Type of the trust store. |  |  | 
-| key-password | java.lang.String | Password of the private key in either key store key or key store file. |  |  | 
-| key-store-certificate-chain | java.lang.String | Certificate chain in PEM format with a list of X.509 certificates. |  |  | 
-| key-store-key | java.lang.String | Private key in PEM format with PKCS#8 keys. |  |  | 
-| key-store-location | org.springframework.core.io.Resource | Location of the key store file. |  |  | 
-| key-store-password | java.lang.String | Store password for the key store file. |  |  | 
-| key-store-type | java.lang.String | Type of the key store. |  |  | 
-| protocol | java.lang.String | SSL protocol to use. |  |  | 
-| trust-store-certificates | java.lang.String | Trusted certificates in PEM format with X.509 certificates. |  |  | 
-| trust-store-location | org.springframework.core.io.Resource | Location of the trust store file. |  |  | 
-| trust-store-password | java.lang.String | Store password for the trust store file. |  |  | 
-| trust-store-type | java.lang.String | Type of the trust store. |  |  | 
 
 ### spring.kafka.jaas.xx
-描述:
+描述:spring-kafka-jaas
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Jaas`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties`
 
@@ -1883,7 +1771,7 @@
 | options | java.util.Map<java.lang.String,java.lang.String> | Additional JAAS options. |  |  | 
 
 ### spring.kafka.listener.xx
-描述:
+描述:spring-kafka-listener
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Listener`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties`
 
@@ -1905,7 +1793,7 @@
 | type | org.springframework.boot.autoconfigure.kafka.KafkaProperties$Listener$Type | Listener type. | single |  | 
 
 ### spring.kafka.producer.xx
-描述:
+描述:spring-kafka-producer
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Producer`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties`
 
@@ -1924,69 +1812,21 @@
 | value-serializer | java.lang.Class<?> | Serializer class for values. |  |  | 
 
 ### spring.kafka.producer.security.xx
-描述:
+描述:spring-kafka-producer-security
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Security`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Producer`
 
 | 名称 | 类型 | 描述 | 默认值 | 过期替代 |
 |-----|------|-----|-------|---------|
 | protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
-| protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
-| protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
-| protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
-| protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
 
 ### spring.kafka.producer.ssl.xx
-描述:
+描述:spring-kafka-producer-ssl
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Ssl`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Producer`
 
 | 名称 | 类型 | 描述 | 默认值 | 过期替代 |
 |-----|------|-----|-------|---------|
-| key-password | java.lang.String | Password of the private key in either key store key or key store file. |  |  | 
-| key-store-certificate-chain | java.lang.String | Certificate chain in PEM format with a list of X.509 certificates. |  |  | 
-| key-store-key | java.lang.String | Private key in PEM format with PKCS#8 keys. |  |  | 
-| key-store-location | org.springframework.core.io.Resource | Location of the key store file. |  |  | 
-| key-store-password | java.lang.String | Store password for the key store file. |  |  | 
-| key-store-type | java.lang.String | Type of the key store. |  |  | 
-| protocol | java.lang.String | SSL protocol to use. |  |  | 
-| trust-store-certificates | java.lang.String | Trusted certificates in PEM format with X.509 certificates. |  |  | 
-| trust-store-location | org.springframework.core.io.Resource | Location of the trust store file. |  |  | 
-| trust-store-password | java.lang.String | Store password for the trust store file. |  |  | 
-| trust-store-type | java.lang.String | Type of the trust store. |  |  | 
-| key-password | java.lang.String | Password of the private key in either key store key or key store file. |  |  | 
-| key-store-certificate-chain | java.lang.String | Certificate chain in PEM format with a list of X.509 certificates. |  |  | 
-| key-store-key | java.lang.String | Private key in PEM format with PKCS#8 keys. |  |  | 
-| key-store-location | org.springframework.core.io.Resource | Location of the key store file. |  |  | 
-| key-store-password | java.lang.String | Store password for the key store file. |  |  | 
-| key-store-type | java.lang.String | Type of the key store. |  |  | 
-| protocol | java.lang.String | SSL protocol to use. |  |  | 
-| trust-store-certificates | java.lang.String | Trusted certificates in PEM format with X.509 certificates. |  |  | 
-| trust-store-location | org.springframework.core.io.Resource | Location of the trust store file. |  |  | 
-| trust-store-password | java.lang.String | Store password for the trust store file. |  |  | 
-| trust-store-type | java.lang.String | Type of the trust store. |  |  | 
-| key-password | java.lang.String | Password of the private key in either key store key or key store file. |  |  | 
-| key-store-certificate-chain | java.lang.String | Certificate chain in PEM format with a list of X.509 certificates. |  |  | 
-| key-store-key | java.lang.String | Private key in PEM format with PKCS#8 keys. |  |  | 
-| key-store-location | org.springframework.core.io.Resource | Location of the key store file. |  |  | 
-| key-store-password | java.lang.String | Store password for the key store file. |  |  | 
-| key-store-type | java.lang.String | Type of the key store. |  |  | 
-| protocol | java.lang.String | SSL protocol to use. |  |  | 
-| trust-store-certificates | java.lang.String | Trusted certificates in PEM format with X.509 certificates. |  |  | 
-| trust-store-location | org.springframework.core.io.Resource | Location of the trust store file. |  |  | 
-| trust-store-password | java.lang.String | Store password for the trust store file. |  |  | 
-| trust-store-type | java.lang.String | Type of the trust store. |  |  | 
-| key-password | java.lang.String | Password of the private key in either key store key or key store file. |  |  | 
-| key-store-certificate-chain | java.lang.String | Certificate chain in PEM format with a list of X.509 certificates. |  |  | 
-| key-store-key | java.lang.String | Private key in PEM format with PKCS#8 keys. |  |  | 
-| key-store-location | org.springframework.core.io.Resource | Location of the key store file. |  |  | 
-| key-store-password | java.lang.String | Store password for the key store file. |  |  | 
-| key-store-type | java.lang.String | Type of the key store. |  |  | 
-| protocol | java.lang.String | SSL protocol to use. |  |  | 
-| trust-store-certificates | java.lang.String | Trusted certificates in PEM format with X.509 certificates. |  |  | 
-| trust-store-location | org.springframework.core.io.Resource | Location of the trust store file. |  |  | 
-| trust-store-password | java.lang.String | Store password for the trust store file. |  |  | 
-| trust-store-type | java.lang.String | Type of the trust store. |  |  | 
 | key-password | java.lang.String | Password of the private key in either key store key or key store file. |  |  | 
 | key-store-certificate-chain | java.lang.String | Certificate chain in PEM format with a list of X.509 certificates. |  |  | 
 | key-store-key | java.lang.String | Private key in PEM format with PKCS#8 keys. |  |  | 
@@ -2000,20 +1840,16 @@
 | trust-store-type | java.lang.String | Type of the trust store. |  |  | 
 
 ### spring.kafka.security.xx
-描述:
+描述:spring-kafka-security
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Security`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties`
 
 | 名称 | 类型 | 描述 | 默认值 | 过期替代 |
 |-----|------|-----|-------|---------|
 | protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
-| protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
-| protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
-| protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
-| protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
 
 ### spring.kafka.ssl.xx
-描述:
+描述:spring-kafka-ssl
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Ssl`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties`
 
@@ -2030,53 +1866,9 @@
 | trust-store-location | org.springframework.core.io.Resource | Location of the trust store file. |  |  | 
 | trust-store-password | java.lang.String | Store password for the trust store file. |  |  | 
 | trust-store-type | java.lang.String | Type of the trust store. |  |  | 
-| key-password | java.lang.String | Password of the private key in either key store key or key store file. |  |  | 
-| key-store-certificate-chain | java.lang.String | Certificate chain in PEM format with a list of X.509 certificates. |  |  | 
-| key-store-key | java.lang.String | Private key in PEM format with PKCS#8 keys. |  |  | 
-| key-store-location | org.springframework.core.io.Resource | Location of the key store file. |  |  | 
-| key-store-password | java.lang.String | Store password for the key store file. |  |  | 
-| key-store-type | java.lang.String | Type of the key store. |  |  | 
-| protocol | java.lang.String | SSL protocol to use. |  |  | 
-| trust-store-certificates | java.lang.String | Trusted certificates in PEM format with X.509 certificates. |  |  | 
-| trust-store-location | org.springframework.core.io.Resource | Location of the trust store file. |  |  | 
-| trust-store-password | java.lang.String | Store password for the trust store file. |  |  | 
-| trust-store-type | java.lang.String | Type of the trust store. |  |  | 
-| key-password | java.lang.String | Password of the private key in either key store key or key store file. |  |  | 
-| key-store-certificate-chain | java.lang.String | Certificate chain in PEM format with a list of X.509 certificates. |  |  | 
-| key-store-key | java.lang.String | Private key in PEM format with PKCS#8 keys. |  |  | 
-| key-store-location | org.springframework.core.io.Resource | Location of the key store file. |  |  | 
-| key-store-password | java.lang.String | Store password for the key store file. |  |  | 
-| key-store-type | java.lang.String | Type of the key store. |  |  | 
-| protocol | java.lang.String | SSL protocol to use. |  |  | 
-| trust-store-certificates | java.lang.String | Trusted certificates in PEM format with X.509 certificates. |  |  | 
-| trust-store-location | org.springframework.core.io.Resource | Location of the trust store file. |  |  | 
-| trust-store-password | java.lang.String | Store password for the trust store file. |  |  | 
-| trust-store-type | java.lang.String | Type of the trust store. |  |  | 
-| key-password | java.lang.String | Password of the private key in either key store key or key store file. |  |  | 
-| key-store-certificate-chain | java.lang.String | Certificate chain in PEM format with a list of X.509 certificates. |  |  | 
-| key-store-key | java.lang.String | Private key in PEM format with PKCS#8 keys. |  |  | 
-| key-store-location | org.springframework.core.io.Resource | Location of the key store file. |  |  | 
-| key-store-password | java.lang.String | Store password for the key store file. |  |  | 
-| key-store-type | java.lang.String | Type of the key store. |  |  | 
-| protocol | java.lang.String | SSL protocol to use. |  |  | 
-| trust-store-certificates | java.lang.String | Trusted certificates in PEM format with X.509 certificates. |  |  | 
-| trust-store-location | org.springframework.core.io.Resource | Location of the trust store file. |  |  | 
-| trust-store-password | java.lang.String | Store password for the trust store file. |  |  | 
-| trust-store-type | java.lang.String | Type of the trust store. |  |  | 
-| key-password | java.lang.String | Password of the private key in either key store key or key store file. |  |  | 
-| key-store-certificate-chain | java.lang.String | Certificate chain in PEM format with a list of X.509 certificates. |  |  | 
-| key-store-key | java.lang.String | Private key in PEM format with PKCS#8 keys. |  |  | 
-| key-store-location | org.springframework.core.io.Resource | Location of the key store file. |  |  | 
-| key-store-password | java.lang.String | Store password for the key store file. |  |  | 
-| key-store-type | java.lang.String | Type of the key store. |  |  | 
-| protocol | java.lang.String | SSL protocol to use. |  |  | 
-| trust-store-certificates | java.lang.String | Trusted certificates in PEM format with X.509 certificates. |  |  | 
-| trust-store-location | org.springframework.core.io.Resource | Location of the trust store file. |  |  | 
-| trust-store-password | java.lang.String | Store password for the trust store file. |  |  | 
-| trust-store-type | java.lang.String | Type of the trust store. |  |  | 
 
 ### spring.kafka.streams.xx
-描述:
+描述:spring-kafka-streams
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Streams`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties`
 
@@ -2092,7 +1884,7 @@
 | state-dir | java.lang.String | Directory location for the state store. |  |  | 
 
 ### spring.kafka.streams.cleanup.xx
-描述:
+描述:spring-kafka-streams-cleanup
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Cleanup`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Streams`
 
@@ -2102,20 +1894,16 @@
 | on-startup | java.lang.Boolean | Cleanup the application’s local state directory on startup. | false |  | 
 
 ### spring.kafka.streams.security.xx
-描述:
+描述:spring-kafka-streams-security
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Security`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Streams`
 
 | 名称 | 类型 | 描述 | 默认值 | 过期替代 |
 |-----|------|-----|-------|---------|
 | protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
-| protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
-| protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
-| protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
-| protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
 
 ### spring.kafka.streams.ssl.xx
-描述:
+描述:spring-kafka-streams-ssl
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Ssl`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Streams`
 
@@ -2132,53 +1920,9 @@
 | trust-store-location | org.springframework.core.io.Resource | Location of the trust store file. |  |  | 
 | trust-store-password | java.lang.String | Store password for the trust store file. |  |  | 
 | trust-store-type | java.lang.String | Type of the trust store. |  |  | 
-| key-password | java.lang.String | Password of the private key in either key store key or key store file. |  |  | 
-| key-store-certificate-chain | java.lang.String | Certificate chain in PEM format with a list of X.509 certificates. |  |  | 
-| key-store-key | java.lang.String | Private key in PEM format with PKCS#8 keys. |  |  | 
-| key-store-location | org.springframework.core.io.Resource | Location of the key store file. |  |  | 
-| key-store-password | java.lang.String | Store password for the key store file. |  |  | 
-| key-store-type | java.lang.String | Type of the key store. |  |  | 
-| protocol | java.lang.String | SSL protocol to use. |  |  | 
-| trust-store-certificates | java.lang.String | Trusted certificates in PEM format with X.509 certificates. |  |  | 
-| trust-store-location | org.springframework.core.io.Resource | Location of the trust store file. |  |  | 
-| trust-store-password | java.lang.String | Store password for the trust store file. |  |  | 
-| trust-store-type | java.lang.String | Type of the trust store. |  |  | 
-| key-password | java.lang.String | Password of the private key in either key store key or key store file. |  |  | 
-| key-store-certificate-chain | java.lang.String | Certificate chain in PEM format with a list of X.509 certificates. |  |  | 
-| key-store-key | java.lang.String | Private key in PEM format with PKCS#8 keys. |  |  | 
-| key-store-location | org.springframework.core.io.Resource | Location of the key store file. |  |  | 
-| key-store-password | java.lang.String | Store password for the key store file. |  |  | 
-| key-store-type | java.lang.String | Type of the key store. |  |  | 
-| protocol | java.lang.String | SSL protocol to use. |  |  | 
-| trust-store-certificates | java.lang.String | Trusted certificates in PEM format with X.509 certificates. |  |  | 
-| trust-store-location | org.springframework.core.io.Resource | Location of the trust store file. |  |  | 
-| trust-store-password | java.lang.String | Store password for the trust store file. |  |  | 
-| trust-store-type | java.lang.String | Type of the trust store. |  |  | 
-| key-password | java.lang.String | Password of the private key in either key store key or key store file. |  |  | 
-| key-store-certificate-chain | java.lang.String | Certificate chain in PEM format with a list of X.509 certificates. |  |  | 
-| key-store-key | java.lang.String | Private key in PEM format with PKCS#8 keys. |  |  | 
-| key-store-location | org.springframework.core.io.Resource | Location of the key store file. |  |  | 
-| key-store-password | java.lang.String | Store password for the key store file. |  |  | 
-| key-store-type | java.lang.String | Type of the key store. |  |  | 
-| protocol | java.lang.String | SSL protocol to use. |  |  | 
-| trust-store-certificates | java.lang.String | Trusted certificates in PEM format with X.509 certificates. |  |  | 
-| trust-store-location | org.springframework.core.io.Resource | Location of the trust store file. |  |  | 
-| trust-store-password | java.lang.String | Store password for the trust store file. |  |  | 
-| trust-store-type | java.lang.String | Type of the trust store. |  |  | 
-| key-password | java.lang.String | Password of the private key in either key store key or key store file. |  |  | 
-| key-store-certificate-chain | java.lang.String | Certificate chain in PEM format with a list of X.509 certificates. |  |  | 
-| key-store-key | java.lang.String | Private key in PEM format with PKCS#8 keys. |  |  | 
-| key-store-location | org.springframework.core.io.Resource | Location of the key store file. |  |  | 
-| key-store-password | java.lang.String | Store password for the key store file. |  |  | 
-| key-store-type | java.lang.String | Type of the key store. |  |  | 
-| protocol | java.lang.String | SSL protocol to use. |  |  | 
-| trust-store-certificates | java.lang.String | Trusted certificates in PEM format with X.509 certificates. |  |  | 
-| trust-store-location | org.springframework.core.io.Resource | Location of the trust store file. |  |  | 
-| trust-store-password | java.lang.String | Store password for the trust store file. |  |  | 
-| trust-store-type | java.lang.String | Type of the trust store. |  |  | 
 
 ### spring.kafka.template.xx
-描述:
+描述:spring-kafka-template
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Template`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties`
 
@@ -2187,7 +1931,7 @@
 | default-topic | java.lang.String | Default topic to which messages are sent. |  |  | 
 
 ### spring.ldap.xx
-描述:
+描述:spring-ldap
 类型:`org.springframework.boot.autoconfigure.ldap.LdapProperties`
 源类型:`org.springframework.boot.autoconfigure.ldap.LdapProperties`
 
@@ -2201,7 +1945,7 @@
 | username | java.lang.String | Login username of the server. |  |  | 
 
 ### spring.ldap.embedded.xx
-描述:
+描述:spring-ldap-embedded
 类型:`org.springframework.boot.autoconfigure.ldap.embedded.EmbeddedLdapProperties`
 源类型:`org.springframework.boot.autoconfigure.ldap.embedded.EmbeddedLdapProperties`
 
@@ -2212,7 +1956,7 @@
 | port | java.lang.Integer | Embedded LDAP port. | 0 |  | 
 
 ### spring.ldap.embedded.credential.xx
-描述:
+描述:spring-ldap-embedded-credential
 类型:`org.springframework.boot.autoconfigure.ldap.embedded.EmbeddedLdapProperties$Credential`
 源类型:`org.springframework.boot.autoconfigure.ldap.embedded.EmbeddedLdapProperties`
 
@@ -2222,7 +1966,7 @@
 | username | java.lang.String | Embedded LDAP username. |  |  | 
 
 ### spring.ldap.embedded.validation.xx
-描述:
+描述:spring-ldap-embedded-validation
 类型:`org.springframework.boot.autoconfigure.ldap.embedded.EmbeddedLdapProperties$Validation`
 源类型:`org.springframework.boot.autoconfigure.ldap.embedded.EmbeddedLdapProperties`
 
@@ -2232,7 +1976,7 @@
 | schema | org.springframework.core.io.Resource | Path to the custom schema. |  |  | 
 
 ### spring.ldap.template.xx
-描述:
+描述:spring-ldap-template
 类型:`org.springframework.boot.autoconfigure.ldap.LdapProperties$Template`
 源类型:`org.springframework.boot.autoconfigure.ldap.LdapProperties`
 
@@ -2243,7 +1987,7 @@
 | ignore-size-limit-exceeded-exception | java.lang.Boolean | Whether SizeLimitExceededException should be ignored in searches via the LdapTemplate. | true |  | 
 
 ### spring.lifecycle.xx
-描述:
+描述:spring-lifecycle
 类型:`org.springframework.boot.autoconfigure.context.LifecycleProperties`
 源类型:`org.springframework.boot.autoconfigure.context.LifecycleProperties`
 
@@ -2252,7 +1996,7 @@
 | timeout-per-shutdown-phase | java.time.Duration | Timeout for the shutdown of any phase (group of SmartLifecycle beans with the same 'phase' value). | 30s |  | 
 
 ### spring.liquibase.xx
-描述:
+描述:spring-[liquibase](https://liquibase.org/)
 类型:`org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties`
 源类型:`org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties`
 
@@ -2279,7 +2023,7 @@
 | user | java.lang.String | Login user of the database to migrate. |  |  | 
 
 ### spring.mail.xx
-描述:
+描述:spring-mail
 类型:`org.springframework.boot.autoconfigure.mail.MailProperties`
 源类型:`org.springframework.boot.autoconfigure.mail.MailProperties`
 
@@ -2296,7 +2040,7 @@
 | username | java.lang.String | Login user of the SMTP server. |  |  | 
 
 ### spring.messages.xx
-描述:
+描述:spring-messages
 类型:`org.springframework.boot.autoconfigure.context.MessageSourceProperties`
 源类型:`org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration`
 
@@ -2310,7 +2054,7 @@
 | use-code-as-default-message | java.lang.Boolean | Whether to use the message code as the default message instead of throwing a "NoSuchMessageException". Recommended during development only. | false |  | 
 
 ### spring.mongodb.embedded.xx
-描述:
+描述:spring-mongodb-embedded
 类型:`org.springframework.boot.autoconfigure.mongo.embedded.EmbeddedMongoProperties`
 源类型:`org.springframework.boot.autoconfigure.mongo.embedded.EmbeddedMongoProperties`
 
@@ -2320,7 +2064,7 @@
 | version | java.lang.String | Version of Mongo to use. |  |  | 
 
 ### spring.mongodb.embedded.storage.xx
-描述:
+描述:spring-mongodb-embedded-storage
 类型:`org.springframework.boot.autoconfigure.mongo.embedded.EmbeddedMongoProperties$Storage`
 源类型:`org.springframework.boot.autoconfigure.mongo.embedded.EmbeddedMongoProperties`
 
@@ -2331,7 +2075,7 @@
 | repl-set-name | java.lang.String | Name of the replica set. |  |  | 
 
 ### spring.mustache.xx
-描述:
+描述:spring-mustache,模板引擎
 类型:`org.springframework.boot.autoconfigure.mustache.MustacheProperties`
 源类型:`org.springframework.boot.autoconfigure.mustache.MustacheProperties`
 
@@ -2353,7 +2097,7 @@
 | view-names | java.lang.String[] | View names that can be resolved. |  |  | 
 
 ### spring.mvc.xx
-描述:
+描述:spring-mvc
 类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties`
 源类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties`
 
@@ -2371,7 +2115,7 @@
 | date-format | java.lang.String | null |  | true,spring.mvc.format.date | 
 
 ### spring.mvc.async.xx
-描述:
+描述:spring-mvc-async
 类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties$Async`
 源类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties`
 
@@ -2380,7 +2124,7 @@
 | request-timeout | java.time.Duration | Amount of time before asynchronous request handling times out. If this value is not set, the default timeout of the underlying implementation is used. |  |  | 
 
 ### spring.mvc.contentnegotiation.xx
-描述:
+描述:spring-mvc-contentnegotiation
 类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties$Contentnegotiation`
 源类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties`
 
@@ -2392,7 +2136,7 @@
 | favor-path-extension | java.lang.Boolean | Whether the path extension in the URL path should be used to determine the requested media type. If enabled a request "/users.pdf" will be interpreted as a request for "application/pdf" regardless of the 'Accept' header. | false | true,Use of path extensions for request mapping and for content negotiation is discouraged. | 
 
 ### spring.mvc.format.xx
-描述:
+描述:spring-mvc-format
 类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties$Format`
 源类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties`
 
@@ -2403,7 +2147,7 @@
 | time | java.lang.String | Time format to use, for example 'HH:mm:ss'. |  |  | 
 
 ### spring.mvc.pathmatch.xx
-描述:
+描述:spring-mvc-pathmatch
 类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties$Pathmatch`
 源类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties`
 
@@ -2414,7 +2158,7 @@
 | use-suffix-pattern | java.lang.Boolean | Whether to use suffix pattern match (".*") when matching patterns to requests. If enabled a method mapped to "/users" also matches to "/users.*". Enabling this option is not compatible with the PathPatternParser matching strategy. | false | true,Use of path extensions for request mapping and for content negotiation is discouraged. | 
 
 ### spring.mvc.servlet.xx
-描述:
+描述:spring-mvc-servlet
 类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties$Servlet`
 源类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties`
 
@@ -2424,7 +2168,7 @@
 | path | java.lang.String | Path of the dispatcher servlet. Setting a custom value for this property is not compatible with the PathPatternParser matching strategy. | / |  | 
 
 ### spring.mvc.view.xx
-描述:
+描述:spring-mvc-view
 类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties$View`
 源类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties`
 
@@ -2434,7 +2178,7 @@
 | suffix | java.lang.String | Spring MVC view suffix. |  |  | 
 
 ### spring.neo4j.xx
-描述:
+描述:spring-neo4j
 类型:`org.springframework.boot.autoconfigure.neo4j.Neo4jProperties`
 源类型:`org.springframework.boot.autoconfigure.neo4j.Neo4jProperties`
 
@@ -2445,7 +2189,7 @@
 | uri | java.net.URI | URI used by the driver. | bolt://localhost:7687 |  | 
 
 ### spring.neo4j.authentication.xx
-描述:
+描述:spring-neo4j-authentication
 类型:`org.springframework.boot.autoconfigure.neo4j.Neo4jProperties$Authentication`
 源类型:`org.springframework.boot.autoconfigure.neo4j.Neo4jProperties`
 
@@ -2457,7 +2201,7 @@
 | username | java.lang.String | Login user of the server. |  |  | 
 
 ### spring.neo4j.pool.xx
-描述:
+描述:spring-neo4j-pool
 类型:`org.springframework.boot.autoconfigure.neo4j.Neo4jProperties$Pool`
 源类型:`org.springframework.boot.autoconfigure.neo4j.Neo4jProperties`
 
@@ -2471,7 +2215,7 @@
 | metrics-enabled | java.lang.Boolean | Whether to enable metrics. | false |  | 
 
 ### spring.neo4j.security.xx
-描述:
+描述:spring-neo4j-security
 类型:`org.springframework.boot.autoconfigure.neo4j.Neo4jProperties$Security`
 源类型:`org.springframework.boot.autoconfigure.neo4j.Neo4jProperties`
 
@@ -2483,7 +2227,7 @@
 | trust-strategy | org.springframework.boot.autoconfigure.neo4j.Neo4jProperties$Security$TrustStrategy | Trust strategy to use. | trust-system-ca-signed-certificates |  | 
 
 ### spring.netty.xx
-描述:
+描述:spring-netty
 类型:`org.springframework.boot.autoconfigure.netty.NettyProperties`
 源类型:`org.springframework.boot.autoconfigure.netty.NettyProperties`
 
@@ -2492,7 +2236,7 @@
 | leak-detection | org.springframework.boot.autoconfigure.netty.NettyProperties$LeakDetection | Level of leak detection for reference-counted buffers. | simple |  | 
 
 ### spring.quartz.xx
-描述:
+描述:spring-quartz
 类型:`org.springframework.boot.autoconfigure.quartz.QuartzProperties`
 源类型:`org.springframework.boot.autoconfigure.quartz.QuartzProperties`
 
@@ -2507,7 +2251,7 @@
 | wait-for-jobs-to-complete-on-shutdown | java.lang.Boolean | Whether to wait for running jobs to complete on shutdown. | false |  | 
 
 ### spring.quartz.jdbc.xx
-描述:
+描述:spring-quartz-jdbc
 类型:`org.springframework.boot.autoconfigure.quartz.QuartzProperties$Jdbc`
 源类型:`org.springframework.boot.autoconfigure.quartz.QuartzProperties`
 
@@ -2519,7 +2263,7 @@
 | schema | java.lang.String | Path to the SQL file to use to initialize the database schema. | classpath:org/quartz/impl/jdbcjobstore/tables_@@platform@@.sql |  | 
 
 ### spring.r2dbc.xx
-描述:
+描述:spring-r2dbc
 类型:`org.springframework.boot.autoconfigure.r2dbc.R2dbcProperties`
 源类型:`org.springframework.boot.autoconfigure.r2dbc.R2dbcProperties`
 
@@ -2533,7 +2277,7 @@
 | username | java.lang.String | Login username of the database. Set if no username is specified in the url. |  |  | 
 
 ### spring.r2dbc.pool.xx
-描述:
+描述:spring-r2dbc-pool
 类型:`org.springframework.boot.autoconfigure.r2dbc.R2dbcProperties$Pool`
 源类型:`org.springframework.boot.autoconfigure.r2dbc.R2dbcProperties`
 
@@ -2550,7 +2294,7 @@
 | validation-query | java.lang.String | Validation query. |  |  | 
 
 ### spring.rabbitmq.xx
-描述:
+描述:spring-rabbitmq
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties`
 
@@ -2571,7 +2315,7 @@
 | virtual-host | java.lang.String | Virtual host to use when connecting to the broker. |  |  | 
 
 ### spring.rabbitmq.cache.xx
-描述:
+描述:spring-rabbitmq-cache
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Cache`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties`
 
@@ -2579,7 +2323,7 @@
 |-----|------|-----|-------|---------|
 
 ### spring.rabbitmq.cache.channel.xx
-描述:
+描述:spring-rabbitmq-cache-channel
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Cache$Channel`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Cache`
 
@@ -2589,7 +2333,7 @@
 | size | java.lang.Integer | Number of channels to retain in the cache. When "check-timeout" > 0, max channels per connection. |  |  | 
 
 ### spring.rabbitmq.cache.connection.xx
-描述:
+描述:spring-rabbitmq-cache-connection
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Cache$Connection`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Cache`
 
@@ -2599,7 +2343,7 @@
 | size | java.lang.Integer | Number of connections to cache. Only applies when mode is CONNECTION. |  |  | 
 
 ### spring.rabbitmq.listener.xx
-描述:
+描述:spring-rabbitmq-listener
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Listener`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties`
 
@@ -2608,7 +2352,7 @@
 | type | org.springframework.boot.autoconfigure.amqp.RabbitProperties$ContainerType | Listener container type. | simple |  | 
 
 ### spring.rabbitmq.listener.direct.xx
-描述:
+描述:spring-rabbitmq-listener-direct
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$DirectContainer`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Listener`
 
@@ -2624,7 +2368,7 @@
 | prefetch | java.lang.Integer | Maximum number of unacknowledged messages that can be outstanding at each consumer. |  |  | 
 
 ### spring.rabbitmq.listener.direct.retry.xx
-描述:
+描述:spring-rabbitmq-listener-direct-retry
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$ListenerRetry`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$DirectContainer`
 
@@ -2636,15 +2380,9 @@
 | max-interval | java.time.Duration | Maximum duration between attempts. | 10000ms |  | 
 | multiplier | java.lang.Double | Multiplier to apply to the previous retry interval. | 1 |  | 
 | stateless | java.lang.Boolean | Whether retries are stateless or stateful. | true |  | 
-| enabled | java.lang.Boolean | Whether publishing retries are enabled. | false |  | 
-| initial-interval | java.time.Duration | Duration between the first and second attempt to deliver a message. | 1000ms |  | 
-| max-attempts | java.lang.Integer | Maximum number of attempts to deliver a message. | 3 |  | 
-| max-interval | java.time.Duration | Maximum duration between attempts. | 10000ms |  | 
-| multiplier | java.lang.Double | Multiplier to apply to the previous retry interval. | 1 |  | 
-| stateless | java.lang.Boolean | Whether retries are stateless or stateful. | true |  | 
 
 ### spring.rabbitmq.listener.simple.xx
-描述:
+描述:spring-rabbitmq-listener-simple
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$SimpleContainer`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Listener`
 
@@ -2663,7 +2401,7 @@
 | prefetch | java.lang.Integer | Maximum number of unacknowledged messages that can be outstanding at each consumer. |  |  | 
 
 ### spring.rabbitmq.listener.simple.retry.xx
-描述:
+描述:spring-rabbitmq-listener-simple-retry
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$ListenerRetry`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$SimpleContainer`
 
@@ -2675,15 +2413,9 @@
 | max-interval | java.time.Duration | Maximum duration between attempts. | 10000ms |  | 
 | multiplier | java.lang.Double | Multiplier to apply to the previous retry interval. | 1 |  | 
 | stateless | java.lang.Boolean | Whether retries are stateless or stateful. | true |  | 
-| enabled | java.lang.Boolean | Whether publishing retries are enabled. | false |  | 
-| initial-interval | java.time.Duration | Duration between the first and second attempt to deliver a message. | 1000ms |  | 
-| max-attempts | java.lang.Integer | Maximum number of attempts to deliver a message. | 3 |  | 
-| max-interval | java.time.Duration | Maximum duration between attempts. | 10000ms |  | 
-| multiplier | java.lang.Double | Multiplier to apply to the previous retry interval. | 1 |  | 
-| stateless | java.lang.Boolean | Whether retries are stateless or stateful. | true |  | 
 
 ### spring.rabbitmq.listener.stream.xx
-描述:
+描述:spring-rabbitmq-listener-simple-stream
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$StreamContainer`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Listener`
 
@@ -2693,7 +2425,7 @@
 | native-listener | java.lang.Boolean | Whether the container will support listeners that consume native stream messages instead of Spring AMQP messages. | false |  | 
 
 ### spring.rabbitmq.ssl.xx
-描述:
+描述:spring-rabbitmq-ssl
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Ssl`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties`
 
@@ -2713,7 +2445,7 @@
 | verify-hostname | java.lang.Boolean | Whether to enable hostname verification. | true |  | 
 
 ### spring.rabbitmq.stream.xx
-描述:
+描述:spring-rabbitmq-stream
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Stream`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties`
 
@@ -2725,7 +2457,7 @@
 | username | java.lang.String | Login user to authenticate to the broker. When not set, spring.rabbitmq.username is used. |  |  | 
 
 ### spring.rabbitmq.template.xx
-描述:
+描述:spring-rabbitmq-template
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Template`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties`
 
@@ -2739,7 +2471,7 @@
 | routing-key | java.lang.String | Value of a default routing key to use for send operations. |  |  | 
 
 ### spring.rabbitmq.template.retry.xx
-描述:
+描述:spring-rabbitmq-template-retry
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Retry`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Template`
 
@@ -2752,7 +2484,7 @@
 | multiplier | java.lang.Double | Multiplier to apply to the previous retry interval. | 1 |  | 
 
 ### spring.redis.xx
-描述:
+描述:spring-redis
 类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties`
 源类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties`
 
@@ -2771,7 +2503,7 @@
 | username | java.lang.String | Login username of the redis server. |  |  | 
 
 ### spring.redis.cluster.xx
-描述:
+描述:spring-redis-cluster
 类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties$Cluster`
 源类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties`
 
@@ -2781,7 +2513,7 @@
 | nodes | java.util.List<java.lang.String> | Comma-separated list of "host:port" pairs to bootstrap from. This represents an "initial" list of cluster nodes and is required to have at least one entry. |  |  | 
 
 ### spring.redis.jedis.xx
-描述:
+描述:spring-redis-jedis
 类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties$Jedis`
 源类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties`
 
@@ -2789,7 +2521,7 @@
 |-----|------|-----|-------|---------|
 
 ### spring.redis.jedis.pool.xx
-描述:
+描述:spring-redis-jedis-pool
 类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties$Pool`
 源类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties$Jedis`
 
@@ -2801,15 +2533,9 @@
 | max-wait | java.time.Duration | Maximum amount of time a connection allocation should block before throwing an exception when the pool is exhausted. Use a negative value to block indefinitely. | -1ms |  | 
 | min-idle | java.lang.Integer | Target for the minimum number of idle connections to maintain in the pool. This setting only has an effect if both it and time between eviction runs are positive. | 0 |  | 
 | time-between-eviction-runs | java.time.Duration | Time between runs of the idle object evictor thread. When positive, the idle object evictor thread starts, otherwise no idle object eviction is performed. |  |  | 
-| enabled | java.lang.Boolean | Whether to enable the pool. Enabled automatically if "commons-pool2" is available. With Jedis, pooling is implicitly enabled in sentinel mode and this setting only applies to single node setup. |  |  | 
-| max-active | java.lang.Integer | Maximum number of connections that can be allocated by the pool at a given time. Use a negative value for no limit. | 8 |  | 
-| max-idle | java.lang.Integer | Maximum number of "idle" connections in the pool. Use a negative value to indicate an unlimited number of idle connections. | 8 |  | 
-| max-wait | java.time.Duration | Maximum amount of time a connection allocation should block before throwing an exception when the pool is exhausted. Use a negative value to block indefinitely. | -1ms |  | 
-| min-idle | java.lang.Integer | Target for the minimum number of idle connections to maintain in the pool. This setting only has an effect if both it and time between eviction runs are positive. | 0 |  | 
-| time-between-eviction-runs | java.time.Duration | Time between runs of the idle object evictor thread. When positive, the idle object evictor thread starts, otherwise no idle object eviction is performed. |  |  | 
 
 ### spring.redis.lettuce.xx
-描述:
+描述:spring-redis-lettuce
 类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties$Lettuce`
 源类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties`
 
@@ -2818,7 +2544,7 @@
 | shutdown-timeout | java.time.Duration | Shutdown timeout. | 100ms |  | 
 
 ### spring.redis.lettuce.cluster.xx
-描述:
+描述:spring-redis-lettuce-cluster
 类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties$Lettuce$Cluster`
 源类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties$Lettuce`
 
@@ -2826,7 +2552,7 @@
 |-----|------|-----|-------|---------|
 
 ### spring.redis.lettuce.cluster.refresh.xx
-描述:
+描述:spring-redis-lettuce-cluster-refresh
 类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties$Lettuce$Cluster$Refresh`
 源类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties$Lettuce$Cluster`
 
@@ -2837,7 +2563,7 @@
 | period | java.time.Duration | Cluster topology refresh period. |  |  | 
 
 ### spring.redis.lettuce.pool.xx
-描述:
+描述:spring-redis-lettuce-pool
 类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties$Pool`
 源类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties$Lettuce`
 
@@ -2849,15 +2575,9 @@
 | max-wait | java.time.Duration | Maximum amount of time a connection allocation should block before throwing an exception when the pool is exhausted. Use a negative value to block indefinitely. | -1ms |  | 
 | min-idle | java.lang.Integer | Target for the minimum number of idle connections to maintain in the pool. This setting only has an effect if both it and time between eviction runs are positive. | 0 |  | 
 | time-between-eviction-runs | java.time.Duration | Time between runs of the idle object evictor thread. When positive, the idle object evictor thread starts, otherwise no idle object eviction is performed. |  |  | 
-| enabled | java.lang.Boolean | Whether to enable the pool. Enabled automatically if "commons-pool2" is available. With Jedis, pooling is implicitly enabled in sentinel mode and this setting only applies to single node setup. |  |  | 
-| max-active | java.lang.Integer | Maximum number of connections that can be allocated by the pool at a given time. Use a negative value for no limit. | 8 |  | 
-| max-idle | java.lang.Integer | Maximum number of "idle" connections in the pool. Use a negative value to indicate an unlimited number of idle connections. | 8 |  | 
-| max-wait | java.time.Duration | Maximum amount of time a connection allocation should block before throwing an exception when the pool is exhausted. Use a negative value to block indefinitely. | -1ms |  | 
-| min-idle | java.lang.Integer | Target for the minimum number of idle connections to maintain in the pool. This setting only has an effect if both it and time between eviction runs are positive. | 0 |  | 
-| time-between-eviction-runs | java.time.Duration | Time between runs of the idle object evictor thread. When positive, the idle object evictor thread starts, otherwise no idle object eviction is performed. |  |  | 
 
 ### spring.redis.sentinel.xx
-描述:
+描述:spring-redis-sentinel
 类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties$Sentinel`
 源类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties`
 
@@ -2868,7 +2588,7 @@
 | password | java.lang.String | Password for authenticating with sentinel(s). |  |  | 
 
 ### spring.rsocket.xx
-描述:
+描述:spring-[rsocket](https://rsocket.io/)
 类型:`org.springframework.boot.autoconfigure.rsocket.RSocketProperties`
 源类型:`org.springframework.boot.autoconfigure.rsocket.RSocketProperties`
 
@@ -2876,7 +2596,7 @@
 |-----|------|-----|-------|---------|
 
 ### spring.rsocket.server.xx
-描述:
+描述:spring-rsocket-server
 类型:`org.springframework.boot.autoconfigure.rsocket.RSocketProperties$Server`
 源类型:`org.springframework.boot.autoconfigure.rsocket.RSocketProperties`
 
@@ -2889,27 +2609,12 @@
 | transport | org.springframework.boot.rsocket.server.RSocketServer$Transport | RSocket transport protocol. | tcp |  | 
 
 ### spring.rsocket.server.ssl.xx
-描述:
+描述:spring-rsocket-server-ssl
 类型:`org.springframework.boot.web.server.Ssl`
 源类型:`org.springframework.boot.autoconfigure.rsocket.RSocketProperties$Server`
 
 | 名称 | 类型 | 描述 | 默认值 | 过期替代 |
 |-----|------|-----|-------|---------|
-| ciphers | java.lang.String[] | Supported SSL ciphers. |  |  | 
-| client-auth | org.springframework.boot.web.server.Ssl$ClientAuth | Client authentication mode. Requires a trust store. |  |  | 
-| enabled | java.lang.Boolean | Whether to enable SSL support. | true |  | 
-| enabled-protocols | java.lang.String[] | Enabled SSL protocols. |  |  | 
-| key-alias | java.lang.String | Alias that identifies the key in the key store. |  |  | 
-| key-password | java.lang.String | Password used to access the key in the key store. |  |  | 
-| key-store | java.lang.String | Path to the key store that holds the SSL certificate (typically a jks file). |  |  | 
-| key-store-password | java.lang.String | Password used to access the key store. |  |  | 
-| key-store-provider | java.lang.String | Provider for the key store. |  |  | 
-| key-store-type | java.lang.String | Type of the key store. |  |  | 
-| protocol | java.lang.String | SSL protocol to use. | TLS |  | 
-| trust-store | java.lang.String | Trust store that holds SSL certificates. |  |  | 
-| trust-store-password | java.lang.String | Password used to access the trust store. |  |  | 
-| trust-store-provider | java.lang.String | Provider for the trust store. |  |  | 
-| trust-store-type | java.lang.String | Type of the trust store. |  |  | 
 | ciphers | java.lang.String[] | null |  |  | 
 | client-auth | org.springframework.boot.web.server.Ssl$ClientAuth | null |  |  | 
 | enabled | java.lang.Boolean | null |  |  | 
@@ -2927,7 +2632,7 @@
 | trust-store-type | java.lang.String | null |  |  | 
 
 ### spring.security.xx
-描述:
+描述:spring-security
 类型:`org.springframework.boot.autoconfigure.security.SecurityProperties`
 源类型:`org.springframework.boot.autoconfigure.security.SecurityProperties`
 
@@ -2935,7 +2640,7 @@
 |-----|------|-----|-------|---------|
 
 ### spring.security.filter.xx
-描述:
+描述:spring-security-filter
 类型:`org.springframework.boot.autoconfigure.security.SecurityProperties$Filter`
 源类型:`org.springframework.boot.autoconfigure.security.SecurityProperties`
 
@@ -2945,7 +2650,7 @@
 | order | java.lang.Integer | Security filter chain order. | -100 |  | 
 
 ### spring.security.oauth2.client.xx
-描述:
+描述:spring-security-oauth2-client
 类型:`org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientProperties`
 源类型:`org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientProperties`
 
@@ -2955,7 +2660,7 @@
 | registration | java.util.Map<java.lang.String,org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientProperties$Registration> | OAuth client registrations. |  |  | 
 
 ### spring.security.oauth2.resourceserver.xx
-描述:
+描述:spring-security-oauth2-resourceserver
 类型:`org.springframework.boot.autoconfigure.security.oauth2.resource.OAuth2ResourceServerProperties`
 源类型:`org.springframework.boot.autoconfigure.security.oauth2.resource.OAuth2ResourceServerProperties`
 
@@ -2963,7 +2668,7 @@
 |-----|------|-----|-------|---------|
 
 ### spring.security.oauth2.resourceserver.jwt.xx
-描述:
+描述:spring-security-oauth2-resourceserver-jwt
 类型:`org.springframework.boot.autoconfigure.security.oauth2.resource.OAuth2ResourceServerProperties$Jwt`
 源类型:`org.springframework.boot.autoconfigure.security.oauth2.resource.OAuth2ResourceServerProperties`
 
@@ -2975,7 +2680,7 @@
 | public-key-location | org.springframework.core.io.Resource | Location of the file containing the public key used to verify a JWT. |  |  | 
 
 ### spring.security.oauth2.resourceserver.opaquetoken.xx
-描述:
+描述:spring-security-oauth2-resourceserver-opaquetoken
 类型:`org.springframework.boot.autoconfigure.security.oauth2.resource.OAuth2ResourceServerProperties$Opaquetoken`
 源类型:`org.springframework.boot.autoconfigure.security.oauth2.resource.OAuth2ResourceServerProperties`
 
@@ -2986,7 +2691,7 @@
 | introspection-uri | java.lang.String | OAuth 2.0 endpoint through which token introspection is accomplished. |  |  | 
 
 ### spring.security.saml2.relyingparty.xx
-描述:
+描述:spring-security-saml2-relyingparty
 类型:`org.springframework.boot.autoconfigure.security.saml2.Saml2RelyingPartyProperties`
 源类型:`org.springframework.boot.autoconfigure.security.saml2.Saml2RelyingPartyProperties`
 
@@ -2995,7 +2700,7 @@
 | registration | java.util.Map<java.lang.String,org.springframework.boot.autoconfigure.security.saml2.Saml2RelyingPartyProperties$Registration> | SAML2 relying party registrations. |  |  | 
 
 ### spring.security.user.xx
-描述:
+描述:spring-security-user
 类型:`org.springframework.boot.autoconfigure.security.SecurityProperties$User`
 源类型:`org.springframework.boot.autoconfigure.security.SecurityProperties`
 
@@ -3006,7 +2711,7 @@
 | roles | java.util.List<java.lang.String> | Granted roles for the default user name. |  |  | 
 
 ### spring.sendgrid.xx
-描述:
+描述:spring-[sendgrid](https://sendgrid.com/),邮件
 类型:`org.springframework.boot.autoconfigure.sendgrid.SendGridProperties`
 源类型:`org.springframework.boot.autoconfigure.sendgrid.SendGridProperties`
 
@@ -3015,7 +2720,7 @@
 | api-key | java.lang.String | SendGrid API key. |  |  | 
 
 ### spring.sendgrid.proxy.xx
-描述:
+描述:spring-sendgrid-proxy
 类型:`org.springframework.boot.autoconfigure.sendgrid.SendGridProperties$Proxy`
 源类型:`org.springframework.boot.autoconfigure.sendgrid.SendGridProperties`
 
@@ -3025,7 +2730,7 @@
 | port | java.lang.Integer | SendGrid proxy port. |  |  | 
 
 ### spring.servlet.multipart.xx
-描述:
+描述:spring-servlet-multipart
 类型:`org.springframework.boot.autoconfigure.web.servlet.MultipartProperties`
 源类型:`org.springframework.boot.autoconfigure.web.servlet.MultipartProperties`
 
@@ -3039,7 +2744,7 @@
 | resolve-lazily | java.lang.Boolean | Whether to resolve the multipart request lazily at the time of file or parameter access. | false |  | 
 
 ### spring.session.xx
-描述:
+描述:spring-session
 类型:`org.springframework.boot.autoconfigure.session.SessionProperties`
 源类型:`org.springframework.boot.autoconfigure.session.SessionProperties`
 
@@ -3049,7 +2754,7 @@
 | timeout | java.time.Duration | Session timeout. If a duration suffix is not specified, seconds will be used. |  |  | 
 
 ### spring.session.hazelcast.xx
-描述:
+描述:spring-session-hazelcast
 类型:`org.springframework.boot.autoconfigure.session.HazelcastSessionProperties`
 源类型:`org.springframework.boot.autoconfigure.session.HazelcastSessionProperties`
 
@@ -3060,7 +2765,7 @@
 | save-mode | org.springframework.session.SaveMode | Sessions save mode. Determines how session changes are tracked and saved to the session store. | on-set-attribute |  | 
 
 ### spring.session.jdbc.xx
-描述:
+描述:spring-session-jdbc
 类型:`org.springframework.boot.autoconfigure.session.JdbcSessionProperties`
 源类型:`org.springframework.boot.autoconfigure.session.JdbcSessionProperties`
 
@@ -3075,7 +2780,7 @@
 | table-name | java.lang.String | Name of the database table used to store sessions. | SPRING_SESSION |  | 
 
 ### spring.session.mongodb.xx
-描述:
+描述:spring-session-mongodb
 类型:`org.springframework.boot.autoconfigure.session.MongoSessionProperties`
 源类型:`org.springframework.boot.autoconfigure.session.MongoSessionProperties`
 
@@ -3084,7 +2789,7 @@
 | collection-name | java.lang.String | Collection name used to store sessions. | sessions |  | 
 
 ### spring.session.redis.xx
-描述:
+描述:spring-session-redis
 类型:`org.springframework.boot.autoconfigure.session.RedisSessionProperties`
 源类型:`org.springframework.boot.autoconfigure.session.RedisSessionProperties`
 
@@ -3097,7 +2802,7 @@
 | save-mode | org.springframework.session.SaveMode | Sessions save mode. Determines how session changes are tracked and saved to the session store. | on-set-attribute |  | 
 
 ### spring.session.servlet.xx
-描述:
+描述:spring-session-servlet
 类型:`org.springframework.boot.autoconfigure.session.SessionProperties$Servlet`
 源类型:`org.springframework.boot.autoconfigure.session.SessionProperties`
 
@@ -3107,7 +2812,7 @@
 | filter-order | java.lang.Integer | Session repository filter order. |  |  | 
 
 ### spring.sql.init.xx
-描述:
+描述:spring-sql-init
 类型:`org.springframework.boot.autoconfigure.sql.init.SqlInitializationProperties`
 源类型:`org.springframework.boot.autoconfigure.sql.init.SqlInitializationProperties`
 
@@ -3124,7 +2829,7 @@
 | username | java.lang.String | Username of the database to use when applying initialization scripts (if different). |  |  | 
 
 ### spring.task.execution.xx
-描述:
+描述:spring-task-execution
 类型:`org.springframework.boot.autoconfigure.task.TaskExecutionProperties`
 源类型:`org.springframework.boot.autoconfigure.task.TaskExecutionProperties`
 
@@ -3133,7 +2838,7 @@
 | thread-name-prefix | java.lang.String | Prefix to use for the names of newly created threads. | task- |  | 
 
 ### spring.task.execution.pool.xx
-描述:
+描述:spring-task-execution-pool
 类型:`org.springframework.boot.autoconfigure.task.TaskExecutionProperties$Pool`
 源类型:`org.springframework.boot.autoconfigure.task.TaskExecutionProperties`
 
@@ -3146,7 +2851,7 @@
 | queue-capacity | java.lang.Integer | Queue capacity. An unbounded capacity does not increase the pool and therefore ignores the "max-size" property. |  |  | 
 
 ### spring.task.execution.shutdown.xx
-描述:
+描述:spring-task-execution-shutdown
 类型:`org.springframework.boot.autoconfigure.task.TaskExecutionProperties$Shutdown`
 源类型:`org.springframework.boot.autoconfigure.task.TaskExecutionProperties`
 
@@ -3156,7 +2861,7 @@
 | await-termination-period | java.time.Duration | Maximum time the executor should wait for remaining tasks to complete. |  |  | 
 
 ### spring.task.scheduling.xx
-描述:
+描述:spring-task-scheduling
 类型:`org.springframework.boot.autoconfigure.task.TaskSchedulingProperties`
 源类型:`org.springframework.boot.autoconfigure.task.TaskSchedulingProperties`
 
@@ -3165,7 +2870,7 @@
 | thread-name-prefix | java.lang.String | Prefix to use for the names of newly created threads. | scheduling- |  | 
 
 ### spring.task.scheduling.pool.xx
-描述:
+描述:spring-task-scheduling-pool
 类型:`org.springframework.boot.autoconfigure.task.TaskSchedulingProperties$Pool`
 源类型:`org.springframework.boot.autoconfigure.task.TaskSchedulingProperties`
 
@@ -3174,7 +2879,7 @@
 | size | java.lang.Integer | Maximum allowed number of threads. | 1 |  | 
 
 ### spring.task.scheduling.shutdown.xx
-描述:
+描述:spring-task-scheduling-shutdown
 类型:`org.springframework.boot.autoconfigure.task.TaskSchedulingProperties$Shutdown`
 源类型:`org.springframework.boot.autoconfigure.task.TaskSchedulingProperties`
 
@@ -3184,7 +2889,7 @@
 | await-termination-period | java.time.Duration | Maximum time the executor should wait for remaining tasks to complete. |  |  | 
 
 ### spring.thymeleaf.xx
-描述:
+描述:spring-thymeleaf
 类型:`org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties`
 源类型:`org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties`
 
@@ -3205,7 +2910,7 @@
 | view-names | java.lang.String[] | Comma-separated list of view names (patterns allowed) that can be resolved. |  |  | 
 
 ### spring.thymeleaf.reactive.xx
-描述:
+描述:spring-thymeleaf-reactive
 类型:`org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties$Reactive`
 源类型:`org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties`
 
@@ -3217,7 +2922,7 @@
 | media-types | java.util.List<org.springframework.http.MediaType> | Media types supported by the view technology. |  |  | 
 
 ### spring.thymeleaf.servlet.xx
-描述:
+描述:spring-thymeleaf-servlet
 类型:`org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties$Servlet`
 源类型:`org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties`
 
@@ -3227,7 +2932,7 @@
 | produce-partial-output-while-processing | java.lang.Boolean | Whether Thymeleaf should start writing partial output as soon as possible or buffer until template processing is finished. | true |  | 
 
 ### spring.transaction.xx
-描述:
+描述:spring-transaction
 类型:`org.springframework.boot.autoconfigure.transaction.TransactionProperties`
 源类型:`org.springframework.boot.autoconfigure.transaction.TransactionProperties`
 
@@ -3237,7 +2942,7 @@
 | rollback-on-commit-failure | java.lang.Boolean | Whether to roll back on commit failures. |  |  | 
 
 ### spring.web.xx
-描述:
+描述:spring-web
 类型:`org.springframework.boot.autoconfigure.web.WebProperties`
 源类型:`org.springframework.boot.autoconfigure.web.WebProperties`
 
@@ -3247,7 +2952,7 @@
 | locale-resolver | org.springframework.boot.autoconfigure.web.WebProperties$LocaleResolver | Define how the locale should be resolved. | accept-header |  | 
 
 ### spring.web.resources.xx
-描述:
+描述:spring-web-resources
 类型:`org.springframework.boot.autoconfigure.web.WebProperties$Resources`
 源类型:`org.springframework.boot.autoconfigure.web.WebProperties`
 
@@ -3257,7 +2962,7 @@
 | static-locations | java.lang.String[] | Locations of static resources. Defaults to classpath:[/META-INF/resources/, /resources/, /static/, /public/]. | ["classpath:/META-INF/resources/","classpath:/resources/","classpath:/static/","classpath:/public/"] |  | 
 
 ### spring.web.resources.cache.xx
-描述:
+描述:spring-web-resources-cache
 类型:`org.springframework.boot.autoconfigure.web.WebProperties$Resources$Cache`
 源类型:`org.springframework.boot.autoconfigure.web.WebProperties$Resources`
 
@@ -3267,7 +2972,7 @@
 | use-last-modified | java.lang.Boolean | Whether we should use the "lastModified" metadata of the files in HTTP caching headers. | true |  | 
 
 ### spring.web.resources.cache.cachecontrol.xx
-描述:
+描述:spring-web-resources-cache-cachecontrol
 类型:`org.springframework.boot.autoconfigure.web.WebProperties$Resources$Cache$Cachecontrol`
 源类型:`org.springframework.boot.autoconfigure.web.WebProperties$Resources$Cache`
 
@@ -3286,7 +2991,7 @@
 | stale-while-revalidate | java.time.Duration | Maximum time the response can be served after it becomes stale, in seconds if no duration suffix is not specified. |  |  | 
 
 ### spring.web.resources.chain.xx
-描述:
+描述:spring-web-resources-chain
 类型:`org.springframework.boot.autoconfigure.web.WebProperties$Resources$Chain`
 源类型:`org.springframework.boot.autoconfigure.web.WebProperties$Resources`
 
@@ -3297,7 +3002,7 @@
 | enabled | java.lang.Boolean | Whether to enable the Spring Resource Handling chain. By default, disabled unless at least one strategy has been enabled. |  |  | 
 
 ### spring.web.resources.chain.strategy.xx
-描述:
+描述:spring-web-resources-chain-strategy
 类型:`org.springframework.boot.autoconfigure.web.WebProperties$Resources$Chain$Strategy`
 源类型:`org.springframework.boot.autoconfigure.web.WebProperties$Resources$Chain`
 
@@ -3305,7 +3010,7 @@
 |-----|------|-----|-------|---------|
 
 ### spring.web.resources.chain.strategy.content.xx
-描述:
+描述:spring-web-resources-chain-strategy-context
 类型:`org.springframework.boot.autoconfigure.web.WebProperties$Resources$Chain$Strategy$Content`
 源类型:`org.springframework.boot.autoconfigure.web.WebProperties$Resources$Chain$Strategy`
 
@@ -3315,7 +3020,7 @@
 | paths | java.lang.String[] | Comma-separated list of patterns to apply to the content Version Strategy. | ["/**"] |  | 
 
 ### spring.web.resources.chain.strategy.fixed.xx
-描述:
+描述:spring-web-resources-chain-strategy-fixed
 类型:`org.springframework.boot.autoconfigure.web.WebProperties$Resources$Chain$Strategy$Fixed`
 源类型:`org.springframework.boot.autoconfigure.web.WebProperties$Resources$Chain$Strategy`
 
@@ -3326,7 +3031,7 @@
 | version | java.lang.String | Version string to use for the fixed Version Strategy. |  |  | 
 
 ### spring.webflux.xx
-描述:
+描述:spring-webflux
 类型:`org.springframework.boot.autoconfigure.web.reactive.WebFluxProperties`
 源类型:`org.springframework.boot.autoconfigure.web.reactive.WebFluxProperties`
 
