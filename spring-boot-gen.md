@@ -1,5 +1,5 @@
-
 ### server.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties`
@@ -14,6 +14,7 @@
 | shutdown | org.springframework.boot.web.server.Shutdown | Type of shutdown that the server will support. | immediate |  | 
 
 ### server.compression.xx
+
 描述:
 类型:`org.springframework.boot.web.server.Compression`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties`
@@ -26,6 +27,7 @@
 | min-response-size | org.springframework.util.unit.DataSize | Minimum "Content-Length" value that is required for compression to be performed. | 2KB |  | 
 
 ### server.error.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.ErrorProperties`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties`
@@ -39,6 +41,7 @@
 | path | java.lang.String | Path of the error controller. | /error |  | 
 
 ### server.error.whitelabel.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.ErrorProperties$Whitelabel`
 源类型:`org.springframework.boot.autoconfigure.web.ErrorProperties`
@@ -48,6 +51,7 @@
 | enabled | java.lang.Boolean | Whether to enable the default error page displayed in browsers in case of a server error. | true |  | 
 
 ### server.http2.xx
+
 描述:
 类型:`org.springframework.boot.web.server.Http2`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties`
@@ -57,6 +61,7 @@
 | enabled | java.lang.Boolean | Whether to enable HTTP/2 support, if the current environment supports it. | false |  | 
 
 ### server.jetty.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Jetty`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties`
@@ -67,6 +72,7 @@
 | max-http-form-post-size | org.springframework.util.unit.DataSize | Maximum size of the form content in any HTTP post request. | 200000B |  | 
 
 ### server.jetty.accesslog.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Jetty$Accesslog`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Jetty`
@@ -83,6 +89,7 @@
 | retention-period | java.lang.Integer | Number of days before rotated log files are deleted. | 31 |  | 
 
 ### server.jetty.threads.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Jetty$Threads`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Jetty`
@@ -97,6 +104,7 @@
 | selectors | java.lang.Integer | Number of selector threads to use. When the value is -1, the default, the number of selectors is derived from the operating environment. | -1 |  | 
 
 ### server.netty.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Netty`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties`
@@ -112,6 +120,7 @@
 | validate-headers | java.lang.Boolean | Whether to validate headers when decoding requests. | true |  | 
 
 ### server.reactive.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Reactive`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties`
@@ -120,6 +129,7 @@
 |-----|------|-----|-------|---------|
 
 ### server.reactive.session.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Reactive$Session`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Reactive`
@@ -129,6 +139,7 @@
 | timeout | java.time.Duration | Session timeout. If a duration suffix is not specified, seconds will be used. | 30m |  | 
 
 ### server.servlet.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Servlet`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties`
@@ -141,6 +152,7 @@
 | register-default-servlet | java.lang.Boolean | Whether to register the default Servlet with the container. | false |  | 
 
 ### server.servlet.encoding.xx
+
 描述:
 类型:`org.springframework.boot.web.servlet.server.Encoding`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Servlet`
@@ -154,6 +166,7 @@
 | mapping | java.util.Map<java.util.Locale,java.nio.charset.Charset> | null |  |  | 
 
 ### server.servlet.jsp.xx
+
 描述:
 类型:`org.springframework.boot.web.servlet.server.Jsp`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Servlet`
@@ -165,6 +178,7 @@
 | registered | java.lang.Boolean | Whether the JSP servlet is registered. | true |  | 
 
 ### server.servlet.session.xx
+
 描述:
 类型:`org.springframework.boot.web.servlet.server.Session`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Servlet`
@@ -177,6 +191,7 @@
 | tracking-modes | java.util.Set<org.springframework.boot.web.servlet.server.Session$SessionTrackingMode> | Session tracking modes. |  |  | 
 
 ### server.servlet.session.cookie.xx
+
 描述:
 类型:`org.springframework.boot.web.servlet.server.Session$Cookie`
 源类型:`org.springframework.boot.web.servlet.server.Session`
@@ -193,6 +208,7 @@
 | secure | java.lang.Boolean | null |  |  | 
 
 ### server.ssl.xx
+
 描述:
 类型:`org.springframework.boot.web.server.Ssl`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties`
@@ -231,6 +247,7 @@
 | trust-store-type | java.lang.String | null |  |  | 
 
 ### server.tomcat.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties`
@@ -256,6 +273,7 @@
 | use-relative-redirects | java.lang.Boolean | Whether HTTP 1.1 and later location headers generated by a call to sendRedirect will use relative or absolute redirects. | false |  | 
 
 ### server.tomcat.accesslog.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat$Accesslog`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat`
@@ -281,6 +299,7 @@
 | suffix | java.lang.String | Log file name suffix. | .log |  | 
 
 ### server.tomcat.mbeanregistry.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat$Mbeanregistry`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat`
@@ -290,6 +309,7 @@
 | enabled | java.lang.Boolean | Whether Tomcat's MBean Registry should be enabled. | false |  | 
 
 ### server.tomcat.remoteip.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat$Remoteip`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat`
@@ -304,6 +324,7 @@
 | remote-ip-header | java.lang.String | Name of the HTTP header from which the remote IP is extracted. For instance, 'X-FORWARDED-FOR'. |  |  | 
 
 ### server.tomcat.resource.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat$Resource`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat`
@@ -314,6 +335,7 @@
 | cache-ttl | java.time.Duration | Time-to-live of the static resource cache. |  |  | 
 
 ### server.tomcat.threads.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat$Threads`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat`
@@ -324,6 +346,7 @@
 | min-spare | java.lang.Integer | Minimum amount of worker threads. | 10 |  | 
 
 ### server.undertow.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Undertow`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties`
@@ -345,6 +368,7 @@
 | url-charset | java.nio.charset.Charset | Charset used to decode URLs. | UTF-8 |  | 
 
 ### server.undertow.accesslog.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Undertow$Accesslog`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Undertow`
@@ -359,6 +383,7 @@
 | suffix | java.lang.String | Log file name suffix. | log |  | 
 
 ### server.undertow.options.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Undertow$Options`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Undertow`
@@ -369,6 +394,7 @@
 | socket | java.util.Map<java.lang.String,java.lang.String> | null |  |  | 
 
 ### server.undertow.threads.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Undertow$Threads`
 源类型:`org.springframework.boot.autoconfigure.web.ServerProperties$Undertow`
@@ -379,6 +405,7 @@
 | worker | java.lang.Integer | Number of worker threads. The default is 8 times the number of I/O threads. |  |  | 
 
 ### spring.activemq.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.jms.activemq.ActiveMQProperties`
 源类型:`org.springframework.boot.autoconfigure.jms.activemq.ActiveMQProperties`
@@ -394,6 +421,7 @@
 | user | java.lang.String | Login user of the broker. |  |  | 
 
 ### spring.activemq.packages.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.jms.activemq.ActiveMQProperties$Packages`
 源类型:`org.springframework.boot.autoconfigure.jms.activemq.ActiveMQProperties`
@@ -404,6 +432,7 @@
 | trusted | java.util.List<java.lang.String> | Comma-separated list of specific packages to trust (when not trusting all packages). |  |  | 
 
 ### spring.activemq.pool.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.jms.JmsPoolConnectionFactoryProperties`
 源类型:`org.springframework.boot.autoconfigure.jms.activemq.ActiveMQProperties`
@@ -420,6 +449,7 @@
 | use-anonymous-producers | java.lang.Boolean | Whether to use only one anonymous "MessageProducer" instance. Set it to false to create one "MessageProducer" every time one is required. | true |  | 
 
 ### spring.artemis.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.jms.artemis.ArtemisProperties`
 源类型:`org.springframework.boot.autoconfigure.jms.artemis.ArtemisProperties`
@@ -430,10 +460,11 @@
 | mode | org.springframework.boot.autoconfigure.jms.artemis.ArtemisMode | Artemis deployment mode, auto-detected by default. |  |  | 
 | password | java.lang.String | Login password of the broker. |  |  | 
 | user | java.lang.String | Login user of the broker. |  |  | 
-| host | java.lang.String | Artemis broker host. |  | true,spring.artemis.broker-url | 
-| port | java.lang.Integer | Artemis broker port. | 61616 | true,spring.artemis.broker-url | 
+| ~~host~~ | java.lang.String | Artemis broker host. |  | true,spring.artemis.broker-url | 
+| ~~port~~ | java.lang.Integer | Artemis broker port. | 61616 | true,spring.artemis.broker-url | 
 
 ### spring.artemis.embedded.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.jms.artemis.ArtemisProperties$Embedded`
 源类型:`org.springframework.boot.autoconfigure.jms.artemis.ArtemisProperties`
@@ -449,6 +480,7 @@
 | topics | java.lang.String[] | Comma-separated list of topics to create on startup. | [] |  | 
 
 ### spring.artemis.pool.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.jms.JmsPoolConnectionFactoryProperties`
 源类型:`org.springframework.boot.autoconfigure.jms.artemis.ArtemisProperties`
@@ -465,17 +497,19 @@
 | use-anonymous-producers | java.lang.Boolean | Whether to use only one anonymous "MessageProducer" instance. Set it to false to create one "MessageProducer" every time one is required. | true |  | 
 
 ### spring.batch.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.batch.BatchProperties`
 源类型:`org.springframework.boot.autoconfigure.batch.BatchProperties`
 
 | 名称 | 类型 | 描述 | 默认值 | 过期替代 |
 |-----|------|-----|-------|---------|
-| initialize-schema | org.springframework.boot.sql.init.DatabaseInitializationMode | null | embedded | true,spring.batch.jdbc.initialize-schema | 
-| schema | java.lang.String | null |  | true,spring.batch.jdbc.schema | 
-| table-prefix | java.lang.String | null |  | true,spring.batch.jdbc.table-prefix | 
+| ~~initialize-schema~~ | org.springframework.boot.sql.init.DatabaseInitializationMode | null | embedded | true,spring.batch.jdbc.initialize-schema | 
+| ~~schema~~ | java.lang.String | null |  | true,spring.batch.jdbc.schema | 
+| ~~table-prefix~~ | java.lang.String | null |  | true,spring.batch.jdbc.table-prefix | 
 
 ### spring.batch.jdbc.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.batch.BatchProperties$Jdbc`
 源类型:`org.springframework.boot.autoconfigure.batch.BatchProperties`
@@ -488,6 +522,7 @@
 | table-prefix | java.lang.String | Table prefix for all the batch meta-data tables. |  |  | 
 
 ### spring.batch.job.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.batch.BatchProperties$Job`
 源类型:`org.springframework.boot.autoconfigure.batch.BatchProperties`
@@ -497,6 +532,7 @@
 | names | java.lang.String | Comma-separated list of job names to execute on startup (for instance, 'job1,job2'). By default, all Jobs found in the context are executed. |  |  | 
 
 ### spring.cache.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.cache.CacheProperties`
 源类型:`org.springframework.boot.autoconfigure.cache.CacheProperties`
@@ -507,6 +543,7 @@
 | type | org.springframework.boot.autoconfigure.cache.CacheType | Cache type. By default, auto-detected according to the environment. |  |  | 
 
 ### spring.cache.caffeine.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.cache.CacheProperties$Caffeine`
 源类型:`org.springframework.boot.autoconfigure.cache.CacheProperties`
@@ -516,6 +553,7 @@
 | spec | java.lang.String | The spec to use to create caches. See CaffeineSpec for more details on the spec format. |  |  | 
 
 ### spring.cache.couchbase.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.cache.CacheProperties$Couchbase`
 源类型:`org.springframework.boot.autoconfigure.cache.CacheProperties`
@@ -525,6 +563,7 @@
 | expiration | java.time.Duration | Entry expiration. By default the entries never expire. Note that this value is ultimately converted to seconds. |  |  | 
 
 ### spring.cache.ehcache.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.cache.CacheProperties$EhCache`
 源类型:`org.springframework.boot.autoconfigure.cache.CacheProperties`
@@ -534,6 +573,7 @@
 | config | org.springframework.core.io.Resource | The location of the configuration file to use to initialize EhCache. |  |  | 
 
 ### spring.cache.infinispan.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.cache.CacheProperties$Infinispan`
 源类型:`org.springframework.boot.autoconfigure.cache.CacheProperties`
@@ -543,6 +583,7 @@
 | config | org.springframework.core.io.Resource | The location of the configuration file to use to initialize Infinispan. |  |  | 
 
 ### spring.cache.jcache.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.cache.CacheProperties$JCache`
 源类型:`org.springframework.boot.autoconfigure.cache.CacheProperties`
@@ -553,6 +594,7 @@
 | provider | java.lang.String | Fully qualified name of the CachingProvider implementation to use to retrieve the JSR-107 compliant cache manager. Needed only if more than one JSR-107 implementation is available on the classpath. |  |  | 
 
 ### spring.cache.redis.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.cache.CacheProperties$Redis`
 源类型:`org.springframework.boot.autoconfigure.cache.CacheProperties`
@@ -566,6 +608,7 @@
 | use-key-prefix | java.lang.Boolean | Whether to use the key prefix when writing to Redis. | true |  | 
 
 ### spring.codec.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.codec.CodecProperties`
 源类型:`org.springframework.boot.autoconfigure.codec.CodecProperties`
@@ -576,6 +619,7 @@
 | max-in-memory-size | org.springframework.util.unit.DataSize | Limit on the number of bytes that can be buffered whenever the input stream needs to be aggregated. This applies only to the auto-configured WebFlux server and WebClient instances. By default this is not set, in which case individual codec defaults apply. Most codecs are limited to 256K by default. |  |  | 
 
 ### spring.couchbase.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.couchbase.CouchbaseProperties`
 源类型:`org.springframework.boot.autoconfigure.couchbase.CouchbaseProperties`
@@ -587,6 +631,7 @@
 | username | java.lang.String | Cluster username. |  |  | 
 
 ### spring.couchbase.env.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.couchbase.CouchbaseProperties$Env`
 源类型:`org.springframework.boot.autoconfigure.couchbase.CouchbaseProperties`
@@ -595,6 +640,7 @@
 |-----|------|-----|-------|---------|
 
 ### spring.couchbase.env.io.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.couchbase.CouchbaseProperties$Io`
 源类型:`org.springframework.boot.autoconfigure.couchbase.CouchbaseProperties$Env`
@@ -606,6 +652,7 @@
 | min-endpoints | java.lang.Integer | Minimum number of sockets per node. | 1 |  | 
 
 ### spring.couchbase.env.ssl.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.couchbase.CouchbaseProperties$Ssl`
 源类型:`org.springframework.boot.autoconfigure.couchbase.CouchbaseProperties$Env`
@@ -617,6 +664,7 @@
 | key-store-password | java.lang.String | Password used to access the key store. |  |  | 
 
 ### spring.couchbase.env.timeouts.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.couchbase.CouchbaseProperties$Timeouts`
 源类型:`org.springframework.boot.autoconfigure.couchbase.CouchbaseProperties$Env`
@@ -634,6 +682,7 @@
 | view | java.time.Duration | Regular and geospatial view operations timeout. | 75s |  | 
 
 ### spring.data.cassandra.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.cassandra.CassandraProperties`
 源类型:`org.springframework.boot.autoconfigure.cassandra.CassandraProperties`
@@ -653,6 +702,7 @@
 | username | java.lang.String | Login user of the server. |  |  | 
 
 ### spring.data.cassandra.connection.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.cassandra.CassandraProperties$Connection`
 源类型:`org.springframework.boot.autoconfigure.cassandra.CassandraProperties`
@@ -663,6 +713,7 @@
 | init-query-timeout | java.time.Duration | Timeout to use for internal queries that run as part of the initialization process, just after a connection is opened. | 5s |  | 
 
 ### spring.data.cassandra.controlconnection.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.cassandra.CassandraProperties$Controlconnection`
 源类型:`org.springframework.boot.autoconfigure.cassandra.CassandraProperties`
@@ -672,6 +723,7 @@
 | timeout | java.time.Duration | Timeout to use for control queries. | 5s |  | 
 
 ### spring.data.cassandra.pool.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.cassandra.CassandraProperties$Pool`
 源类型:`org.springframework.boot.autoconfigure.cassandra.CassandraProperties`
@@ -682,6 +734,7 @@
 | idle-timeout | java.time.Duration | Idle timeout before an idle connection is removed. | 5s |  | 
 
 ### spring.data.cassandra.request.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.cassandra.CassandraProperties$Request`
 源类型:`org.springframework.boot.autoconfigure.cassandra.CassandraProperties`
@@ -694,6 +747,7 @@
 | timeout | java.time.Duration | How long the driver waits for a request to complete. | 2s |  | 
 
 ### spring.data.cassandra.request.throttler.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.cassandra.CassandraProperties$Throttler`
 源类型:`org.springframework.boot.autoconfigure.cassandra.CassandraProperties$Request`
@@ -707,6 +761,7 @@
 | type | org.springframework.boot.autoconfigure.cassandra.CassandraProperties$ThrottlerType | Request throttling type. | none |  | 
 
 ### spring.data.couchbase.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.data.couchbase.CouchbaseDataProperties`
 源类型:`org.springframework.boot.autoconfigure.data.couchbase.CouchbaseDataProperties`
@@ -720,21 +775,23 @@
 | type-key | java.lang.String | Name of the field that stores the type information for complex types when using "MappingCouchbaseConverter". | _class |  | 
 
 ### spring.data.elasticsearch.client.reactive.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.data.elasticsearch.DeprecatedReactiveElasticsearchRestClientProperties`
 源类型:`org.springframework.boot.autoconfigure.data.elasticsearch.DeprecatedReactiveElasticsearchRestClientProperties`
 
 | 名称 | 类型 | 描述 | 默认值 | 过期替代 |
 |-----|------|-----|-------|---------|
-| connection-timeout | java.time.Duration | Connection timeout. |  | true,spring.elasticsearch.connection-timeout | 
-| endpoints | java.util.List<java.lang.String> | Comma-separated list of the Elasticsearch endpoints to connect to. | ["localhost:9200"] | true,spring.elasticsearch.uris | 
-| max-in-memory-size | org.springframework.util.unit.DataSize | Limit on the number of bytes that can be buffered whenever the input stream needs to be aggregated. |  | true,spring.elasticsearch.webclient.max-in-memory-size | 
-| password | java.lang.String | Credentials password. |  | true,spring.elasticsearch.password | 
-| socket-timeout | java.time.Duration | Read and Write Socket timeout. |  | true,spring.elasticsearch.socket-timeout | 
-| use-ssl | java.lang.Boolean | Whether the client should use SSL to connect to the endpoints. | false | true,Use of SSL should be indicated through an https URI scheme | 
-| username | java.lang.String | Credentials username. |  | true,spring.elasticsearch.username | 
+| ~~connection-timeout~~ | java.time.Duration | Connection timeout. |  | true,spring.elasticsearch.connection-timeout | 
+| ~~endpoints~~ | java.util.List<java.lang.String> | Comma-separated list of the Elasticsearch endpoints to connect to. | ["localhost:9200"] | true,spring.elasticsearch.uris | 
+| ~~max-in-memory-size~~ | org.springframework.util.unit.DataSize | Limit on the number of bytes that can be buffered whenever the input stream needs to be aggregated. |  | true,spring.elasticsearch.webclient.max-in-memory-size | 
+| ~~password~~ | java.lang.String | Credentials password. |  | true,spring.elasticsearch.password | 
+| ~~socket-timeout~~ | java.time.Duration | Read and Write Socket timeout. |  | true,spring.elasticsearch.socket-timeout | 
+| ~~use-ssl~~ | java.lang.Boolean | Whether the client should use SSL to connect to the endpoints. | false | true,Use of SSL should be indicated through an https URI scheme | 
+| ~~username~~ | java.lang.String | Credentials username. |  | true,spring.elasticsearch.username | 
 
 ### spring.data.mongodb.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.mongo.MongoProperties`
 源类型:`org.springframework.boot.autoconfigure.mongo.MongoProperties`
@@ -754,6 +811,7 @@
 | uuid-representation | org.bson.UuidRepresentation | Representation to use when converting a UUID to a BSON binary value. | java-legacy |  | 
 
 ### spring.data.mongodb.gridfs.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.mongo.MongoProperties$Gridfs`
 源类型:`org.springframework.boot.autoconfigure.mongo.MongoProperties`
@@ -764,6 +822,7 @@
 | database | java.lang.String | GridFS database name. |  |  | 
 
 ### spring.data.neo4j.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.data.neo4j.Neo4jDataProperties`
 源类型:`org.springframework.boot.autoconfigure.data.neo4j.Neo4jDataProperties`
@@ -773,6 +832,7 @@
 | database | java.lang.String | Database name to use. By default, the server decides the default database to use. |  |  | 
 
 ### spring.data.rest.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.data.rest.RepositoryRestProperties`
 源类型:`org.springframework.boot.autoconfigure.data.rest.RepositoryRestProperties`
@@ -792,6 +852,7 @@
 | sort-param-name | java.lang.String | Name of the URL query string parameter that indicates what direction to sort results. |  |  | 
 
 ### spring.data.solr.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.solr.SolrProperties`
 源类型:`org.springframework.boot.autoconfigure.solr.SolrProperties`
@@ -802,6 +863,7 @@
 | zk-host | java.lang.String | ZooKeeper host address in the form HOST:PORT. |  |  | 
 
 ### spring.data.web.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties`
 源类型:`org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties`
@@ -810,6 +872,7 @@
 |-----|------|-----|-------|---------|
 
 ### spring.data.web.pageable.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties$Pageable`
 源类型:`org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties`
@@ -825,6 +888,7 @@
 | size-parameter | java.lang.String | Page size parameter name. | size |  | 
 
 ### spring.data.web.sort.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties$Sort`
 源类型:`org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties`
@@ -834,6 +898,7 @@
 | sort-parameter | java.lang.String | Sort parameter name. | sort |  | 
 
 ### spring.datasource.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.jdbc.DataSourceProperties`
 源类型:`org.springframework.boot.autoconfigure.jdbc.DataSourceProperties`
@@ -849,19 +914,20 @@
 | type | java.lang.Class<? extends javax.sql.DataSource> | Fully qualified name of the connection pool implementation to use. By default, it is auto-detected from the classpath. |  |  | 
 | url | java.lang.String | JDBC URL of the database. |  |  | 
 | username | java.lang.String | Login username of the database. |  |  | 
-| continue-on-error | java.lang.Boolean | Whether to stop if an error occurs while initializing the database. | false | true,spring.sql.init.continue-on-error | 
-| data | java.util.List<java.lang.String> | Data (DML) script resource references. |  | true,spring.sql.init.data-locations | 
-| data-password | java.lang.String | Password of the database to execute DML scripts (if different). |  | true,spring.sql.init.password | 
-| data-username | java.lang.String | Username of the database to execute DML scripts (if different). |  | true,spring.sql.init.username | 
-| initialization-mode | org.springframework.boot.jdbc.DataSourceInitializationMode | Mode to apply when determining if DataSource initialization should be performed using the available DDL and DML scripts. | embedded | true,spring.sql.init.mode | 
-| platform | java.lang.String | Platform to use in the DDL or DML scripts (such as schema-${platform}.sql or data-${platform}.sql). | all | true,spring.sql.init.platform | 
-| schema | java.util.List<java.lang.String> | Schema (DDL) script resource references. |  | true,spring.sql.init.schema-locations | 
-| schema-password | java.lang.String | Password of the database to execute DDL scripts (if different). |  | true,spring.sql.init.password | 
-| schema-username | java.lang.String | Username of the database to execute DDL scripts (if different). |  | true,spring.sql.init.username | 
-| separator | java.lang.String | Statement separator in SQL initialization scripts. | ; | true,spring.sql.init.separator | 
-| sql-script-encoding | java.nio.charset.Charset | SQL scripts encoding. |  | true,spring.sql.init.encoding | 
+| ~~continue-on-error~~ | java.lang.Boolean | Whether to stop if an error occurs while initializing the database. | false | true,spring.sql.init.continue-on-error | 
+| ~~data~~ | java.util.List<java.lang.String> | Data (DML) script resource references. |  | true,spring.sql.init.data-locations | 
+| ~~data-password~~ | java.lang.String | Password of the database to execute DML scripts (if different). |  | true,spring.sql.init.password | 
+| ~~data-username~~ | java.lang.String | Username of the database to execute DML scripts (if different). |  | true,spring.sql.init.username | 
+| ~~initialization-mode~~ | org.springframework.boot.jdbc.DataSourceInitializationMode | Mode to apply when determining if DataSource initialization should be performed using the available DDL and DML scripts. | embedded | true,spring.sql.init.mode | 
+| ~~platform~~ | java.lang.String | Platform to use in the DDL or DML scripts (such as schema-${platform}.sql or data-${platform}.sql). | all | true,spring.sql.init.platform | 
+| ~~schema~~ | java.util.List<java.lang.String> | Schema (DDL) script resource references. |  | true,spring.sql.init.schema-locations | 
+| ~~schema-password~~ | java.lang.String | Password of the database to execute DDL scripts (if different). |  | true,spring.sql.init.password | 
+| ~~schema-username~~ | java.lang.String | Username of the database to execute DDL scripts (if different). |  | true,spring.sql.init.username | 
+| ~~separator~~ | java.lang.String | Statement separator in SQL initialization scripts. | ; | true,spring.sql.init.separator | 
+| ~~sql-script-encoding~~ | java.nio.charset.Charset | SQL scripts encoding. |  | true,spring.sql.init.encoding | 
 
 ### spring.datasource.dbcp2.xx
+
 描述:
 类型:`org.apache.commons.dbcp2.BasicDataSource`
 源类型:`org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Dbcp2`
@@ -916,9 +982,10 @@
 | username | java.lang.String | null |  |  | 
 | validation-query | java.lang.String | null |  |  | 
 | validation-query-timeout | java.lang.Integer | null |  |  | 
-| enable-auto-commit-on-return | java.lang.Boolean | null |  | true | 
+| ~~enable-auto-commit-on-return~~ | java.lang.Boolean | null |  | true | 
 
 ### spring.datasource.hikari.xx
+
 描述:
 类型:`com.zaxxer.hikari.HikariDataSource`
 源类型:`org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari`
@@ -961,6 +1028,7 @@
 | validation-timeout | java.lang.Long | null |  |  | 
 
 ### spring.datasource.oracleucp.xx
+
 描述:
 类型:`oracle.ucp.jdbc.PoolDataSourceImpl`
 源类型:`org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$OracleUcp`
@@ -1012,6 +1080,7 @@
 | validate-connection-on-borrow | java.lang.Boolean | null |  |  | 
 
 ### spring.datasource.tomcat.xx
+
 描述:
 类型:`org.apache.tomcat.jdbc.pool.DataSource`
 源类型:`org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat`
@@ -1071,6 +1140,7 @@
 | validator-class-name | java.lang.String | null |  |  | 
 
 ### spring.datasource.xa.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$Xa`
 源类型:`org.springframework.boot.autoconfigure.jdbc.DataSourceProperties`
@@ -1081,6 +1151,7 @@
 | properties | java.util.Map<java.lang.String,java.lang.String> | Properties to pass to the XA data source. |  |  | 
 
 ### spring.elasticsearch.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchProperties`
 源类型:`org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchProperties`
@@ -1095,29 +1166,32 @@
 | username | java.lang.String | Username for authentication with Elasticsearch. |  |  | 
 
 ### spring.elasticsearch.rest.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.elasticsearch.DeprecatedElasticsearchRestClientProperties`
 源类型:`org.springframework.boot.autoconfigure.elasticsearch.DeprecatedElasticsearchRestClientProperties`
 
 | 名称 | 类型 | 描述 | 默认值 | 过期替代 |
 |-----|------|-----|-------|---------|
-| connection-timeout | java.time.Duration | Connection timeout. | 1s | true,spring.elasticsearch.connection-timeout | 
-| password | java.lang.String | Credentials password. |  | true,spring.elasticsearch.password | 
-| read-timeout | java.time.Duration | Read timeout. | 30s | true,spring.elasticsearch.socket-timeout | 
-| uris | java.util.List<java.lang.String> | Comma-separated list of the Elasticsearch instances to use. | ["http://localhost:9200"] | true,spring.elasticsearch.uris | 
-| username | java.lang.String | Credentials username. |  | true,spring.elasticsearch.username | 
+| ~~connection-timeout~~ | java.time.Duration | Connection timeout. | 1s | true,spring.elasticsearch.connection-timeout | 
+| ~~password~~ | java.lang.String | Credentials password. |  | true,spring.elasticsearch.password | 
+| ~~read-timeout~~ | java.time.Duration | Read timeout. | 30s | true,spring.elasticsearch.socket-timeout | 
+| ~~uris~~ | java.util.List<java.lang.String> | Comma-separated list of the Elasticsearch instances to use. | ["http://localhost:9200"] | true,spring.elasticsearch.uris | 
+| ~~username~~ | java.lang.String | Credentials username. |  | true,spring.elasticsearch.username | 
 
 ### spring.elasticsearch.rest.sniffer.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.elasticsearch.DeprecatedElasticsearchRestClientProperties$Sniffer`
 源类型:`org.springframework.boot.autoconfigure.elasticsearch.DeprecatedElasticsearchRestClientProperties`
 
 | 名称 | 类型 | 描述 | 默认值 | 过期替代 |
 |-----|------|-----|-------|---------|
-| delay-after-failure | java.time.Duration | Delay of a sniff execution scheduled after a failure. | 1m | true,spring.elasticsearch.restclient.sniffer.delay-after-failure | 
-| interval | java.time.Duration | Interval between consecutive ordinary sniff executions. | 5m | true,spring.elasticsearch.restclient.sniffer.interval | 
+| ~~delay-after-failure~~ | java.time.Duration | Delay of a sniff execution scheduled after a failure. | 1m | true,spring.elasticsearch.restclient.sniffer.delay-after-failure | 
+| ~~interval~~ | java.time.Duration | Interval between consecutive ordinary sniff executions. | 5m | true,spring.elasticsearch.restclient.sniffer.interval | 
 
 ### spring.elasticsearch.restclient.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchRestClientProperties`
 源类型:`org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchRestClientProperties`
@@ -1126,6 +1200,7 @@
 |-----|------|-----|-------|---------|
 
 ### spring.elasticsearch.restclient.sniffer.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchRestClientProperties$Sniffer`
 源类型:`org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchRestClientProperties`
@@ -1136,6 +1211,7 @@
 | interval | java.time.Duration | Interval between consecutive ordinary sniff executions. | 5m |  | 
 
 ### spring.elasticsearch.webclient.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.data.elasticsearch.ReactiveElasticsearchRestClientProperties`
 源类型:`org.springframework.boot.autoconfigure.data.elasticsearch.ReactiveElasticsearchRestClientProperties`
@@ -1145,6 +1221,7 @@
 | max-in-memory-size | org.springframework.util.unit.DataSize | Limit on the number of bytes that can be buffered whenever the input stream needs to be aggregated. |  |  | 
 
 ### spring.flyway.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.flyway.FlywayProperties`
 源类型:`org.springframework.boot.autoconfigure.flyway.FlywayProperties`
@@ -1209,16 +1286,17 @@
 | user | java.lang.String | Login user of the database to migrate. |  |  | 
 | validate-migration-naming | java.lang.Boolean | Whether to validate migrations and callbacks whose scripts do not obey the correct naming convention. | false |  | 
 | validate-on-migrate | java.lang.Boolean | Whether to automatically call validate when performing a migration. | true |  | 
-| check-location | java.lang.Boolean | Whether to check that migration scripts location exists. Should be set to false when using a wildcard location or a remote-hosted location such as S3 or GCS. | true | true,Locations can no longer be checked accurately due to changes in Flyway's location support. | 
-| dry-run-output | java.io.File | File to which the SQL statements of a migration dry run should be output. Requires Flyway Teams. |  | true,error,Flyway pro edition only. | 
-| ignore-future-migrations | java.lang.Boolean | Whether to ignore future migrations when reading the schema history table. | true | true,spring.flyway.ignore-migration-patterns | 
-| ignore-ignored-migrations | java.lang.Boolean | Whether to ignore ignored migrations when reading the schema history table. | false | true,spring.flyway.ignore-migration-patterns | 
-| ignore-missing-migrations | java.lang.Boolean | Whether to ignore missing migrations when reading the schema history table. | false | true,spring.flyway.ignore-migration-patterns | 
-| ignore-pending-migrations | java.lang.Boolean | Whether to ignore pending migrations when reading the schema history table. | false | true,spring.flyway.ignore-migration-patterns | 
-| oracle-kerberos-config-file | java.lang.String | null |  | true,spring.flyway.kerberos-config-file | 
-| undo-sql-migration-prefix | java.lang.String | File name prefix for undo SQL migrations. Requires Flyway Teams. |  | true,error,Flyway pro edition only. | 
+| ~~check-location~~ | java.lang.Boolean | Whether to check that migration scripts location exists. Should be set to false when using a wildcard location or a remote-hosted location such as S3 or GCS. | true | true,Locations can no longer be checked accurately due to changes in Flyway's location support. | 
+| ~~dry-run-output~~ | java.io.File | File to which the SQL statements of a migration dry run should be output. Requires Flyway Teams. |  | true,error,Flyway pro edition only. | 
+| ~~ignore-future-migrations~~ | java.lang.Boolean | Whether to ignore future migrations when reading the schema history table. | true | true,spring.flyway.ignore-migration-patterns | 
+| ~~ignore-ignored-migrations~~ | java.lang.Boolean | Whether to ignore ignored migrations when reading the schema history table. | false | true,spring.flyway.ignore-migration-patterns | 
+| ~~ignore-missing-migrations~~ | java.lang.Boolean | Whether to ignore missing migrations when reading the schema history table. | false | true,spring.flyway.ignore-migration-patterns | 
+| ~~ignore-pending-migrations~~ | java.lang.Boolean | Whether to ignore pending migrations when reading the schema history table. | false | true,spring.flyway.ignore-migration-patterns | 
+| ~~oracle-kerberos-config-file~~ | java.lang.String | null |  | true,spring.flyway.kerberos-config-file | 
+| ~~undo-sql-migration-prefix~~ | java.lang.String | File name prefix for undo SQL migrations. Requires Flyway Teams. |  | true,error,Flyway pro edition only. | 
 
 ### spring.freemarker.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.freemarker.FreeMarkerProperties`
 源类型:`org.springframework.boot.autoconfigure.freemarker.FreeMarkerProperties`
@@ -1244,6 +1322,7 @@
 | view-names | java.lang.String[] | View names that can be resolved. |  |  | 
 
 ### spring.groovy.template.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateProperties`
 源类型:`org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateProperties`
@@ -1267,6 +1346,7 @@
 | view-names | java.lang.String[] | View names that can be resolved. |  |  | 
 
 ### spring.groovy.template.configuration.xx
+
 描述:
 类型:`org.springframework.web.servlet.view.groovy.GroovyMarkupConfigurer`
 源类型:`org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration$GroovyMarkupConfiguration`
@@ -1287,6 +1367,7 @@
 | use-double-quotes | java.lang.Boolean | null |  |  | 
 
 ### spring.gson.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.gson.GsonProperties`
 源类型:`org.springframework.boot.autoconfigure.gson.GsonProperties`
@@ -1306,6 +1387,7 @@
 | serialize-nulls | java.lang.Boolean | Whether to serialize null fields. |  |  | 
 
 ### spring.h2.console.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.h2.H2ConsoleProperties`
 源类型:`org.springframework.boot.autoconfigure.h2.H2ConsoleProperties`
@@ -1316,6 +1398,7 @@
 | path | java.lang.String | Path at which the console is available. | /h2-console |  | 
 
 ### spring.h2.console.settings.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.h2.H2ConsoleProperties$Settings`
 源类型:`org.springframework.boot.autoconfigure.h2.H2ConsoleProperties`
@@ -1327,6 +1410,7 @@
 | web-allow-others | java.lang.Boolean | Whether to enable remote access. | false |  | 
 
 ### spring.hateoas.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.hateoas.HateoasProperties`
 源类型:`org.springframework.boot.autoconfigure.hateoas.HateoasProperties`
@@ -1336,6 +1420,7 @@
 | use-hal-as-default-json-media-type | java.lang.Boolean | Whether application/hal+json responses should be sent to requests that accept application/json. | true |  | 
 
 ### spring.hazelcast.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.hazelcast.HazelcastProperties`
 源类型:`org.springframework.boot.autoconfigure.hazelcast.HazelcastProperties`
@@ -1345,6 +1430,7 @@
 | config | org.springframework.core.io.Resource | The location of the configuration file to use to initialize Hazelcast. |  |  | 
 
 ### spring.influx.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.influx.InfluxDbProperties`
 源类型:`org.springframework.boot.autoconfigure.influx.InfluxDbProperties`
@@ -1356,6 +1442,7 @@
 | user | java.lang.String | Login user. |  |  | 
 
 ### spring.info.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.info.ProjectInfoProperties`
 源类型:`org.springframework.boot.autoconfigure.info.ProjectInfoProperties`
@@ -1364,6 +1451,7 @@
 |-----|------|-----|-------|---------|
 
 ### spring.info.build.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.info.ProjectInfoProperties$Build`
 源类型:`org.springframework.boot.autoconfigure.info.ProjectInfoProperties`
@@ -1374,6 +1462,7 @@
 | location | org.springframework.core.io.Resource | Location of the generated build-info.properties file. | classpath:META-INF/build-info.properties |  | 
 
 ### spring.info.git.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.info.ProjectInfoProperties$Git`
 源类型:`org.springframework.boot.autoconfigure.info.ProjectInfoProperties`
@@ -1384,6 +1473,7 @@
 | location | org.springframework.core.io.Resource | Location of the generated git.properties file. | classpath:git.properties |  | 
 
 ### spring.integration.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.integration.IntegrationProperties`
 源类型:`org.springframework.boot.autoconfigure.integration.IntegrationProperties`
@@ -1392,6 +1482,7 @@
 |-----|------|-----|-------|---------|
 
 ### spring.integration.channel.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.integration.IntegrationProperties$Channel`
 源类型:`org.springframework.boot.autoconfigure.integration.IntegrationProperties`
@@ -1403,6 +1494,7 @@
 | max-unicast-subscribers | java.lang.Integer | Default number of subscribers allowed on, for example, a 'DirectChannel'. |  |  | 
 
 ### spring.integration.endpoint.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.integration.IntegrationProperties$Endpoint`
 源类型:`org.springframework.boot.autoconfigure.integration.IntegrationProperties`
@@ -1414,6 +1506,7 @@
 | throw-exception-on-late-reply | java.lang.Boolean | Whether to throw an exception when a reply is not expected anymore by a gateway. | false |  | 
 
 ### spring.integration.error.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.integration.IntegrationProperties$Error`
 源类型:`org.springframework.boot.autoconfigure.integration.IntegrationProperties`
@@ -1424,6 +1517,7 @@
 | require-subscribers | java.lang.Boolean | Whether to not silently ignore messages on the global 'errorChannel' when they are no subscribers. | true |  | 
 
 ### spring.integration.jdbc.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.integration.IntegrationProperties$Jdbc`
 源类型:`org.springframework.boot.autoconfigure.integration.IntegrationProperties`
@@ -1435,6 +1529,7 @@
 | schema | java.lang.String | Path to the SQL file to use to initialize the database schema. | classpath:org/springframework/integration/jdbc/schema-@@platform@@.sql |  | 
 
 ### spring.integration.management.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.integration.IntegrationProperties$Management`
 源类型:`org.springframework.boot.autoconfigure.integration.IntegrationProperties`
@@ -1444,6 +1539,7 @@
 | default-logging-enabled | java.lang.Boolean | Whether Spring Integration components should perform logging in the main message flow. When disabled, such logging will be skipped without checking the logging level. When enabled, such logging is controlled as normal by the logging system's log level configuration. | true |  | 
 
 ### spring.integration.poller.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.integration.IntegrationProperties$Poller`
 源类型:`org.springframework.boot.autoconfigure.integration.IntegrationProperties`
@@ -1458,6 +1554,7 @@
 | receive-timeout | java.time.Duration | How long to wait for messages on poll. | 1s |  | 
 
 ### spring.integration.rsocket.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.integration.IntegrationProperties$RSocket`
 源类型:`org.springframework.boot.autoconfigure.integration.IntegrationProperties`
@@ -1466,6 +1563,7 @@
 |-----|------|-----|-------|---------|
 
 ### spring.integration.rsocket.client.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.integration.IntegrationProperties$RSocket$Client`
 源类型:`org.springframework.boot.autoconfigure.integration.IntegrationProperties$RSocket`
@@ -1477,6 +1575,7 @@
 | uri | java.net.URI | WebSocket RSocket server uri to connect to. |  |  | 
 
 ### spring.integration.rsocket.server.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.integration.IntegrationProperties$RSocket$Server`
 源类型:`org.springframework.boot.autoconfigure.integration.IntegrationProperties$RSocket`
@@ -1486,6 +1585,7 @@
 | message-mapping-enabled | java.lang.Boolean | Whether to handle message mapping for RSocket via Spring Integration. | false |  | 
 
 ### spring.jackson.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.jackson.JacksonProperties`
 源类型:`org.springframework.boot.autoconfigure.jackson.JacksonProperties`
@@ -1507,6 +1607,7 @@
 | visibility | java.util.Map<com.fasterxml.jackson.annotation.PropertyAccessor,com.fasterxml.jackson.annotation.JsonAutoDetect$Visibility> | Jackson visibility thresholds that can be used to limit which methods (and fields) are auto-detected. |  |  | 
 
 ### spring.jdbc.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.jdbc.JdbcProperties`
 源类型:`org.springframework.boot.autoconfigure.jdbc.JdbcProperties`
@@ -1515,6 +1616,7 @@
 |-----|------|-----|-------|---------|
 
 ### spring.jdbc.template.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.jdbc.JdbcProperties$Template`
 源类型:`org.springframework.boot.autoconfigure.jdbc.JdbcProperties`
@@ -1526,6 +1628,7 @@
 | query-timeout | java.time.Duration | Query timeout. Default is to use the JDBC driver's default configuration. If a duration suffix is not specified, seconds will be used. |  |  | 
 
 ### spring.jersey.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.jersey.JerseyProperties`
 源类型:`org.springframework.boot.autoconfigure.jersey.JerseyProperties`
@@ -1537,6 +1640,7 @@
 | type | org.springframework.boot.autoconfigure.jersey.JerseyProperties$Type | Jersey integration type. | servlet |  | 
 
 ### spring.jersey.filter.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.jersey.JerseyProperties$Filter`
 源类型:`org.springframework.boot.autoconfigure.jersey.JerseyProperties`
@@ -1546,6 +1650,7 @@
 | order | java.lang.Integer | Jersey filter chain order. | 0 |  | 
 
 ### spring.jersey.servlet.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.jersey.JerseyProperties$Servlet`
 源类型:`org.springframework.boot.autoconfigure.jersey.JerseyProperties`
@@ -1555,6 +1660,7 @@
 | load-on-startup | java.lang.Integer | Load on startup priority of the Jersey servlet. | -1 |  | 
 
 ### spring.jms.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.jms.JmsProperties`
 源类型:`org.springframework.boot.autoconfigure.jms.JmsProperties`
@@ -1565,6 +1671,7 @@
 | pub-sub-domain | java.lang.Boolean | Whether the default destination type is topic. | false |  | 
 
 ### spring.jms.cache.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.jms.JmsProperties$Cache`
 源类型:`org.springframework.boot.autoconfigure.jms.JmsProperties`
@@ -1577,6 +1684,7 @@
 | session-cache-size | java.lang.Integer | Size of the session cache (per JMS Session type). | 1 |  | 
 
 ### spring.jms.listener.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.jms.JmsProperties$Listener`
 源类型:`org.springframework.boot.autoconfigure.jms.JmsProperties`
@@ -1590,6 +1698,7 @@
 | receive-timeout | java.time.Duration | Timeout to use for receive calls. Use -1 for a no-wait receive or 0 for no timeout at all. The latter is only feasible if not running within a transaction manager and is generally discouraged since it prevents clean shutdown. | 1s |  | 
 
 ### spring.jms.template.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.jms.JmsProperties$Template`
 源类型:`org.springframework.boot.autoconfigure.jms.JmsProperties`
@@ -1605,6 +1714,7 @@
 | time-to-live | java.time.Duration | Time-to-live of a message when sending. Enables QoS (Quality of Service) when set. |  |  | 
 
 ### spring.jooq.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.jooq.JooqProperties`
 源类型:`org.springframework.boot.autoconfigure.jooq.JooqProperties`
@@ -1614,6 +1724,7 @@
 | sql-dialect | org.jooq.SQLDialect | SQL dialect to use. Auto-detected by default. |  |  | 
 
 ### spring.jpa.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.orm.jpa.JpaProperties`
 源类型:`org.springframework.boot.autoconfigure.orm.jpa.JpaProperties`
@@ -1629,6 +1740,7 @@
 | show-sql | java.lang.Boolean | Whether to enable logging of SQL statements. | false |  | 
 
 ### spring.jpa.hibernate.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties`
 源类型:`org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties`
@@ -1639,6 +1751,7 @@
 | use-new-id-generator-mappings | java.lang.Boolean | Whether to use Hibernate's newer IdentifierGenerator for AUTO, TABLE and SEQUENCE. This is actually a shortcut for the "hibernate.id.new_generator_mappings" property. When not specified will default to "true". |  |  | 
 
 ### spring.jpa.hibernate.naming.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties$Naming`
 源类型:`org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties`
@@ -1649,6 +1762,7 @@
 | physical-strategy | java.lang.String | Fully qualified name of the physical naming strategy. |  |  | 
 
 ### spring.jta.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.transaction.jta.JtaProperties`
 源类型:`org.springframework.boot.autoconfigure.transaction.jta.JtaProperties`
@@ -1659,6 +1773,7 @@
 | transaction-manager-id | java.lang.String | Transaction manager unique identifier. |  |  | 
 
 ### spring.kafka.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties`
@@ -1670,6 +1785,7 @@
 | properties | java.util.Map<java.lang.String,java.lang.String> | Additional properties, common to producers and consumers, used to configure the client. |  |  | 
 
 ### spring.kafka.admin.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Admin`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties`
@@ -1681,6 +1797,7 @@
 | properties | java.util.Map<java.lang.String,java.lang.String> | Additional admin-specific properties used to configure the client. |  |  | 
 
 ### spring.kafka.admin.security.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Security`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Admin`
@@ -1690,6 +1807,7 @@
 | protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
 
 ### spring.kafka.admin.ssl.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Ssl`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Admin`
@@ -1709,6 +1827,7 @@
 | trust-store-type | java.lang.String | Type of the trust store. |  |  | 
 
 ### spring.kafka.consumer.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Consumer`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties`
@@ -1731,6 +1850,7 @@
 | value-deserializer | java.lang.Class<?> | Deserializer class for values. |  |  | 
 
 ### spring.kafka.consumer.security.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Security`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Consumer`
@@ -1740,6 +1860,7 @@
 | protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
 
 ### spring.kafka.consumer.ssl.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Ssl`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Consumer`
@@ -1759,6 +1880,7 @@
 | trust-store-type | java.lang.String | Type of the trust store. |  |  | 
 
 ### spring.kafka.jaas.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Jaas`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties`
@@ -1771,6 +1893,7 @@
 | options | java.util.Map<java.lang.String,java.lang.String> | Additional JAAS options. |  |  | 
 
 ### spring.kafka.listener.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Listener`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties`
@@ -1793,6 +1916,7 @@
 | type | org.springframework.boot.autoconfigure.kafka.KafkaProperties$Listener$Type | Listener type. | single |  | 
 
 ### spring.kafka.producer.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Producer`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties`
@@ -1812,6 +1936,7 @@
 | value-serializer | java.lang.Class<?> | Serializer class for values. |  |  | 
 
 ### spring.kafka.producer.security.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Security`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Producer`
@@ -1821,6 +1946,7 @@
 | protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
 
 ### spring.kafka.producer.ssl.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Ssl`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Producer`
@@ -1840,6 +1966,7 @@
 | trust-store-type | java.lang.String | Type of the trust store. |  |  | 
 
 ### spring.kafka.security.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Security`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties`
@@ -1849,6 +1976,7 @@
 | protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
 
 ### spring.kafka.ssl.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Ssl`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties`
@@ -1868,6 +1996,7 @@
 | trust-store-type | java.lang.String | Type of the trust store. |  |  | 
 
 ### spring.kafka.streams.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Streams`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties`
@@ -1884,6 +2013,7 @@
 | state-dir | java.lang.String | Directory location for the state store. |  |  | 
 
 ### spring.kafka.streams.cleanup.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Cleanup`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Streams`
@@ -1894,6 +2024,7 @@
 | on-startup | java.lang.Boolean | Cleanup the application’s local state directory on startup. | false |  | 
 
 ### spring.kafka.streams.security.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Security`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Streams`
@@ -1903,6 +2034,7 @@
 | protocol | java.lang.String | Security protocol used to communicate with brokers. |  |  | 
 
 ### spring.kafka.streams.ssl.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Ssl`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Streams`
@@ -1922,6 +2054,7 @@
 | trust-store-type | java.lang.String | Type of the trust store. |  |  | 
 
 ### spring.kafka.template.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties$Template`
 源类型:`org.springframework.boot.autoconfigure.kafka.KafkaProperties`
@@ -1931,6 +2064,7 @@
 | default-topic | java.lang.String | Default topic to which messages are sent. |  |  | 
 
 ### spring.ldap.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.ldap.LdapProperties`
 源类型:`org.springframework.boot.autoconfigure.ldap.LdapProperties`
@@ -1945,6 +2079,7 @@
 | username | java.lang.String | Login username of the server. |  |  | 
 
 ### spring.ldap.embedded.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.ldap.embedded.EmbeddedLdapProperties`
 源类型:`org.springframework.boot.autoconfigure.ldap.embedded.EmbeddedLdapProperties`
@@ -1956,6 +2091,7 @@
 | port | java.lang.Integer | Embedded LDAP port. | 0 |  | 
 
 ### spring.ldap.embedded.credential.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.ldap.embedded.EmbeddedLdapProperties$Credential`
 源类型:`org.springframework.boot.autoconfigure.ldap.embedded.EmbeddedLdapProperties`
@@ -1966,6 +2102,7 @@
 | username | java.lang.String | Embedded LDAP username. |  |  | 
 
 ### spring.ldap.embedded.validation.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.ldap.embedded.EmbeddedLdapProperties$Validation`
 源类型:`org.springframework.boot.autoconfigure.ldap.embedded.EmbeddedLdapProperties`
@@ -1976,6 +2113,7 @@
 | schema | org.springframework.core.io.Resource | Path to the custom schema. |  |  | 
 
 ### spring.ldap.template.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.ldap.LdapProperties$Template`
 源类型:`org.springframework.boot.autoconfigure.ldap.LdapProperties`
@@ -1987,6 +2125,7 @@
 | ignore-size-limit-exceeded-exception | java.lang.Boolean | Whether SizeLimitExceededException should be ignored in searches via the LdapTemplate. | true |  | 
 
 ### spring.lifecycle.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.context.LifecycleProperties`
 源类型:`org.springframework.boot.autoconfigure.context.LifecycleProperties`
@@ -1996,6 +2135,7 @@
 | timeout-per-shutdown-phase | java.time.Duration | Timeout for the shutdown of any phase (group of SmartLifecycle beans with the same 'phase' value). | 30s |  | 
 
 ### spring.liquibase.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties`
 源类型:`org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties`
@@ -2023,6 +2163,7 @@
 | user | java.lang.String | Login user of the database to migrate. |  |  | 
 
 ### spring.mail.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.mail.MailProperties`
 源类型:`org.springframework.boot.autoconfigure.mail.MailProperties`
@@ -2040,6 +2181,7 @@
 | username | java.lang.String | Login user of the SMTP server. |  |  | 
 
 ### spring.messages.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.context.MessageSourceProperties`
 源类型:`org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration`
@@ -2054,6 +2196,7 @@
 | use-code-as-default-message | java.lang.Boolean | Whether to use the message code as the default message instead of throwing a "NoSuchMessageException". Recommended during development only. | false |  | 
 
 ### spring.mongodb.embedded.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.mongo.embedded.EmbeddedMongoProperties`
 源类型:`org.springframework.boot.autoconfigure.mongo.embedded.EmbeddedMongoProperties`
@@ -2064,6 +2207,7 @@
 | version | java.lang.String | Version of Mongo to use. |  |  | 
 
 ### spring.mongodb.embedded.storage.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.mongo.embedded.EmbeddedMongoProperties$Storage`
 源类型:`org.springframework.boot.autoconfigure.mongo.embedded.EmbeddedMongoProperties`
@@ -2075,6 +2219,7 @@
 | repl-set-name | java.lang.String | Name of the replica set. |  |  | 
 
 ### spring.mustache.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.mustache.MustacheProperties`
 源类型:`org.springframework.boot.autoconfigure.mustache.MustacheProperties`
@@ -2097,6 +2242,7 @@
 | view-names | java.lang.String[] | View names that can be resolved. |  |  | 
 
 ### spring.mvc.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties`
 源类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties`
@@ -2112,9 +2258,10 @@
 | publish-request-handled-events | java.lang.Boolean | Whether to publish a ServletRequestHandledEvent at the end of each request. | true |  | 
 | static-path-pattern | java.lang.String | Path pattern used for static resources. | /** |  | 
 | throw-exception-if-no-handler-found | java.lang.Boolean | Whether a "NoHandlerFoundException" should be thrown if no Handler was found to process a request. | false |  | 
-| date-format | java.lang.String | null |  | true,spring.mvc.format.date | 
+| ~~date-format~~ | java.lang.String | null |  | true,spring.mvc.format.date | 
 
 ### spring.mvc.async.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties$Async`
 源类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties`
@@ -2124,6 +2271,7 @@
 | request-timeout | java.time.Duration | Amount of time before asynchronous request handling times out. If this value is not set, the default timeout of the underlying implementation is used. |  |  | 
 
 ### spring.mvc.contentnegotiation.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties$Contentnegotiation`
 源类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties`
@@ -2133,9 +2281,10 @@
 | favor-parameter | java.lang.Boolean | Whether a request parameter ("format" by default) should be used to determine the requested media type. | false |  | 
 | media-types | java.util.Map<java.lang.String,org.springframework.http.MediaType> | Map file extensions to media types for content negotiation. For instance, yml to text/yaml. |  |  | 
 | parameter-name | java.lang.String | Query parameter name to use when "favor-parameter" is enabled. |  |  | 
-| favor-path-extension | java.lang.Boolean | Whether the path extension in the URL path should be used to determine the requested media type. If enabled a request "/users.pdf" will be interpreted as a request for "application/pdf" regardless of the 'Accept' header. | false | true,Use of path extensions for request mapping and for content negotiation is discouraged. | 
+| ~~favor-path-extension~~ | java.lang.Boolean | Whether the path extension in the URL path should be used to determine the requested media type. If enabled a request "/users.pdf" will be interpreted as a request for "application/pdf" regardless of the 'Accept' header. | false | true,Use of path extensions for request mapping and for content negotiation is discouraged. | 
 
 ### spring.mvc.format.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties$Format`
 源类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties`
@@ -2147,6 +2296,7 @@
 | time | java.lang.String | Time format to use, for example 'HH:mm:ss'. |  |  | 
 
 ### spring.mvc.pathmatch.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties$Pathmatch`
 源类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties`
@@ -2154,10 +2304,11 @@
 | 名称 | 类型 | 描述 | 默认值 | 过期替代 |
 |-----|------|-----|-------|---------|
 | matching-strategy | org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties$MatchingStrategy | Choice of strategy for matching request paths against registered mappings. | path-pattern-parser |  | 
-| use-registered-suffix-pattern | java.lang.Boolean | Whether suffix pattern matching should work only against extensions registered with "spring.mvc.contentnegotiation.media-types.*". This is generally recommended to reduce ambiguity and to avoid issues such as when a "." appears in the path for other reasons. Enabling this option is not compatible with the PathPatternParser matching strategy. | false | true,Use of path extensions for request mapping and for content negotiation is discouraged. | 
-| use-suffix-pattern | java.lang.Boolean | Whether to use suffix pattern match (".*") when matching patterns to requests. If enabled a method mapped to "/users" also matches to "/users.*". Enabling this option is not compatible with the PathPatternParser matching strategy. | false | true,Use of path extensions for request mapping and for content negotiation is discouraged. | 
+| ~~use-registered-suffix-pattern~~ | java.lang.Boolean | Whether suffix pattern matching should work only against extensions registered with "spring.mvc.contentnegotiation.media-types.*". This is generally recommended to reduce ambiguity and to avoid issues such as when a "." appears in the path for other reasons. Enabling this option is not compatible with the PathPatternParser matching strategy. | false | true,Use of path extensions for request mapping and for content negotiation is discouraged. | 
+| ~~use-suffix-pattern~~ | java.lang.Boolean | Whether to use suffix pattern match (".*") when matching patterns to requests. If enabled a method mapped to "/users" also matches to "/users.*". Enabling this option is not compatible with the PathPatternParser matching strategy. | false | true,Use of path extensions for request mapping and for content negotiation is discouraged. | 
 
 ### spring.mvc.servlet.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties$Servlet`
 源类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties`
@@ -2168,6 +2319,7 @@
 | path | java.lang.String | Path of the dispatcher servlet. Setting a custom value for this property is not compatible with the PathPatternParser matching strategy. | / |  | 
 
 ### spring.mvc.view.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties$View`
 源类型:`org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties`
@@ -2178,6 +2330,7 @@
 | suffix | java.lang.String | Spring MVC view suffix. |  |  | 
 
 ### spring.neo4j.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.neo4j.Neo4jProperties`
 源类型:`org.springframework.boot.autoconfigure.neo4j.Neo4jProperties`
@@ -2189,6 +2342,7 @@
 | uri | java.net.URI | URI used by the driver. | bolt://localhost:7687 |  | 
 
 ### spring.neo4j.authentication.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.neo4j.Neo4jProperties$Authentication`
 源类型:`org.springframework.boot.autoconfigure.neo4j.Neo4jProperties`
@@ -2201,6 +2355,7 @@
 | username | java.lang.String | Login user of the server. |  |  | 
 
 ### spring.neo4j.pool.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.neo4j.Neo4jProperties$Pool`
 源类型:`org.springframework.boot.autoconfigure.neo4j.Neo4jProperties`
@@ -2215,6 +2370,7 @@
 | metrics-enabled | java.lang.Boolean | Whether to enable metrics. | false |  | 
 
 ### spring.neo4j.security.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.neo4j.Neo4jProperties$Security`
 源类型:`org.springframework.boot.autoconfigure.neo4j.Neo4jProperties`
@@ -2227,6 +2383,7 @@
 | trust-strategy | org.springframework.boot.autoconfigure.neo4j.Neo4jProperties$Security$TrustStrategy | Trust strategy to use. | trust-system-ca-signed-certificates |  | 
 
 ### spring.netty.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.netty.NettyProperties`
 源类型:`org.springframework.boot.autoconfigure.netty.NettyProperties`
@@ -2236,6 +2393,7 @@
 | leak-detection | org.springframework.boot.autoconfigure.netty.NettyProperties$LeakDetection | Level of leak detection for reference-counted buffers. | simple |  | 
 
 ### spring.quartz.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.quartz.QuartzProperties`
 源类型:`org.springframework.boot.autoconfigure.quartz.QuartzProperties`
@@ -2251,6 +2409,7 @@
 | wait-for-jobs-to-complete-on-shutdown | java.lang.Boolean | Whether to wait for running jobs to complete on shutdown. | false |  | 
 
 ### spring.quartz.jdbc.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.quartz.QuartzProperties$Jdbc`
 源类型:`org.springframework.boot.autoconfigure.quartz.QuartzProperties`
@@ -2263,6 +2422,7 @@
 | schema | java.lang.String | Path to the SQL file to use to initialize the database schema. | classpath:org/quartz/impl/jdbcjobstore/tables_@@platform@@.sql |  | 
 
 ### spring.r2dbc.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.r2dbc.R2dbcProperties`
 源类型:`org.springframework.boot.autoconfigure.r2dbc.R2dbcProperties`
@@ -2277,6 +2437,7 @@
 | username | java.lang.String | Login username of the database. Set if no username is specified in the url. |  |  | 
 
 ### spring.r2dbc.pool.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.r2dbc.R2dbcProperties$Pool`
 源类型:`org.springframework.boot.autoconfigure.r2dbc.R2dbcProperties`
@@ -2294,6 +2455,7 @@
 | validation-query | java.lang.String | Validation query. |  |  | 
 
 ### spring.rabbitmq.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties`
@@ -2315,6 +2477,7 @@
 | virtual-host | java.lang.String | Virtual host to use when connecting to the broker. |  |  | 
 
 ### spring.rabbitmq.cache.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Cache`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties`
@@ -2323,6 +2486,7 @@
 |-----|------|-----|-------|---------|
 
 ### spring.rabbitmq.cache.channel.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Cache$Channel`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Cache`
@@ -2333,6 +2497,7 @@
 | size | java.lang.Integer | Number of channels to retain in the cache. When "check-timeout" > 0, max channels per connection. |  |  | 
 
 ### spring.rabbitmq.cache.connection.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Cache$Connection`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Cache`
@@ -2343,6 +2508,7 @@
 | size | java.lang.Integer | Number of connections to cache. Only applies when mode is CONNECTION. |  |  | 
 
 ### spring.rabbitmq.listener.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Listener`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties`
@@ -2352,6 +2518,7 @@
 | type | org.springframework.boot.autoconfigure.amqp.RabbitProperties$ContainerType | Listener container type. | simple |  | 
 
 ### spring.rabbitmq.listener.direct.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$DirectContainer`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Listener`
@@ -2368,6 +2535,7 @@
 | prefetch | java.lang.Integer | Maximum number of unacknowledged messages that can be outstanding at each consumer. |  |  | 
 
 ### spring.rabbitmq.listener.direct.retry.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$ListenerRetry`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$DirectContainer`
@@ -2382,6 +2550,7 @@
 | stateless | java.lang.Boolean | Whether retries are stateless or stateful. | true |  | 
 
 ### spring.rabbitmq.listener.simple.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$SimpleContainer`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Listener`
@@ -2401,6 +2570,7 @@
 | prefetch | java.lang.Integer | Maximum number of unacknowledged messages that can be outstanding at each consumer. |  |  | 
 
 ### spring.rabbitmq.listener.simple.retry.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$ListenerRetry`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$SimpleContainer`
@@ -2415,6 +2585,7 @@
 | stateless | java.lang.Boolean | Whether retries are stateless or stateful. | true |  | 
 
 ### spring.rabbitmq.listener.stream.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$StreamContainer`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Listener`
@@ -2425,6 +2596,7 @@
 | native-listener | java.lang.Boolean | Whether the container will support listeners that consume native stream messages instead of Spring AMQP messages. | false |  | 
 
 ### spring.rabbitmq.ssl.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Ssl`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties`
@@ -2445,6 +2617,7 @@
 | verify-hostname | java.lang.Boolean | Whether to enable hostname verification. | true |  | 
 
 ### spring.rabbitmq.stream.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Stream`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties`
@@ -2457,6 +2630,7 @@
 | username | java.lang.String | Login user to authenticate to the broker. When not set, spring.rabbitmq.username is used. |  |  | 
 
 ### spring.rabbitmq.template.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Template`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties`
@@ -2471,6 +2645,7 @@
 | routing-key | java.lang.String | Value of a default routing key to use for send operations. |  |  | 
 
 ### spring.rabbitmq.template.retry.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Retry`
 源类型:`org.springframework.boot.autoconfigure.amqp.RabbitProperties$Template`
@@ -2484,6 +2659,7 @@
 | multiplier | java.lang.Double | Multiplier to apply to the previous retry interval. | 1 |  | 
 
 ### spring.redis.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties`
 源类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties`
@@ -2503,6 +2679,7 @@
 | username | java.lang.String | Login username of the redis server. |  |  | 
 
 ### spring.redis.cluster.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties$Cluster`
 源类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties`
@@ -2513,6 +2690,7 @@
 | nodes | java.util.List<java.lang.String> | Comma-separated list of "host:port" pairs to bootstrap from. This represents an "initial" list of cluster nodes and is required to have at least one entry. |  |  | 
 
 ### spring.redis.jedis.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties$Jedis`
 源类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties`
@@ -2521,6 +2699,7 @@
 |-----|------|-----|-------|---------|
 
 ### spring.redis.jedis.pool.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties$Pool`
 源类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties$Jedis`
@@ -2535,6 +2714,7 @@
 | time-between-eviction-runs | java.time.Duration | Time between runs of the idle object evictor thread. When positive, the idle object evictor thread starts, otherwise no idle object eviction is performed. |  |  | 
 
 ### spring.redis.lettuce.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties$Lettuce`
 源类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties`
@@ -2544,6 +2724,7 @@
 | shutdown-timeout | java.time.Duration | Shutdown timeout. | 100ms |  | 
 
 ### spring.redis.lettuce.cluster.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties$Lettuce$Cluster`
 源类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties$Lettuce`
@@ -2552,6 +2733,7 @@
 |-----|------|-----|-------|---------|
 
 ### spring.redis.lettuce.cluster.refresh.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties$Lettuce$Cluster$Refresh`
 源类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties$Lettuce$Cluster`
@@ -2563,6 +2745,7 @@
 | period | java.time.Duration | Cluster topology refresh period. |  |  | 
 
 ### spring.redis.lettuce.pool.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties$Pool`
 源类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties$Lettuce`
@@ -2577,6 +2760,7 @@
 | time-between-eviction-runs | java.time.Duration | Time between runs of the idle object evictor thread. When positive, the idle object evictor thread starts, otherwise no idle object eviction is performed. |  |  | 
 
 ### spring.redis.sentinel.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties$Sentinel`
 源类型:`org.springframework.boot.autoconfigure.data.redis.RedisProperties`
@@ -2588,6 +2772,7 @@
 | password | java.lang.String | Password for authenticating with sentinel(s). |  |  | 
 
 ### spring.rsocket.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.rsocket.RSocketProperties`
 源类型:`org.springframework.boot.autoconfigure.rsocket.RSocketProperties`
@@ -2596,6 +2781,7 @@
 |-----|------|-----|-------|---------|
 
 ### spring.rsocket.server.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.rsocket.RSocketProperties$Server`
 源类型:`org.springframework.boot.autoconfigure.rsocket.RSocketProperties`
@@ -2609,6 +2795,7 @@
 | transport | org.springframework.boot.rsocket.server.RSocketServer$Transport | RSocket transport protocol. | tcp |  | 
 
 ### spring.rsocket.server.ssl.xx
+
 描述:
 类型:`org.springframework.boot.web.server.Ssl`
 源类型:`org.springframework.boot.autoconfigure.rsocket.RSocketProperties$Server`
@@ -2632,6 +2819,7 @@
 | trust-store-type | java.lang.String | null |  |  | 
 
 ### spring.security.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.security.SecurityProperties`
 源类型:`org.springframework.boot.autoconfigure.security.SecurityProperties`
@@ -2640,6 +2828,7 @@
 |-----|------|-----|-------|---------|
 
 ### spring.security.filter.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.security.SecurityProperties$Filter`
 源类型:`org.springframework.boot.autoconfigure.security.SecurityProperties`
@@ -2650,6 +2839,7 @@
 | order | java.lang.Integer | Security filter chain order. | -100 |  | 
 
 ### spring.security.oauth2.client.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientProperties`
 源类型:`org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientProperties`
@@ -2660,6 +2850,7 @@
 | registration | java.util.Map<java.lang.String,org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientProperties$Registration> | OAuth client registrations. |  |  | 
 
 ### spring.security.oauth2.resourceserver.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.security.oauth2.resource.OAuth2ResourceServerProperties`
 源类型:`org.springframework.boot.autoconfigure.security.oauth2.resource.OAuth2ResourceServerProperties`
@@ -2668,6 +2859,7 @@
 |-----|------|-----|-------|---------|
 
 ### spring.security.oauth2.resourceserver.jwt.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.security.oauth2.resource.OAuth2ResourceServerProperties$Jwt`
 源类型:`org.springframework.boot.autoconfigure.security.oauth2.resource.OAuth2ResourceServerProperties`
@@ -2680,6 +2872,7 @@
 | public-key-location | org.springframework.core.io.Resource | Location of the file containing the public key used to verify a JWT. |  |  | 
 
 ### spring.security.oauth2.resourceserver.opaquetoken.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.security.oauth2.resource.OAuth2ResourceServerProperties$Opaquetoken`
 源类型:`org.springframework.boot.autoconfigure.security.oauth2.resource.OAuth2ResourceServerProperties`
@@ -2691,6 +2884,7 @@
 | introspection-uri | java.lang.String | OAuth 2.0 endpoint through which token introspection is accomplished. |  |  | 
 
 ### spring.security.saml2.relyingparty.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.security.saml2.Saml2RelyingPartyProperties`
 源类型:`org.springframework.boot.autoconfigure.security.saml2.Saml2RelyingPartyProperties`
@@ -2700,6 +2894,7 @@
 | registration | java.util.Map<java.lang.String,org.springframework.boot.autoconfigure.security.saml2.Saml2RelyingPartyProperties$Registration> | SAML2 relying party registrations. |  |  | 
 
 ### spring.security.user.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.security.SecurityProperties$User`
 源类型:`org.springframework.boot.autoconfigure.security.SecurityProperties`
@@ -2711,6 +2906,7 @@
 | roles | java.util.List<java.lang.String> | Granted roles for the default user name. |  |  | 
 
 ### spring.sendgrid.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.sendgrid.SendGridProperties`
 源类型:`org.springframework.boot.autoconfigure.sendgrid.SendGridProperties`
@@ -2720,6 +2916,7 @@
 | api-key | java.lang.String | SendGrid API key. |  |  | 
 
 ### spring.sendgrid.proxy.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.sendgrid.SendGridProperties$Proxy`
 源类型:`org.springframework.boot.autoconfigure.sendgrid.SendGridProperties`
@@ -2730,6 +2927,7 @@
 | port | java.lang.Integer | SendGrid proxy port. |  |  | 
 
 ### spring.servlet.multipart.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.servlet.MultipartProperties`
 源类型:`org.springframework.boot.autoconfigure.web.servlet.MultipartProperties`
@@ -2744,6 +2942,7 @@
 | resolve-lazily | java.lang.Boolean | Whether to resolve the multipart request lazily at the time of file or parameter access. | false |  | 
 
 ### spring.session.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.session.SessionProperties`
 源类型:`org.springframework.boot.autoconfigure.session.SessionProperties`
@@ -2754,6 +2953,7 @@
 | timeout | java.time.Duration | Session timeout. If a duration suffix is not specified, seconds will be used. |  |  | 
 
 ### spring.session.hazelcast.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.session.HazelcastSessionProperties`
 源类型:`org.springframework.boot.autoconfigure.session.HazelcastSessionProperties`
@@ -2765,6 +2965,7 @@
 | save-mode | org.springframework.session.SaveMode | Sessions save mode. Determines how session changes are tracked and saved to the session store. | on-set-attribute |  | 
 
 ### spring.session.jdbc.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.session.JdbcSessionProperties`
 源类型:`org.springframework.boot.autoconfigure.session.JdbcSessionProperties`
@@ -2780,6 +2981,7 @@
 | table-name | java.lang.String | Name of the database table used to store sessions. | SPRING_SESSION |  | 
 
 ### spring.session.mongodb.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.session.MongoSessionProperties`
 源类型:`org.springframework.boot.autoconfigure.session.MongoSessionProperties`
@@ -2789,6 +2991,7 @@
 | collection-name | java.lang.String | Collection name used to store sessions. | sessions |  | 
 
 ### spring.session.redis.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.session.RedisSessionProperties`
 源类型:`org.springframework.boot.autoconfigure.session.RedisSessionProperties`
@@ -2802,6 +3005,7 @@
 | save-mode | org.springframework.session.SaveMode | Sessions save mode. Determines how session changes are tracked and saved to the session store. | on-set-attribute |  | 
 
 ### spring.session.servlet.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.session.SessionProperties$Servlet`
 源类型:`org.springframework.boot.autoconfigure.session.SessionProperties`
@@ -2812,6 +3016,7 @@
 | filter-order | java.lang.Integer | Session repository filter order. |  |  | 
 
 ### spring.sql.init.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.sql.init.SqlInitializationProperties`
 源类型:`org.springframework.boot.autoconfigure.sql.init.SqlInitializationProperties`
@@ -2829,6 +3034,7 @@
 | username | java.lang.String | Username of the database to use when applying initialization scripts (if different). |  |  | 
 
 ### spring.task.execution.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.task.TaskExecutionProperties`
 源类型:`org.springframework.boot.autoconfigure.task.TaskExecutionProperties`
@@ -2838,6 +3044,7 @@
 | thread-name-prefix | java.lang.String | Prefix to use for the names of newly created threads. | task- |  | 
 
 ### spring.task.execution.pool.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.task.TaskExecutionProperties$Pool`
 源类型:`org.springframework.boot.autoconfigure.task.TaskExecutionProperties`
@@ -2851,6 +3058,7 @@
 | queue-capacity | java.lang.Integer | Queue capacity. An unbounded capacity does not increase the pool and therefore ignores the "max-size" property. |  |  | 
 
 ### spring.task.execution.shutdown.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.task.TaskExecutionProperties$Shutdown`
 源类型:`org.springframework.boot.autoconfigure.task.TaskExecutionProperties`
@@ -2861,6 +3069,7 @@
 | await-termination-period | java.time.Duration | Maximum time the executor should wait for remaining tasks to complete. |  |  | 
 
 ### spring.task.scheduling.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.task.TaskSchedulingProperties`
 源类型:`org.springframework.boot.autoconfigure.task.TaskSchedulingProperties`
@@ -2870,6 +3079,7 @@
 | thread-name-prefix | java.lang.String | Prefix to use for the names of newly created threads. | scheduling- |  | 
 
 ### spring.task.scheduling.pool.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.task.TaskSchedulingProperties$Pool`
 源类型:`org.springframework.boot.autoconfigure.task.TaskSchedulingProperties`
@@ -2879,6 +3089,7 @@
 | size | java.lang.Integer | Maximum allowed number of threads. | 1 |  | 
 
 ### spring.task.scheduling.shutdown.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.task.TaskSchedulingProperties$Shutdown`
 源类型:`org.springframework.boot.autoconfigure.task.TaskSchedulingProperties`
@@ -2889,6 +3100,7 @@
 | await-termination-period | java.time.Duration | Maximum time the executor should wait for remaining tasks to complete. |  |  | 
 
 ### spring.thymeleaf.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties`
 源类型:`org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties`
@@ -2910,6 +3122,7 @@
 | view-names | java.lang.String[] | Comma-separated list of view names (patterns allowed) that can be resolved. |  |  | 
 
 ### spring.thymeleaf.reactive.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties$Reactive`
 源类型:`org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties`
@@ -2922,6 +3135,7 @@
 | media-types | java.util.List<org.springframework.http.MediaType> | Media types supported by the view technology. |  |  | 
 
 ### spring.thymeleaf.servlet.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties$Servlet`
 源类型:`org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties`
@@ -2932,6 +3146,7 @@
 | produce-partial-output-while-processing | java.lang.Boolean | Whether Thymeleaf should start writing partial output as soon as possible or buffer until template processing is finished. | true |  | 
 
 ### spring.transaction.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.transaction.TransactionProperties`
 源类型:`org.springframework.boot.autoconfigure.transaction.TransactionProperties`
@@ -2942,6 +3157,7 @@
 | rollback-on-commit-failure | java.lang.Boolean | Whether to roll back on commit failures. |  |  | 
 
 ### spring.web.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.WebProperties`
 源类型:`org.springframework.boot.autoconfigure.web.WebProperties`
@@ -2952,6 +3168,7 @@
 | locale-resolver | org.springframework.boot.autoconfigure.web.WebProperties$LocaleResolver | Define how the locale should be resolved. | accept-header |  | 
 
 ### spring.web.resources.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.WebProperties$Resources`
 源类型:`org.springframework.boot.autoconfigure.web.WebProperties`
@@ -2962,6 +3179,7 @@
 | static-locations | java.lang.String[] | Locations of static resources. Defaults to classpath:[/META-INF/resources/, /resources/, /static/, /public/]. | ["classpath:/META-INF/resources/","classpath:/resources/","classpath:/static/","classpath:/public/"] |  | 
 
 ### spring.web.resources.cache.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.WebProperties$Resources$Cache`
 源类型:`org.springframework.boot.autoconfigure.web.WebProperties$Resources`
@@ -2972,6 +3190,7 @@
 | use-last-modified | java.lang.Boolean | Whether we should use the "lastModified" metadata of the files in HTTP caching headers. | true |  | 
 
 ### spring.web.resources.cache.cachecontrol.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.WebProperties$Resources$Cache$Cachecontrol`
 源类型:`org.springframework.boot.autoconfigure.web.WebProperties$Resources$Cache`
@@ -2991,6 +3210,7 @@
 | stale-while-revalidate | java.time.Duration | Maximum time the response can be served after it becomes stale, in seconds if no duration suffix is not specified. |  |  | 
 
 ### spring.web.resources.chain.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.WebProperties$Resources$Chain`
 源类型:`org.springframework.boot.autoconfigure.web.WebProperties$Resources`
@@ -3002,6 +3222,7 @@
 | enabled | java.lang.Boolean | Whether to enable the Spring Resource Handling chain. By default, disabled unless at least one strategy has been enabled. |  |  | 
 
 ### spring.web.resources.chain.strategy.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.WebProperties$Resources$Chain$Strategy`
 源类型:`org.springframework.boot.autoconfigure.web.WebProperties$Resources$Chain`
@@ -3010,6 +3231,7 @@
 |-----|------|-----|-------|---------|
 
 ### spring.web.resources.chain.strategy.content.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.WebProperties$Resources$Chain$Strategy$Content`
 源类型:`org.springframework.boot.autoconfigure.web.WebProperties$Resources$Chain$Strategy`
@@ -3020,6 +3242,7 @@
 | paths | java.lang.String[] | Comma-separated list of patterns to apply to the content Version Strategy. | ["/**"] |  | 
 
 ### spring.web.resources.chain.strategy.fixed.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.WebProperties$Resources$Chain$Strategy$Fixed`
 源类型:`org.springframework.boot.autoconfigure.web.WebProperties$Resources$Chain$Strategy`
@@ -3031,6 +3254,7 @@
 | version | java.lang.String | Version string to use for the fixed Version Strategy. |  |  | 
 
 ### spring.webflux.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.reactive.WebFluxProperties`
 源类型:`org.springframework.boot.autoconfigure.web.reactive.WebFluxProperties`
@@ -3041,6 +3265,7 @@
 | static-path-pattern | java.lang.String | Path pattern used for static resources. | /** |  | 
 
 ### spring.webflux.format.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.reactive.WebFluxProperties$Format`
 源类型:`org.springframework.boot.autoconfigure.web.reactive.WebFluxProperties`
@@ -3052,6 +3277,7 @@
 | time | java.lang.String | Time format to use, for example 'HH:mm:ss'. |  |  | 
 
 ### spring.webflux.multipart.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.reactive.ReactiveMultipartProperties`
 源类型:`org.springframework.boot.autoconfigure.web.reactive.ReactiveMultipartProperties`
@@ -3067,6 +3293,7 @@
 | streaming | java.lang.Boolean | Whether to stream directly from the parsed input buffer stream without storing in memory nor file. Default is non-streaming. | false |  | 
 
 ### spring.webflux.session.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.reactive.WebFluxProperties$Session`
 源类型:`org.springframework.boot.autoconfigure.web.reactive.WebFluxProperties`
@@ -3075,15 +3302,17 @@
 |-----|------|-----|-------|---------|
 
 ### spring.webflux.session.cookie.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.web.reactive.WebFluxProperties$Cookie`
 源类型:`org.springframework.boot.autoconfigure.web.reactive.WebFluxProperties$Session`
 
 | 名称 | 类型 | 描述 | 默认值 | 过期替代 |
 |-----|------|-----|-------|---------|
-| same-site | org.springframework.boot.autoconfigure.web.reactive.WebFluxProperties$SameSite | SameSite attribute value for session Cookies. |  | true,server.reactive.session.cookie.same-site | 
+| ~~same-site~~ | org.springframework.boot.autoconfigure.web.reactive.WebFluxProperties$SameSite | SameSite attribute value for session Cookies. |  | true,server.reactive.session.cookie.same-site | 
 
 ### spring.webservices.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.webservices.WebServicesProperties`
 源类型:`org.springframework.boot.autoconfigure.webservices.WebServicesProperties`
@@ -3093,6 +3322,7 @@
 | path | java.lang.String | Path that serves as the base URI for the services. | /services |  | 
 
 ### spring.webservices.servlet.xx
+
 描述:
 类型:`org.springframework.boot.autoconfigure.webservices.WebServicesProperties$Servlet`
 源类型:`org.springframework.boot.autoconfigure.webservices.WebServicesProperties`
@@ -3103,202 +3333,203 @@
 | load-on-startup | java.lang.Integer | Load on startup priority of the Spring Web Services servlet. | -1 |  | 
 
 ### 未分类
+
 描述:
 
 | 名称 | 类型 | 描述 | 默认值 | 过期替代 |
 |-----|------|-----|-------|---------|
-| server.connection-timeout | java.time.Duration | null |  | true,error,Each server behaves differently. Use server specific properties instead. | 
-| server.jetty.accesslog.date-format | null | null |  | true,error,server.jetty.accesslog.custom-format | 
-| server.jetty.accesslog.extended-format | null | null |  | true,error,server.jetty.accesslog.format | 
-| server.jetty.accesslog.locale | null | null |  | true,error,server.jetty.accesslog.custom-format | 
-| server.jetty.accesslog.log-cookies | null | null |  | true,error,server.jetty.accesslog.custom-format | 
-| server.jetty.accesslog.log-latency | null | null |  | true,error,server.jetty.accesslog.custom-format | 
-| server.jetty.accesslog.log-server | null | null |  | true,error,server.jetty.accesslog.custom-format | 
-| server.jetty.accesslog.time-zone | null | null |  | true,error,server.jetty.accesslog.custom-format | 
-| server.jetty.max-http-post-size | org.springframework.util.unit.DataSize | null |  | true,error,server.jetty.max-http-form-post-size | 
-| server.max-http-post-size | java.lang.Integer | Maximum size in bytes of the HTTP post content. | 0 | true,error,Use dedicated property for each container. | 
+| ~~server.connection-timeout~~ | java.time.Duration | null |  | true,error,Each server behaves differently. Use server specific properties instead. | 
+| ~~server.jetty.accesslog.date-format~~ | null | null |  | true,error,server.jetty.accesslog.custom-format | 
+| ~~server.jetty.accesslog.extended-format~~ | null | null |  | true,error,server.jetty.accesslog.format | 
+| ~~server.jetty.accesslog.locale~~ | null | null |  | true,error,server.jetty.accesslog.custom-format | 
+| ~~server.jetty.accesslog.log-cookies~~ | null | null |  | true,error,server.jetty.accesslog.custom-format | 
+| ~~server.jetty.accesslog.log-latency~~ | null | null |  | true,error,server.jetty.accesslog.custom-format | 
+| ~~server.jetty.accesslog.log-server~~ | null | null |  | true,error,server.jetty.accesslog.custom-format | 
+| ~~server.jetty.accesslog.time-zone~~ | null | null |  | true,error,server.jetty.accesslog.custom-format | 
+| ~~server.jetty.max-http-post-size~~ | org.springframework.util.unit.DataSize | null |  | true,error,server.jetty.max-http-form-post-size | 
+| ~~server.max-http-post-size~~ | java.lang.Integer | Maximum size in bytes of the HTTP post content. | 0 | true,error,Use dedicated property for each container. | 
 | server.servlet.encoding.enabled | java.lang.Boolean | Whether to enable http encoding support. | true |  | 
-| server.servlet.path | java.lang.String | Path of the main dispatcher servlet. | / | true,error,spring.mvc.servlet.path | 
-| server.tomcat.max-http-post-size | org.springframework.util.unit.DataSize | null |  | true,error,server.tomcat.max-http-form-post-size | 
-| server.undertow.buffers-per-region | java.lang.Integer | Number of buffer per region. |  | true,error | 
-| server.use-forward-headers | java.lang.Boolean | null |  | true,error,server.forward-headers-strategy,Replaced to support additional strategies. | 
-| spring.activemq.pool.create-connection-on-startup | java.lang.Boolean | Whether to create a connection on startup. Can be used to warm up the pool on startup. | true | true,error | 
-| spring.activemq.pool.expiry-timeout | java.time.Duration | Connection expiration timeout. | 0ms | true,error | 
-| spring.activemq.pool.maximum-active-session-per-connection | null | null |  | true,spring.activemq.pool.max-sessions-per-connection | 
-| spring.activemq.pool.reconnect-on-exception | java.lang.Boolean | Reset the connection when a "JMSException" occurs. | true | true,error | 
+| ~~server.servlet.path~~ | java.lang.String | Path of the main dispatcher servlet. | / | true,error,spring.mvc.servlet.path | 
+| ~~server.tomcat.max-http-post-size~~ | org.springframework.util.unit.DataSize | null |  | true,error,server.tomcat.max-http-form-post-size | 
+| ~~server.undertow.buffers-per-region~~ | java.lang.Integer | Number of buffer per region. |  | true,error | 
+| ~~server.use-forward-headers~~ | java.lang.Boolean | null |  | true,error,server.forward-headers-strategy,Replaced to support additional strategies. | 
+| ~~spring.activemq.pool.create-connection-on-startup~~ | java.lang.Boolean | Whether to create a connection on startup. Can be used to warm up the pool on startup. | true | true,error | 
+| ~~spring.activemq.pool.expiry-timeout~~ | java.time.Duration | Connection expiration timeout. | 0ms | true,error | 
+| ~~spring.activemq.pool.maximum-active-session-per-connection~~ | null | null |  | true,spring.activemq.pool.max-sessions-per-connection | 
+| ~~spring.activemq.pool.reconnect-on-exception~~ | java.lang.Boolean | Reset the connection when a "JMSException" occurs. | true | true,error | 
 | spring.aop.auto | java.lang.Boolean | Add @EnableAspectJAutoProxy. | true |  | 
 | spring.aop.proxy-target-class | java.lang.Boolean | Whether subclass-based (CGLIB) proxies are to be created (true), as opposed to standard Java interface-based proxies (false). | true |  | 
 | spring.application.admin.enabled | java.lang.Boolean | Whether to enable admin features for the application. | false |  | 
 | spring.application.admin.jmx-name | java.lang.String | JMX name of the application admin MBean. | org.springframework.boot:type=Admin,name=SpringApplication |  | 
-| spring.artemis.pool.maximum-active-session-per-connection | null | null |  | true,spring.artemis.pool.max-sessions-per-connection | 
+| ~~spring.artemis.pool.maximum-active-session-per-connection~~ | null | null |  | true,spring.artemis.pool.max-sessions-per-connection | 
 | spring.autoconfigure.exclude | java.util.List<java.lang.Class> | Auto-configuration classes to exclude. |  |  | 
-| spring.batch.initializer.enabled | java.lang.Boolean | Create the required batch tables on startup if necessary. Enabled automatically if no custom table prefix is set or if a custom schema is configured. |  | true,error,spring.batch.jdbc.initialize-schema | 
+| ~~spring.batch.initializer.enabled~~ | java.lang.Boolean | Create the required batch tables on startup if necessary. Enabled automatically if no custom table prefix is set or if a custom schema is configured. |  | true,error,spring.batch.jdbc.initialize-schema | 
 | spring.batch.job.enabled | java.lang.Boolean | Execute all Spring Batch jobs in the context on startup. | true |  | 
-| spring.couchbase.bootstrap-hosts | java.util.List<java.lang.String> | Couchbase nodes (host or IP address) to bootstrap from. |  | true,error,spring.couchbase.connection-string | 
-| spring.couchbase.bucket.name | java.lang.String | Name of the bucket to connect to. |  | true,error,A bucket is no longer auto-configured. | 
-| spring.couchbase.bucket.password | java.lang.String | Password of the bucket. |  | true,error,A bucket is no longer auto-configured. | 
-| spring.couchbase.env.bootstrap.http-direct-port | java.lang.Integer | Port for the HTTP bootstrap. |  | true,error | 
-| spring.couchbase.env.bootstrap.http-ssl-port | java.lang.Integer | Port for the HTTPS bootstrap. |  | true,error | 
-| spring.couchbase.env.endpoints.key-value | java.lang.Integer | Number of sockets per node against the key/value service. |  | true,error | 
-| spring.couchbase.env.endpoints.query | java.lang.Integer | Number of sockets per node against the query (N1QL) service. |  | true,error | 
-| spring.couchbase.env.endpoints.queryservice.max-endpoints | java.lang.Integer | Maximum number of sockets per node. |  | true,error,spring.couchbase.env.io.max-endpoints | 
-| spring.couchbase.env.endpoints.queryservice.min-endpoints | java.lang.Integer | Minimum number of sockets per node. |  | true,error,spring.couchbase.env.io.min-endpoints | 
-| spring.couchbase.env.endpoints.view | java.lang.Integer | Number of sockets per node against the view service. |  | true,error | 
-| spring.couchbase.env.endpoints.viewservice.max-endpoints | java.lang.Integer | Maximum number of sockets per node. |  | true,error,spring.couchbase.env.io.max-endpoints | 
-| spring.couchbase.env.endpoints.viewservice.min-endpoints | java.lang.Integer | Minimum number of sockets per node. |  | true,error,spring.couchbase.env.io.min-endpoints | 
-| spring.couchbase.env.timeouts.socket-connect | java.time.Duration | Socket connect connections timeout. |  | true,error | 
+| ~~spring.couchbase.bootstrap-hosts~~ | java.util.List<java.lang.String> | Couchbase nodes (host or IP address) to bootstrap from. |  | true,error,spring.couchbase.connection-string | 
+| ~~spring.couchbase.bucket.name~~ | java.lang.String | Name of the bucket to connect to. |  | true,error,A bucket is no longer auto-configured. | 
+| ~~spring.couchbase.bucket.password~~ | java.lang.String | Password of the bucket. |  | true,error,A bucket is no longer auto-configured. | 
+| ~~spring.couchbase.env.bootstrap.http-direct-port~~ | java.lang.Integer | Port for the HTTP bootstrap. |  | true,error | 
+| ~~spring.couchbase.env.bootstrap.http-ssl-port~~ | java.lang.Integer | Port for the HTTPS bootstrap. |  | true,error | 
+| ~~spring.couchbase.env.endpoints.key-value~~ | java.lang.Integer | Number of sockets per node against the key/value service. |  | true,error | 
+| ~~spring.couchbase.env.endpoints.query~~ | java.lang.Integer | Number of sockets per node against the query (N1QL) service. |  | true,error | 
+| ~~spring.couchbase.env.endpoints.queryservice.max-endpoints~~ | java.lang.Integer | Maximum number of sockets per node. |  | true,error,spring.couchbase.env.io.max-endpoints | 
+| ~~spring.couchbase.env.endpoints.queryservice.min-endpoints~~ | java.lang.Integer | Minimum number of sockets per node. |  | true,error,spring.couchbase.env.io.min-endpoints | 
+| ~~spring.couchbase.env.endpoints.view~~ | java.lang.Integer | Number of sockets per node against the view service. |  | true,error | 
+| ~~spring.couchbase.env.endpoints.viewservice.max-endpoints~~ | java.lang.Integer | Maximum number of sockets per node. |  | true,error,spring.couchbase.env.io.max-endpoints | 
+| ~~spring.couchbase.env.endpoints.viewservice.min-endpoints~~ | java.lang.Integer | Minimum number of sockets per node. |  | true,error,spring.couchbase.env.io.min-endpoints | 
+| ~~spring.couchbase.env.timeouts.socket-connect~~ | java.time.Duration | Socket connect connections timeout. |  | true,error | 
 | spring.dao.exceptiontranslation.enabled | java.lang.Boolean | Whether to enable the PersistenceExceptionTranslationPostProcessor. | true |  | 
 | spring.data.cassandra.connection.connection-timeout | null | null | 5s |  | 
-| spring.data.cassandra.jmx-enabled | java.lang.Boolean | Whether to enable JMX reporting. Default to false as Cassandra JMX reporting is not compatible with Dropwizard Metrics. |  | true,error,Cassandra no longer provides JMX metrics. | 
-| spring.data.cassandra.load-balancing-policy | java.lang.Class | Class name of the load balancing policy. The class must have a default constructor. |  | true,error | 
-| spring.data.cassandra.pool.max-queue-size | java.lang.Integer | null |  | true,error,spring.data.cassandra.request.throttler.max-queue-size | 
-| spring.data.cassandra.pool.pool-timeout | java.time.Duration | Pool timeout when trying to acquire a connection from a host's pool. |  | true,error,No longer available. | 
-| spring.data.cassandra.reconnection-policy | java.lang.Class | Class name of the reconnection policy. The class must have a default constructor. |  | true,error | 
+| ~~spring.data.cassandra.jmx-enabled~~ | java.lang.Boolean | Whether to enable JMX reporting. Default to false as Cassandra JMX reporting is not compatible with Dropwizard Metrics. |  | true,error,Cassandra no longer provides JMX metrics. | 
+| ~~spring.data.cassandra.load-balancing-policy~~ | java.lang.Class | Class name of the load balancing policy. The class must have a default constructor. |  | true,error | 
+| ~~spring.data.cassandra.pool.max-queue-size~~ | java.lang.Integer | null |  | true,error,spring.data.cassandra.request.throttler.max-queue-size | 
+| ~~spring.data.cassandra.pool.pool-timeout~~ | java.time.Duration | Pool timeout when trying to acquire a connection from a host's pool. |  | true,error,No longer available. | 
+| ~~spring.data.cassandra.reconnection-policy~~ | java.lang.Class | Class name of the reconnection policy. The class must have a default constructor. |  | true,error | 
 | spring.data.cassandra.repositories.type | org.springframework.boot.autoconfigure.data.RepositoryType | Type of Cassandra repositories to enable. | auto |  | 
-| spring.data.cassandra.retry-policy | java.lang.Class | Class name of the retry policy. The class must have a default constructor. |  | true,error | 
-| spring.data.couchbase.consistency | org.springframework.data.couchbase.core.query.Consistency | null |  | true,error | 
+| ~~spring.data.cassandra.retry-policy~~ | java.lang.Class | Class name of the retry policy. The class must have a default constructor. |  | true,error | 
+| ~~spring.data.couchbase.consistency~~ | org.springframework.data.couchbase.core.query.Consistency | null |  | true,error | 
 | spring.data.couchbase.repositories.type | org.springframework.boot.autoconfigure.data.RepositoryType | Type of Couchbase repositories to enable. | auto |  | 
-| spring.data.elasticsearch.cluster-name | java.lang.String | Elasticsearch cluster name. |  | true,error | 
-| spring.data.elasticsearch.cluster-nodes | java.lang.String | Comma-separated list of cluster node addresses. |  | true,error | 
-| spring.data.elasticsearch.properties | java.util.Map<java.lang.String,java.lang.String> | Additional properties used to configure the client. |  | true,error | 
+| ~~spring.data.elasticsearch.cluster-name~~ | java.lang.String | Elasticsearch cluster name. |  | true,error | 
+| ~~spring.data.elasticsearch.cluster-nodes~~ | java.lang.String | Comma-separated list of cluster node addresses. |  | true,error | 
+| ~~spring.data.elasticsearch.properties~~ | java.util.Map<java.lang.String,java.lang.String> | Additional properties used to configure the client. |  | true,error | 
 | spring.data.elasticsearch.repositories.enabled | java.lang.Boolean | Whether to enable Elasticsearch repositories. | true |  | 
 | spring.data.jdbc.repositories.enabled | java.lang.Boolean | Whether to enable JDBC repositories. | true |  | 
 | spring.data.jpa.repositories.bootstrap-mode | org.springframework.data.repository.config.BootstrapMode | Bootstrap mode for JPA repositories. | default |  | 
 | spring.data.jpa.repositories.enabled | java.lang.Boolean | Whether to enable JPA repositories. | true |  | 
 | spring.data.ldap.repositories.enabled | java.lang.Boolean | Whether to enable LDAP repositories. | true |  | 
 | spring.data.mongodb.repositories.type | org.springframework.boot.autoconfigure.data.RepositoryType | Type of Mongo repositories to enable. | auto |  | 
-| spring.data.neo4j.auto-index | null | Auto index mode. | none | true,error,Automatic index creation is no longer supported. | 
-| spring.data.neo4j.embedded.enabled | java.lang.Boolean | Whether to enable embedded mode if the embedded driver is available. |  | true,error,Embedded mode is no longer supported, please use Testcontainers instead. | 
-| spring.data.neo4j.open-in-view | java.lang.Boolean | Register OpenSessionInViewInterceptor that binds a Neo4j Session to the thread for the entire processing of the request. |  | true,error | 
-| spring.data.neo4j.password | java.lang.String | Login password of the server. |  | true,warning,spring.neo4j.authentication.password | 
-| spring.data.neo4j.repositories.enabled | java.lang.Boolean | Whether to enable Neo4j repositories. | true | true,error,spring.data.neo4j.repositories.type | 
+| ~~spring.data.neo4j.auto-index~~ | null | Auto index mode. | none | true,error,Automatic index creation is no longer supported. | 
+| ~~spring.data.neo4j.embedded.enabled~~ | java.lang.Boolean | Whether to enable embedded mode if the embedded driver is available. |  | true,error,Embedded mode is no longer supported, please use Testcontainers instead. | 
+| ~~spring.data.neo4j.open-in-view~~ | java.lang.Boolean | Register OpenSessionInViewInterceptor that binds a Neo4j Session to the thread for the entire processing of the request. |  | true,error | 
+| ~~spring.data.neo4j.password~~ | java.lang.String | Login password of the server. |  | true,warning,spring.neo4j.authentication.password | 
+| ~~spring.data.neo4j.repositories.enabled~~ | java.lang.Boolean | Whether to enable Neo4j repositories. | true | true,error,spring.data.neo4j.repositories.type | 
 | spring.data.neo4j.repositories.type | org.springframework.boot.autoconfigure.data.RepositoryType | Type of Neo4j repositories to enable. | auto |  | 
-| spring.data.neo4j.uri | java.lang.String | URI used by the driver. Auto-detected by default. |  | true,warning,spring.neo4j.uri | 
-| spring.data.neo4j.use-native-types | java.lang.Boolean | Whether to use Neo4j native types wherever possible. |  | true,error,Native type support is now built-in. | 
-| spring.data.neo4j.username | java.lang.String | Login user of the server. |  | true,warning,spring.neo4j.authentication.password | 
+| ~~spring.data.neo4j.uri~~ | java.lang.String | URI used by the driver. Auto-detected by default. |  | true,warning,spring.neo4j.uri | 
+| ~~spring.data.neo4j.use-native-types~~ | java.lang.Boolean | Whether to use Neo4j native types wherever possible. |  | true,error,Native type support is now built-in. | 
+| ~~spring.data.neo4j.username~~ | java.lang.String | Login user of the server. |  | true,warning,spring.neo4j.authentication.password | 
 | spring.data.r2dbc.repositories.enabled | java.lang.Boolean | Whether to enable R2DBC repositories. | true |  | 
 | spring.data.redis.repositories.enabled | java.lang.Boolean | Whether to enable Redis repositories. | true |  | 
-| spring.datasource.jmx-enabled | java.lang.Boolean | Whether to enable JMX support (if provided by the underlying pool). | false | true,error,spring.datasource.tomcat.jmx-enabled | 
-| spring.elasticsearch.jest.connection-timeout | java.time.Duration | Connection timeout. |  | true,error | 
-| spring.elasticsearch.jest.multi-threaded | java.lang.Boolean | Whether to enable connection requests from multiple execution threads. |  | true,error | 
-| spring.elasticsearch.jest.password | java.lang.String | Login password. |  | true,error | 
-| spring.elasticsearch.jest.proxy.host | java.lang.String | Proxy host the HTTP client should use. |  | true,error | 
-| spring.elasticsearch.jest.proxy.port | java.lang.Integer | Proxy port the HTTP client should use. |  | true,error | 
-| spring.elasticsearch.jest.read-timeout | java.time.Duration | Read timeout. |  | true,error | 
-| spring.elasticsearch.jest.uris | java.util.List<java.lang.String> | Comma-separated list of the Elasticsearch instances to use. |  | true,error | 
-| spring.elasticsearch.jest.username | java.lang.String | Login username. |  | true,error | 
-| spring.flyway.error-handlers | org.flywaydb.core.api.errorhandler.ErrorHandler[] | null |  | true,error,Flyway pro edition only. | 
-| spring.flyway.sql-migration-suffix | java.lang.String | null |  | true,error,spring.flyway.sql-migration-suffixes | 
-| spring.flyway.vault-secrets | java.util.List<java.lang.String> | null |  | true,error,Removed in the open source release of Flyway 7.12. | 
-| spring.flyway.vault-token | java.lang.String | null |  | true,error,Removed in the open source release of Flyway 7.12. | 
-| spring.flyway.vault-url | java.lang.String | null |  | true,error,Removed in the open source release of Flyway 7.12. | 
-| spring.git.properties | java.lang.String | Resource reference to a generated git info properties file. |  | true,error,spring.info.git.location | 
-| spring.http.converters.preferred-json-mapper | java.lang.String | Preferred JSON mapper to use for HTTP message conversion. By default, auto-detected according to the environment. |  | true,error,spring.mvc.converters.preferred-json-mapper | 
-| spring.http.encoding.charset | java.nio.charset.Charset | Charset of HTTP requests and responses. Added to the Content-Type header if not set explicitly. |  | true,error,server.servlet.encoding.charset | 
-| spring.http.encoding.enabled | java.lang.Boolean | Whether to enable http encoding support. | true | true,error,server.servlet.encoding.enabled | 
-| spring.http.encoding.force | java.lang.Boolean | Whether to force the encoding to the configured charset on HTTP requests and responses. | false | true,error,server.servlet.encoding.force | 
-| spring.http.encoding.force-request | java.lang.Boolean | Whether to force the encoding to the configured charset on HTTP requests. Defaults to true when force has not been specified. | true | true,error,server.servlet.encoding.force-request | 
-| spring.http.encoding.force-response | java.lang.Boolean | Whether to force the encoding to the configured charset on HTTP responses. | false | true,error,server.servlet.encoding.force-response | 
-| spring.http.encoding.mapping | java.util.Map<java.util.Locale,java.nio.charset.Charset> | Locale in which to encode mapping. |  | true,error,server.servlet.encoding.mapping | 
-| spring.http.log-request-details | java.lang.Boolean | Whether logging of (potentially sensitive) request details at DEBUG and TRACE level is allowed. | false | true,error,spring.mvc.log-request-details | 
-| spring.jackson.joda-date-time-format | java.lang.String | Joda date time format string. If not configured, "date-format" is used as a fallback if it is configured with a format string. |  | true,error | 
+| ~~spring.datasource.jmx-enabled~~ | java.lang.Boolean | Whether to enable JMX support (if provided by the underlying pool). | false | true,error,spring.datasource.tomcat.jmx-enabled | 
+| ~~spring.elasticsearch.jest.connection-timeout~~ | java.time.Duration | Connection timeout. |  | true,error | 
+| ~~spring.elasticsearch.jest.multi-threaded~~ | java.lang.Boolean | Whether to enable connection requests from multiple execution threads. |  | true,error | 
+| ~~spring.elasticsearch.jest.password~~ | java.lang.String | Login password. |  | true,error | 
+| ~~spring.elasticsearch.jest.proxy.host~~ | java.lang.String | Proxy host the HTTP client should use. |  | true,error | 
+| ~~spring.elasticsearch.jest.proxy.port~~ | java.lang.Integer | Proxy port the HTTP client should use. |  | true,error | 
+| ~~spring.elasticsearch.jest.read-timeout~~ | java.time.Duration | Read timeout. |  | true,error | 
+| ~~spring.elasticsearch.jest.uris~~ | java.util.List<java.lang.String> | Comma-separated list of the Elasticsearch instances to use. |  | true,error | 
+| ~~spring.elasticsearch.jest.username~~ | java.lang.String | Login username. |  | true,error | 
+| ~~spring.flyway.error-handlers~~ | org.flywaydb.core.api.errorhandler.ErrorHandler[] | null |  | true,error,Flyway pro edition only. | 
+| ~~spring.flyway.sql-migration-suffix~~ | java.lang.String | null |  | true,error,spring.flyway.sql-migration-suffixes | 
+| ~~spring.flyway.vault-secrets~~ | java.util.List<java.lang.String> | null |  | true,error,Removed in the open source release of Flyway 7.12. | 
+| ~~spring.flyway.vault-token~~ | java.lang.String | null |  | true,error,Removed in the open source release of Flyway 7.12. | 
+| ~~spring.flyway.vault-url~~ | java.lang.String | null |  | true,error,Removed in the open source release of Flyway 7.12. | 
+| ~~spring.git.properties~~ | java.lang.String | Resource reference to a generated git info properties file. |  | true,error,spring.info.git.location | 
+| ~~spring.http.converters.preferred-json-mapper~~ | java.lang.String | Preferred JSON mapper to use for HTTP message conversion. By default, auto-detected according to the environment. |  | true,error,spring.mvc.converters.preferred-json-mapper | 
+| ~~spring.http.encoding.charset~~ | java.nio.charset.Charset | Charset of HTTP requests and responses. Added to the Content-Type header if not set explicitly. |  | true,error,server.servlet.encoding.charset | 
+| ~~spring.http.encoding.enabled~~ | java.lang.Boolean | Whether to enable http encoding support. | true | true,error,server.servlet.encoding.enabled | 
+| ~~spring.http.encoding.force~~ | java.lang.Boolean | Whether to force the encoding to the configured charset on HTTP requests and responses. | false | true,error,server.servlet.encoding.force | 
+| ~~spring.http.encoding.force-request~~ | java.lang.Boolean | Whether to force the encoding to the configured charset on HTTP requests. Defaults to true when force has not been specified. | true | true,error,server.servlet.encoding.force-request | 
+| ~~spring.http.encoding.force-response~~ | java.lang.Boolean | Whether to force the encoding to the configured charset on HTTP responses. | false | true,error,server.servlet.encoding.force-response | 
+| ~~spring.http.encoding.mapping~~ | java.util.Map<java.util.Locale,java.nio.charset.Charset> | Locale in which to encode mapping. |  | true,error,server.servlet.encoding.mapping | 
+| ~~spring.http.log-request-details~~ | java.lang.Boolean | Whether logging of (potentially sensitive) request details at DEBUG and TRACE level is allowed. | false | true,error,spring.mvc.log-request-details | 
+| ~~spring.jackson.joda-date-time-format~~ | java.lang.String | Joda date time format string. If not configured, "date-format" is used as a fallback if it is configured with a format string. |  | true,error | 
 | spring.jmx.default-domain | java.lang.String | JMX domain name. |  |  | 
 | spring.jmx.enabled | java.lang.Boolean | Expose management beans to the JMX domain. | false |  | 
 | spring.jmx.server | java.lang.String | MBeanServer bean name. | mbeanServer |  | 
 | spring.jmx.unique-names | java.lang.Boolean | Whether unique runtime object names should be ensured. | false |  | 
-| spring.jta.bitronix.properties.allow-multiple-lrc | java.lang.Boolean | null |  | true,error | 
-| spring.jta.bitronix.properties.asynchronous2-pc | java.lang.Boolean | null |  | true,error | 
-| spring.jta.bitronix.properties.background-recovery-interval | java.lang.Integer | null |  | true,error | 
-| spring.jta.bitronix.properties.background-recovery-interval-seconds | java.lang.Integer | null |  | true,error | 
-| spring.jta.bitronix.properties.current-node-only-recovery | java.lang.Boolean | null |  | true,error | 
-| spring.jta.bitronix.properties.debug-zero-resource-transaction | java.lang.Boolean | null |  | true,error | 
-| spring.jta.bitronix.properties.default-transaction-timeout | java.lang.Integer | null |  | true,error | 
-| spring.jta.bitronix.properties.disable-jmx | java.lang.Boolean | null |  | true,error | 
-| spring.jta.bitronix.properties.exception-analyzer | java.lang.String | null |  | true,error | 
-| spring.jta.bitronix.properties.filter-log-status | java.lang.Boolean | null |  | true,error | 
-| spring.jta.bitronix.properties.force-batching-enabled | java.lang.Boolean | null |  | true,error | 
-| spring.jta.bitronix.properties.forced-write-enabled | java.lang.Boolean | null |  | true,error | 
-| spring.jta.bitronix.properties.graceful-shutdown-interval | java.lang.String | null |  | true,error | 
-| spring.jta.bitronix.properties.jndi-transaction-synchronization-registry-name | java.lang.String | null |  | true,error | 
-| spring.jta.bitronix.properties.jndi-user-transaction-name | java.lang.String | null |  | true,error | 
-| spring.jta.bitronix.properties.journal | java.lang.String | null |  | true,error | 
-| spring.jta.bitronix.properties.log-part1-filename | java.lang.String | null |  | true,error | 
-| spring.jta.bitronix.properties.log-part2-filename | java.lang.String | null |  | true,error | 
-| spring.jta.bitronix.properties.max-log-size-in-mb | java.lang.Integer | null |  | true,error | 
-| spring.jta.bitronix.properties.resource-configuration-filename | java.lang.String | null |  | true,error | 
-| spring.jta.bitronix.properties.server-id | java.lang.String | null |  | true,error | 
-| spring.jta.bitronix.properties.skip-corrupted-logs | java.lang.Boolean | null |  | true,error | 
-| spring.jta.bitronix.properties.warn-about-zero-resource-transaction | java.lang.Boolean | null |  | true,error | 
+| ~~spring.jta.bitronix.properties.allow-multiple-lrc~~ | java.lang.Boolean | null |  | true,error | 
+| ~~spring.jta.bitronix.properties.asynchronous2-pc~~ | java.lang.Boolean | null |  | true,error | 
+| ~~spring.jta.bitronix.properties.background-recovery-interval~~ | java.lang.Integer | null |  | true,error | 
+| ~~spring.jta.bitronix.properties.background-recovery-interval-seconds~~ | java.lang.Integer | null |  | true,error | 
+| ~~spring.jta.bitronix.properties.current-node-only-recovery~~ | java.lang.Boolean | null |  | true,error | 
+| ~~spring.jta.bitronix.properties.debug-zero-resource-transaction~~ | java.lang.Boolean | null |  | true,error | 
+| ~~spring.jta.bitronix.properties.default-transaction-timeout~~ | java.lang.Integer | null |  | true,error | 
+| ~~spring.jta.bitronix.properties.disable-jmx~~ | java.lang.Boolean | null |  | true,error | 
+| ~~spring.jta.bitronix.properties.exception-analyzer~~ | java.lang.String | null |  | true,error | 
+| ~~spring.jta.bitronix.properties.filter-log-status~~ | java.lang.Boolean | null |  | true,error | 
+| ~~spring.jta.bitronix.properties.force-batching-enabled~~ | java.lang.Boolean | null |  | true,error | 
+| ~~spring.jta.bitronix.properties.forced-write-enabled~~ | java.lang.Boolean | null |  | true,error | 
+| ~~spring.jta.bitronix.properties.graceful-shutdown-interval~~ | java.lang.String | null |  | true,error | 
+| ~~spring.jta.bitronix.properties.jndi-transaction-synchronization-registry-name~~ | java.lang.String | null |  | true,error | 
+| ~~spring.jta.bitronix.properties.jndi-user-transaction-name~~ | java.lang.String | null |  | true,error | 
+| ~~spring.jta.bitronix.properties.journal~~ | java.lang.String | null |  | true,error | 
+| ~~spring.jta.bitronix.properties.log-part1-filename~~ | java.lang.String | null |  | true,error | 
+| ~~spring.jta.bitronix.properties.log-part2-filename~~ | java.lang.String | null |  | true,error | 
+| ~~spring.jta.bitronix.properties.max-log-size-in-mb~~ | java.lang.Integer | null |  | true,error | 
+| ~~spring.jta.bitronix.properties.resource-configuration-filename~~ | java.lang.String | null |  | true,error | 
+| ~~spring.jta.bitronix.properties.server-id~~ | java.lang.String | null |  | true,error | 
+| ~~spring.jta.bitronix.properties.skip-corrupted-logs~~ | java.lang.Boolean | null |  | true,error | 
+| ~~spring.jta.bitronix.properties.warn-about-zero-resource-transaction~~ | java.lang.Boolean | null |  | true,error | 
 | spring.jta.enabled | java.lang.Boolean | Whether to enable JTA support. | true |  | 
-| spring.jta.narayana.default-timeout | java.time.Duration | Transaction timeout. If a duration suffix is not specified, seconds will be used. | 60s | true,error,Narayana support has moved to third party starter. | 
-| spring.jta.narayana.expiry-scanners | java.util.List<java.lang.String> | Comma-separated list of expiry scanners. | ["com.arjuna.ats.internal.arjuna.recovery.ExpiredTransactionStatusManagerScanner"] | true,error,Narayana support has moved to third party starter. | 
-| spring.jta.narayana.log-dir | java.lang.String | Transaction object store directory. |  | true,error,Narayana support has moved to third party starter. | 
-| spring.jta.narayana.one-phase-commit | java.lang.Boolean | Whether to enable one phase commit optimization. | true | true,error,Narayana support has moved to third party starter. | 
-| spring.jta.narayana.periodic-recovery-period | java.time.Duration | Interval in which periodic recovery scans are performed. If a duration suffix is not specified, seconds will be used. | 120s | true,error,Narayana support has moved to third party starter. | 
-| spring.jta.narayana.recovery-backoff-period | java.time.Duration | Back off period between first and second phases of the recovery scan. If a duration suffix is not specified, seconds will be used. | 10s | true,error,Narayana support has moved to third party starter. | 
-| spring.jta.narayana.recovery-db-pass | java.lang.String | Database password to be used by the recovery manager. |  | true,error,Narayana support has moved to third party starter. | 
-| spring.jta.narayana.recovery-db-user | java.lang.String | Database username to be used by the recovery manager. |  | true,error,Narayana support has moved to third party starter. | 
-| spring.jta.narayana.recovery-jms-pass | java.lang.String | JMS password to be used by the recovery manager. |  | true,error,Narayana support has moved to third party starter. | 
-| spring.jta.narayana.recovery-jms-user | java.lang.String | JMS username to be used by the recovery manager. |  | true,error,Narayana support has moved to third party starter. | 
-| spring.jta.narayana.recovery-modules | java.util.List<java.lang.String> | Comma-separated list of recovery modules. |  | true,error,Narayana support has moved to third party starter. | 
-| spring.jta.narayana.transaction-manager-id | java.lang.String | Unique transaction manager id. | 1 | true,error,Narayana support has moved to third party starter. | 
-| spring.jta.narayana.xa-resource-orphan-filters | java.util.List<java.lang.String> | Comma-separated list of orphan filters. |  | true,error,Narayana support has moved to third party starter. | 
-| spring.kafka.admin.ssl.keystore-location | org.springframework.core.io.Resource | Location of the key store file. |  | true,error,spring.kafka.admin.ssl.key-store-location | 
-| spring.kafka.admin.ssl.keystore-password | java.lang.String | Store password for the key store file. |  | true,error,spring.kafka.admin.ssl.key-store-password | 
-| spring.kafka.admin.ssl.truststore-location | org.springframework.core.io.Resource | Location of the trust store file. |  | true,error,spring.kafka.admin.ssl.trust-store-location | 
-| spring.kafka.admin.ssl.truststore-password | java.lang.String | Store password for the trust store file. |  | true,error,spring.kafka.admin.ssl.trust-store-password | 
-| spring.kafka.consumer.ssl.keystore-location | org.springframework.core.io.Resource | Location of the key store file. |  | true,error,spring.kafka.consumer.ssl.key-store-location | 
-| spring.kafka.consumer.ssl.keystore-password | java.lang.String | Store password for the key store file. |  | true,error,spring.kafka.consumer.ssl.key-store-password | 
-| spring.kafka.consumer.ssl.truststore-location | org.springframework.core.io.Resource | Location of the trust store file. |  | true,error,spring.kafka.consumer.ssl.trust-store-location | 
-| spring.kafka.consumer.ssl.truststore-password | java.lang.String | Store password for the trust store file. |  | true,error,spring.kafka.consumer.ssl.trust-store-password | 
-| spring.kafka.producer.ssl.keystore-location | org.springframework.core.io.Resource | Location of the key store file. |  | true,error,spring.kafka.producer.ssl.key-store-location | 
-| spring.kafka.producer.ssl.keystore-password | java.lang.String | Store password for the key store file. |  | true,error,spring.kafka.producer.ssl.key-store-password | 
-| spring.kafka.producer.ssl.truststore-location | org.springframework.core.io.Resource | Location of the trust store file. |  | true,error,spring.kafka.producer.ssl.trust-store-location | 
-| spring.kafka.producer.ssl.truststore-password | java.lang.String | Store password for the trust store file. |  | true,error,spring.kafka.producer.ssl.trust-store-password | 
-| spring.kafka.ssl.keystore-location | org.springframework.core.io.Resource | Location of the key store file. |  | true,error,spring.kafka.ssl.key-store-location | 
-| spring.kafka.ssl.keystore-password | java.lang.String | Store password for the key store file. |  | true,error,spring.kafka.ssl.key-store-password | 
-| spring.kafka.ssl.truststore-location | org.springframework.core.io.Resource | Location of the trust store file. |  | true,error,spring.kafka.ssl.trust-store-location | 
-| spring.kafka.ssl.truststore-password | java.lang.String | Store password for the trust store file. |  | true,error,spring.kafka.ssl.trust-store-password | 
-| spring.kafka.streams.cache-max-bytes-buffering | java.lang.Integer | null |  | true,error,spring.kafka.streams.cache-max-size-buffering | 
-| spring.liquibase.check-change-log-location | java.lang.Boolean | Check the change log location exists. | true | true,error,Liquibase has it's own check that checks if the change log location exists making this property redundant. | 
+| ~~spring.jta.narayana.default-timeout~~ | java.time.Duration | Transaction timeout. If a duration suffix is not specified, seconds will be used. | 60s | true,error,Narayana support has moved to third party starter. | 
+| ~~spring.jta.narayana.expiry-scanners~~ | java.util.List<java.lang.String> | Comma-separated list of expiry scanners. | ["com.arjuna.ats.internal.arjuna.recovery.ExpiredTransactionStatusManagerScanner"] | true,error,Narayana support has moved to third party starter. | 
+| ~~spring.jta.narayana.log-dir~~ | java.lang.String | Transaction object store directory. |  | true,error,Narayana support has moved to third party starter. | 
+| ~~spring.jta.narayana.one-phase-commit~~ | java.lang.Boolean | Whether to enable one phase commit optimization. | true | true,error,Narayana support has moved to third party starter. | 
+| ~~spring.jta.narayana.periodic-recovery-period~~ | java.time.Duration | Interval in which periodic recovery scans are performed. If a duration suffix is not specified, seconds will be used. | 120s | true,error,Narayana support has moved to third party starter. | 
+| ~~spring.jta.narayana.recovery-backoff-period~~ | java.time.Duration | Back off period between first and second phases of the recovery scan. If a duration suffix is not specified, seconds will be used. | 10s | true,error,Narayana support has moved to third party starter. | 
+| ~~spring.jta.narayana.recovery-db-pass~~ | java.lang.String | Database password to be used by the recovery manager. |  | true,error,Narayana support has moved to third party starter. | 
+| ~~spring.jta.narayana.recovery-db-user~~ | java.lang.String | Database username to be used by the recovery manager. |  | true,error,Narayana support has moved to third party starter. | 
+| ~~spring.jta.narayana.recovery-jms-pass~~ | java.lang.String | JMS password to be used by the recovery manager. |  | true,error,Narayana support has moved to third party starter. | 
+| ~~spring.jta.narayana.recovery-jms-user~~ | java.lang.String | JMS username to be used by the recovery manager. |  | true,error,Narayana support has moved to third party starter. | 
+| ~~spring.jta.narayana.recovery-modules~~ | java.util.List<java.lang.String> | Comma-separated list of recovery modules. |  | true,error,Narayana support has moved to third party starter. | 
+| ~~spring.jta.narayana.transaction-manager-id~~ | java.lang.String | Unique transaction manager id. | 1 | true,error,Narayana support has moved to third party starter. | 
+| ~~spring.jta.narayana.xa-resource-orphan-filters~~ | java.util.List<java.lang.String> | Comma-separated list of orphan filters. |  | true,error,Narayana support has moved to third party starter. | 
+| ~~spring.kafka.admin.ssl.keystore-location~~ | org.springframework.core.io.Resource | Location of the key store file. |  | true,error,spring.kafka.admin.ssl.key-store-location | 
+| ~~spring.kafka.admin.ssl.keystore-password~~ | java.lang.String | Store password for the key store file. |  | true,error,spring.kafka.admin.ssl.key-store-password | 
+| ~~spring.kafka.admin.ssl.truststore-location~~ | org.springframework.core.io.Resource | Location of the trust store file. |  | true,error,spring.kafka.admin.ssl.trust-store-location | 
+| ~~spring.kafka.admin.ssl.truststore-password~~ | java.lang.String | Store password for the trust store file. |  | true,error,spring.kafka.admin.ssl.trust-store-password | 
+| ~~spring.kafka.consumer.ssl.keystore-location~~ | org.springframework.core.io.Resource | Location of the key store file. |  | true,error,spring.kafka.consumer.ssl.key-store-location | 
+| ~~spring.kafka.consumer.ssl.keystore-password~~ | java.lang.String | Store password for the key store file. |  | true,error,spring.kafka.consumer.ssl.key-store-password | 
+| ~~spring.kafka.consumer.ssl.truststore-location~~ | org.springframework.core.io.Resource | Location of the trust store file. |  | true,error,spring.kafka.consumer.ssl.trust-store-location | 
+| ~~spring.kafka.consumer.ssl.truststore-password~~ | java.lang.String | Store password for the trust store file. |  | true,error,spring.kafka.consumer.ssl.trust-store-password | 
+| ~~spring.kafka.producer.ssl.keystore-location~~ | org.springframework.core.io.Resource | Location of the key store file. |  | true,error,spring.kafka.producer.ssl.key-store-location | 
+| ~~spring.kafka.producer.ssl.keystore-password~~ | java.lang.String | Store password for the key store file. |  | true,error,spring.kafka.producer.ssl.key-store-password | 
+| ~~spring.kafka.producer.ssl.truststore-location~~ | org.springframework.core.io.Resource | Location of the trust store file. |  | true,error,spring.kafka.producer.ssl.trust-store-location | 
+| ~~spring.kafka.producer.ssl.truststore-password~~ | java.lang.String | Store password for the trust store file. |  | true,error,spring.kafka.producer.ssl.trust-store-password | 
+| ~~spring.kafka.ssl.keystore-location~~ | org.springframework.core.io.Resource | Location of the key store file. |  | true,error,spring.kafka.ssl.key-store-location | 
+| ~~spring.kafka.ssl.keystore-password~~ | java.lang.String | Store password for the key store file. |  | true,error,spring.kafka.ssl.key-store-password | 
+| ~~spring.kafka.ssl.truststore-location~~ | org.springframework.core.io.Resource | Location of the trust store file. |  | true,error,spring.kafka.ssl.trust-store-location | 
+| ~~spring.kafka.ssl.truststore-password~~ | java.lang.String | Store password for the trust store file. |  | true,error,spring.kafka.ssl.trust-store-password | 
+| ~~spring.kafka.streams.cache-max-bytes-buffering~~ | java.lang.Integer | null |  | true,error,spring.kafka.streams.cache-max-size-buffering | 
+| ~~spring.liquibase.check-change-log-location~~ | java.lang.Boolean | Check the change log location exists. | true | true,error,Liquibase has it's own check that checks if the change log location exists making this property redundant. | 
 | spring.mvc.converters.preferred-json-mapper | java.lang.String | Preferred JSON mapper to use for HTTP message conversion. By default, auto-detected according to the environment. |  |  | 
-| spring.mvc.favicon.enabled | java.lang.Boolean | Whether to enable resolution of favicon.ico. |  | true,error | 
+| ~~spring.mvc.favicon.enabled~~ | java.lang.Boolean | Whether to enable resolution of favicon.ico. |  | true,error | 
 | spring.mvc.formcontent.filter.enabled | java.lang.Boolean | Whether to enable Spring's FormContentFilter. | true |  | 
-| spring.mvc.formcontent.putfilter.enabled | java.lang.Boolean | Whether to enable Spring's HttpPutFormContentFilter. | true | true,error,spring.mvc.formcontent.filter.enabled | 
+| ~~spring.mvc.formcontent.putfilter.enabled~~ | java.lang.Boolean | Whether to enable Spring's HttpPutFormContentFilter. | true | true,error,spring.mvc.formcontent.filter.enabled | 
 | spring.mvc.hiddenmethod.filter.enabled | java.lang.Boolean | Whether to enable Spring's HiddenHttpMethodFilter. | false |  | 
-| spring.mvc.locale | java.util.Locale | null |  | true,error,spring.web.locale | 
-| spring.mvc.locale-resolver | org.springframework.boot.autoconfigure.web.WebProperties$LocaleResolver | null |  | true,error,spring.web.locale-resolver | 
+| ~~spring.mvc.locale~~ | java.util.Locale | null |  | true,error,spring.web.locale | 
+| ~~spring.mvc.locale-resolver~~ | org.springframework.boot.autoconfigure.web.WebProperties$LocaleResolver | null |  | true,error,spring.web.locale-resolver | 
 | spring.rabbitmq.dynamic | java.lang.Boolean | Whether to create an AmqpAdmin bean. | true |  | 
-| spring.rabbitmq.listener.simple.transaction-size | java.lang.Integer | null |  | true,error | 
-| spring.rabbitmq.publisher-confirms | java.lang.Boolean | null |  | true,error | 
-| spring.rabbitmq.template.queue | java.lang.String | null |  | true,error,spring.rabbitmq.template.default-receive-queue | 
-| spring.reactor.stacktrace-mode.enabled | null | Whether Reactor should collect stacktrace information at runtime. | false | true,spring.reactor.debug-agent.enabled | 
-| spring.resources.add-mappings | java.lang.Boolean | null |  | true,error,spring.web.resources.add-mappings | 
-| spring.resources.cache.cachecontrol.cache-private | java.lang.Boolean | null |  | true,error,spring.web.resources.cache.cachecontrol.cache-private | 
-| spring.resources.cache.cachecontrol.cache-public | java.lang.Boolean | null |  | true,error,spring.web.resources.cache.cachecontrol.cache-public | 
-| spring.resources.cache.cachecontrol.max-age | java.time.Duration | null |  | true,error,spring.web.resources.cache.cachecontrol.max-age | 
-| spring.resources.cache.cachecontrol.must-revalidate | java.lang.Boolean | null |  | true,error,spring.web.resources.cache.cachecontrol.must-revalidate | 
-| spring.resources.cache.cachecontrol.no-cache | java.lang.Boolean | null |  | true,error,spring.web.resources.cache.cachecontrol.no-cache | 
-| spring.resources.cache.cachecontrol.no-store | java.lang.Boolean | null |  | true,error,spring.web.resources.cache.cachecontrol.no-store | 
-| spring.resources.cache.cachecontrol.no-transform | java.lang.Boolean | null |  | true,error,spring.web.resources.cache.cachecontrol.no-transform | 
-| spring.resources.cache.cachecontrol.proxy-revalidate | java.lang.Boolean | null |  | true,error,spring.web.resources.cache.cachecontrol.proxy-revalidate | 
-| spring.resources.cache.cachecontrol.s-max-age | java.time.Duration | null |  | true,error,spring.web.resources.cache.cachecontrol.s-max-age | 
-| spring.resources.cache.cachecontrol.stale-if-error | java.time.Duration | null |  | true,error,spring.web.resources.cache.cachecontrol.stale-if-error | 
-| spring.resources.cache.cachecontrol.stale-while-revalidate | java.time.Duration | null |  | true,error,spring.web.resources.cache.cachecontrol.stale-while-revalidate | 
-| spring.resources.cache.period | java.time.Duration | null |  | true,error,spring.web.resources.cache.period | 
-| spring.resources.cache.use-last-modified | java.lang.Boolean | null |  | true,error,spring.web.resources.cache.use-last-modified | 
-| spring.resources.chain.cache | java.lang.Boolean | null |  | true,error,spring.web.resources.chain.cache | 
-| spring.resources.chain.compressed | java.lang.Boolean | null |  | true,error,spring.web.resources.chain.compressed | 
-| spring.resources.chain.enabled | java.lang.Boolean | null |  | true,error,spring.web.resources.chain.enabled | 
-| spring.resources.chain.gzipped | java.lang.Boolean | null |  | true,error,spring.web.resources.chain.compressed | 
-| spring.resources.chain.html-application-cache | java.lang.Boolean | null |  | true,error | 
-| spring.resources.chain.strategy.content.enabled | java.lang.Boolean | null |  | true,error,spring.web.resources.chain.strategy.content.enabled | 
-| spring.resources.chain.strategy.content.paths | java.lang.String[] | null |  | true,error,spring.web.resources.chain.strategy.content.paths | 
-| spring.resources.chain.strategy.fixed.enabled | java.lang.Boolean | null |  | true,error,spring.web.resources.chain.strategy.fixed.enabled | 
-| spring.resources.chain.strategy.fixed.paths | java.lang.String[] | null |  | true,error,spring.web.resources.chain.strategy.fixed.paths | 
-| spring.resources.chain.strategy.fixed.version | java.lang.String | null |  | true,error,spring.web.resources.chain.strategy.fixed.version | 
-| spring.resources.static-locations | java.lang.String[] | null |  | true,error,spring.web.resources.static-locations | 
-| spring.sql.init.enabled | java.lang.Boolean | Whether basic script-based initialization of an SQL database is enabled. | true | true,warning,spring.sql.init.mode | 
+| ~~spring.rabbitmq.listener.simple.transaction-size~~ | java.lang.Integer | null |  | true,error | 
+| ~~spring.rabbitmq.publisher-confirms~~ | java.lang.Boolean | null |  | true,error | 
+| ~~spring.rabbitmq.template.queue~~ | java.lang.String | null |  | true,error,spring.rabbitmq.template.default-receive-queue | 
+| ~~spring.reactor.stacktrace-mode.enabled~~ | null | Whether Reactor should collect stacktrace information at runtime. | false | true,spring.reactor.debug-agent.enabled | 
+| ~~spring.resources.add-mappings~~ | java.lang.Boolean | null |  | true,error,spring.web.resources.add-mappings | 
+| ~~spring.resources.cache.cachecontrol.cache-private~~ | java.lang.Boolean | null |  | true,error,spring.web.resources.cache.cachecontrol.cache-private | 
+| ~~spring.resources.cache.cachecontrol.cache-public~~ | java.lang.Boolean | null |  | true,error,spring.web.resources.cache.cachecontrol.cache-public | 
+| ~~spring.resources.cache.cachecontrol.max-age~~ | java.time.Duration | null |  | true,error,spring.web.resources.cache.cachecontrol.max-age | 
+| ~~spring.resources.cache.cachecontrol.must-revalidate~~ | java.lang.Boolean | null |  | true,error,spring.web.resources.cache.cachecontrol.must-revalidate | 
+| ~~spring.resources.cache.cachecontrol.no-cache~~ | java.lang.Boolean | null |  | true,error,spring.web.resources.cache.cachecontrol.no-cache | 
+| ~~spring.resources.cache.cachecontrol.no-store~~ | java.lang.Boolean | null |  | true,error,spring.web.resources.cache.cachecontrol.no-store | 
+| ~~spring.resources.cache.cachecontrol.no-transform~~ | java.lang.Boolean | null |  | true,error,spring.web.resources.cache.cachecontrol.no-transform | 
+| ~~spring.resources.cache.cachecontrol.proxy-revalidate~~ | java.lang.Boolean | null |  | true,error,spring.web.resources.cache.cachecontrol.proxy-revalidate | 
+| ~~spring.resources.cache.cachecontrol.s-max-age~~ | java.time.Duration | null |  | true,error,spring.web.resources.cache.cachecontrol.s-max-age | 
+| ~~spring.resources.cache.cachecontrol.stale-if-error~~ | java.time.Duration | null |  | true,error,spring.web.resources.cache.cachecontrol.stale-if-error | 
+| ~~spring.resources.cache.cachecontrol.stale-while-revalidate~~ | java.time.Duration | null |  | true,error,spring.web.resources.cache.cachecontrol.stale-while-revalidate | 
+| ~~spring.resources.cache.period~~ | java.time.Duration | null |  | true,error,spring.web.resources.cache.period | 
+| ~~spring.resources.cache.use-last-modified~~ | java.lang.Boolean | null |  | true,error,spring.web.resources.cache.use-last-modified | 
+| ~~spring.resources.chain.cache~~ | java.lang.Boolean | null |  | true,error,spring.web.resources.chain.cache | 
+| ~~spring.resources.chain.compressed~~ | java.lang.Boolean | null |  | true,error,spring.web.resources.chain.compressed | 
+| ~~spring.resources.chain.enabled~~ | java.lang.Boolean | null |  | true,error,spring.web.resources.chain.enabled | 
+| ~~spring.resources.chain.gzipped~~ | java.lang.Boolean | null |  | true,error,spring.web.resources.chain.compressed | 
+| ~~spring.resources.chain.html-application-cache~~ | java.lang.Boolean | null |  | true,error | 
+| ~~spring.resources.chain.strategy.content.enabled~~ | java.lang.Boolean | null |  | true,error,spring.web.resources.chain.strategy.content.enabled | 
+| ~~spring.resources.chain.strategy.content.paths~~ | java.lang.String[] | null |  | true,error,spring.web.resources.chain.strategy.content.paths | 
+| ~~spring.resources.chain.strategy.fixed.enabled~~ | java.lang.Boolean | null |  | true,error,spring.web.resources.chain.strategy.fixed.enabled | 
+| ~~spring.resources.chain.strategy.fixed.paths~~ | java.lang.String[] | null |  | true,error,spring.web.resources.chain.strategy.fixed.paths | 
+| ~~spring.resources.chain.strategy.fixed.version~~ | java.lang.String | null |  | true,error,spring.web.resources.chain.strategy.fixed.version | 
+| ~~spring.resources.static-locations~~ | java.lang.String[] | null |  | true,error,spring.web.resources.static-locations | 
+| ~~spring.sql.init.enabled~~ | java.lang.Boolean | Whether basic script-based initialization of an SQL database is enabled. | true | true,warning,spring.sql.init.mode | 
 | spring.webflux.hiddenmethod.filter.enabled | java.lang.Boolean | Whether to enable Spring's HiddenHttpMethodFilter. | false |  | 
 | spring.webflux.session.timeout | null | null | 30m |  | 
 | spring.webservices.wsdl-locations | java.util.List<java.lang.String> | Comma-separated list of locations of WSDLs and accompanying XSDs to be exposed as beans. |  |  | 

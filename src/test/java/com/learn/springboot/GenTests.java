@@ -54,11 +54,13 @@ public class GenTests {
         stringBuilder.append(separator);
         if(groups!=null) {
             stringBuilder.append("### " + groups.getName() + ".xx" + separator)
+                    .append(separator)
                     .append("描述:" + separator)
                     .append("类型:`" + groups.getType() + "`" + separator)
                     .append("源类型:`" + groups.getSourceType() + "`" + separator);
         }else{
             stringBuilder.append("### 未分类" + separator)
+                    .append(separator)
                     .append("描述:" + separator);
         }
         stringBuilder.append(separator)
@@ -66,13 +68,19 @@ public class GenTests {
                 .append("|-----|------|-----|-------|---------|"+separator);
         for (ConfigMetadata.Properties property : properties) {
             Object defaultValue=property.getDefaultValue();
-            Object deprecated=property.getDeprecated();
+            Boolean deprecated=property.getDeprecated();
+            String name = property.getName();
             ConfigMetadata.Properties.Deprecation deprecation=property.getDeprecation();
-            if(groups!=null) {
-                stringBuilder.append("| " + property.getName().substring(property.getName().lastIndexOf(".") + 1) + " | " + property.getType() + " | " + StrUtil.replace(property.getDescription(),"\n","") + " | ");
+            String propertyName = "";
+            if(groups!=null){
+                propertyName = name.substring(name.lastIndexOf(".") + 1);
             }else{
-                stringBuilder.append("| " + property.getName() + " | " + property.getType() + " | " + StrUtil.replace(property.getDescription(),"\n","") + " | ");
+                propertyName= name;
             }
+            if(deprecated!=null&&deprecated){
+                propertyName = "~~" + propertyName + "~~";
+            }
+            stringBuilder.append("| " + propertyName + " | " + property.getType() + " | " + StrUtil.replace(property.getDescription(),"\n","") + " | ");
             if(defaultValue!=null){
                 stringBuilder.append(defaultValue);
             }
