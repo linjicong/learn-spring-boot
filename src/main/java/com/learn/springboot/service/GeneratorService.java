@@ -2,6 +2,7 @@ package com.learn.springboot.service;
 
 import cn.hutool.core.io.file.FileReader;
 import cn.hutool.core.io.file.FileWriter;
+import cn.hutool.core.lang.tree.TreeUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.json.JSONUtil;
 import com.learn.springboot.domain.ConfigMetadata;
@@ -105,6 +106,7 @@ public class GeneratorService {
 
     public static void main(String[] args) {
         //generator("spring-configuration-metadata-spring-boot-autoconfigure.json");
+
         generator("spring-configuration-metadata-euraka-client.json");
     }
 }
