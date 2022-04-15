@@ -2,6 +2,7 @@ package com.learn.springboot;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.ConfigurableBootstrapContext;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringApplicationRunListener;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.env.ConfigurableEnvironment;
@@ -9,10 +10,15 @@ import org.springframework.stereotype.Component;
 
 import java.time.Duration;
 
-@Component
 @Slf4j
 public class MySpringApplicationRunListener implements SpringApplicationRunListener {
 
+    private final SpringApplication springApplication;
+    private final String[] args;
+    public MySpringApplicationRunListener(SpringApplication springApplication, String[] args) {
+        this.springApplication=springApplication;
+        this.args=args;
+    }
     @Override
     public void starting(ConfigurableBootstrapContext bootstrapContext) {
         log.info("MySpringApplicationRunListener.starting()");

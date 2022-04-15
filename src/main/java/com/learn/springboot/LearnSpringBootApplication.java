@@ -9,6 +9,7 @@ public class LearnSpringBootApplication {
     public static void main(String[] args) {
         SpringApplication springApplication = new SpringApplication(LearnSpringBootApplication.class);
         springApplication.addListeners(new MyApplicationListener());
+        springApplication.addInitializers(new MyApplicationContextInitializer());
         springApplication.run(args);
     }
 
