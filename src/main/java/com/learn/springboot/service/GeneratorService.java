@@ -2,10 +2,9 @@ package com.learn.springboot.service;
 
 import cn.hutool.core.io.file.FileReader;
 import cn.hutool.core.io.file.FileWriter;
-import cn.hutool.core.lang.tree.TreeUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.json.JSONUtil;
-import com.learn.springboot.domain.ConfigMetadata;
+import com.learn.springboot.dao.entity.ConfigMetadata;
 
 import java.util.*;
 

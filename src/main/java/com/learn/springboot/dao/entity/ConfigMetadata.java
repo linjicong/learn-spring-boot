@@ -1,13 +1,9 @@
-package com.learn.springboot.domain;
+package com.learn.springboot.dao.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.core.codec.Hints;
-import sun.security.jca.Providers;
 
 import java.util.List;
-import java.util.Map;
-import java.util.Properties;
 
 /**
  * @author linjicong
