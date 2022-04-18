@@ -1,9 +1,10 @@
 package com.learn.springboot;
 
+import com.learn.springboot.extension.MyApplicationContextInitializer;
+import com.learn.springboot.extension.MyApplicationListener;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 @SpringBootApplication
 @MapperScan("com.learn.springboot.dao.mapper")
